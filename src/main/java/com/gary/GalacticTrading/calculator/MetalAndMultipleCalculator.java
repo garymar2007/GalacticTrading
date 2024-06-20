@@ -18,6 +18,9 @@ import java.util.Map;
 @Slf4j
 @Getter
 public class MetalAndMultipleCalculator {
+    /**
+     * This map is used to store the metal name and multiple.
+     */
     private Map<String, Double> metalNameMultiplerMap = new HashMap<>();
     private final RomanStringToIntegerConverter romanStringToIntegerConverter;
     private final IntergalacticUnitsToRomanStringConverter intergalacticUnitsToRomanStringConverter;

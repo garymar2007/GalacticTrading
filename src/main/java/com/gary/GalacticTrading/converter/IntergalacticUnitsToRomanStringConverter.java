@@ -1,5 +1,7 @@
 package com.gary.GalacticTrading.converter;
 
+import lombok.NoArgsConstructor;
+import lombok.Setter;
 import org.springframework.stereotype.Service;
 
 import java.util.Map;
@@ -8,6 +10,8 @@ import java.util.Map;
  * This class is responsible for converting intergalactic units to roman string.
  */
 @Service
+@Setter
+@NoArgsConstructor
 public class IntergalacticUnitsToRomanStringConverter {
     private Map<String, String> interGalacticUnits;
 
