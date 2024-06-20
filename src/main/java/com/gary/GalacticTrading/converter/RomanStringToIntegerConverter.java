@@ -9,7 +9,7 @@ import java.util.Map;
  * This class is used to convert Roman String to Integer
  */
 @Service
-public class RomanStringToIntegerConversion {
+public class RomanStringToIntegerConverter {
     private static final Map<String, Integer> ROMAN_TO_INTEGER_MAP = new HashMap<>(){
         {
             put("I", 1);
