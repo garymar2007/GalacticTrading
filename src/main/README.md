@@ -77,5 +77,42 @@ The problem can be broken down into 3 parts:
 2. Parse the input and store the conversion rates for the metals in a dictionary.
 3. Parse the input and convert the intergalactic units to roman numerals and then to decimal numbers.
 
+### Assumptions
+1. The inputs are following the order: 
+    - Conversion rates for intergalactic units
+    - Conversion rates for metals
+    - Queries
+2. The queries are in the format:
+3. The queries are in the format:
+    - how much is pish tegj glob glob ?
+    - how many Credits is glob prok Silver ?
+    - how many Credits is glob prok Gold ?
+    - how many Credits is glob prok Iron ?
+    - how much wood could a woodchuck chuck if a woodchuck could chuck wood ?
+4. The queries are case insensitive.
+5. The queries are ending with a question mark.
+6. The conversion rates are case insensitive.
+7. The conversion rates are in the format:
+    - glob is I
+    - prok is V
+    - pish is X
+    - tegj is L
+    - glob glob Silver is 34 Credits
+    - glob prok Gold is 57800 Credits
+    - pish pish Iron is 3910 Credits
 
+### Design
+1. Parser: 
+   - a map of <String, String> to store the conversion rates;
+   - a map of <String, Integer> to store the metal multiplers;
+   - a list of queries;
+2. Converter:
+   - Romman string to integer converter;
+   - Intergalactic units to Roman string converter;
+3. Calculator:
+   - Calculate the value of the intergalactic units;
+   - Calculate the value of the metal;
+   - Calculate the value of the query;
+4. Validator:
+   - Validate the input;
 
