@@ -27,9 +27,13 @@ class GalacticTradingApplicationTests {
 	}
 
 	@Test
-	void testInvalidInputFile() throws IOException {
-		String inputFileName = "invalid-input.txt";
-		String outputFileName = "invalid-output.txt";
-		tradingService.trade(inputFileName, outputFileName);
+	void testInvalidInputFile() throws Exception {
+		try{
+			String inputFileName = "invalid-input.txt";
+			String outputFileName = "invalid-output.txt";
+			tradingService.trade(inputFileName, outputFileName);
+		} catch (Exception e) {
+			throw new Exception("Failed to process trade due to: " + e.getMessage());
+		}
 	}
 }

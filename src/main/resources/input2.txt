@@ -1,15 +1,15 @@
-glob is I
+glOb is I
 prok is V
-pish is X
+pish is x
 tegj is L
-diag is C
+diag is c
 glob prok Silver is 34 Credits
-prok glob glob Diamond is 315000 Credits
-diag pish Iron is 5005 Credits
-pish tegj glob glob Gold is 2541 Credits
+prok glob glob diamond is 315000 Credits
+diag pIsh Iron is 5005 Credits
+pish tegj glob glob gold is 2541 Credits
 how much is diag pish tegj glob prok ?
 how many Credits is glob pish Silver ?
 how many Credits is pish tegj Gold ?
-how many Credits is diag prok Iron ?
+how many Credits is dIag pRok Iron ?
 how many Credits is glob glob glob Diamond ?
 how much wood could a woodchuck chuck if a woodchuck could chuck wood?

@@ -1,10 +1,6 @@
 package com.gary.GalacticTrading.validator;
 
 import org.junit.jupiter.api.Test;
-
-import java.util.regex.Matcher;
-import java.util.regex.Pattern;
-
 import static org.junit.jupiter.api.Assertions.*;
 
 class RomanSymbolRulesTest {
@@ -36,6 +32,11 @@ class RomanSymbolRulesTest {
     }
 
     @Test
+    void validateRomanSymbolsReturnValid5() {
+        assertTrue(romanSymbolRules.validateRomanSymbols("XXXIX"));
+    }
+
+    @Test
     void validateRomanSymbolsFailedRule1() {
         assertFalse(romanSymbolRules.validateRomanSymbols("MCMXLIVB"));
     }
@@ -47,6 +48,11 @@ class RomanSymbolRulesTest {
     @Test
     void validateRomanSymbolsFailedRule2WithExceedingOneOccurrence() {
         assertFalse(romanSymbolRules.validateRomanSymbols("CCCLLXXXVIIII"));
+    }
+
+    @Test
+    void validateRomanSymbolsFailedRule2WithWrongOcurrence() {
+        assertFalse(romanSymbolRules.validateRomanSymbols("DD"));
     }
 
     @Test
@@ -68,6 +74,7 @@ class RomanSymbolRulesTest {
     void validateRomanSymbolsFailedRule3WithWrongSubstractionOfLC() {
         assertFalse(romanSymbolRules.validateRomanSymbols("DLCXIII"));
     }
+
     @Test
     void validateRomanSymbolsFailedRule3WithWrongSubstractionOfDM() {
         assertFalse(romanSymbolRules.validateRomanSymbols("DMXIII"));

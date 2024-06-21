@@ -73,9 +73,9 @@ queries appropriately.
 
 ## Solution Design
 The problem can be broken down into 3 parts:
-1. Parse the input and store the conversion rates in a dictionary.
-2. Parse the input and store the conversion rates for the metals in a dictionary.
-3. Parse the input and convert the intergalactic units to roman numerals and then to decimal numbers.
+1. Parse the input and store the conversion rates for intergalatic units in a dictionary.
+2. Parse the input and calculate the value of the metals based on credits and then store the metal values in a dictionary.
+3. Parse the input and convert the intergalactic units to roman numerals and then to calculate the number of units of metals.
 
 ### Assumptions
 1. The inputs are following the order: 
@@ -87,9 +87,9 @@ The problem can be broken down into 3 parts:
     - how many Credits is glob prok Silver ?
     - how many Credits is glob prok Gold ?
     - how many Credits is glob prok Iron ?
-3. The queries are case sensitive.
+3. The queries are case-sensitive, except for the key words, that is intergalatic unit or metal.
 4. The queries are ending with a question mark.
-5. The conversion rates are case sensitive.
+5. The conversion rates are case-sensitive, except for the key words, that is intergalatic unit or metal.
 6. The conversion rates are in the format:
     - glob is I
     - prok is V
@@ -133,7 +133,15 @@ The problem can be broken down into 3 parts:
     ```
     mvn clean install
     ```
-3. In order to run the program easily, you should use integration test to run against your input file which resides in resource folder.
+   
+3. Run the program:
+    ```
+    java -jar target/galaxy-merchant-1.0-SNAPSHOT.jar input.txt output.txt
+    ```
+   where input.txt is the input file and output.txt is the output file.
+
+
+5. In order to run the program easily, you should use integration test to run against your input file which resides in resource folder.
 
 The integration test will read the input file as input test and generate a output file for the outcome.
 The IT class is GalaxyMerchantIT.java, which is located in src/test/java/com/galaxy/merchant/it folder.  
@@ -144,6 +152,7 @@ It has three simple tests which read three different files:
 - input2.txt - another valid input file for the test with different queries;
   - The output file will be generated as output2.txt;
 - invalid-input.txt - an invalid input file for the test with invalid intergalactic units;
-  - The output file will be generated as output3.txt, as well as an exception will be thrown.;
+  - The output file will be generated as output3.txt with "Unknown unit of metal in query",
+   as well as an exception will be thrown.;
 ```
 

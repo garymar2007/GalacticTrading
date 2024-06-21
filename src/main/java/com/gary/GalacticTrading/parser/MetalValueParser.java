@@ -28,7 +28,7 @@ public class MetalValueParser {
         String[] metalValueArray = Arrays.stream(metalValueDefn.split(" ")).filter(s -> !s.equals(""))
                 .toArray(String[]::new);
         final int indexOfIs = Arrays.asList(metalValueArray).indexOf("is");
-        metalName = metalValueArray[indexOfIs - 1];
+        metalName = convertToUpperCaseForFirstLetter(metalValueArray[indexOfIs - 1]);
         log.debug("Parsed metal value: metal name -> {}", metalName);
         if (metalValueArray[indexOfIs + 1].chars().allMatch(Character::isDigit)) {
             value = Integer.parseInt(metalValueArray[indexOfIs + 1]);
@@ -46,6 +46,14 @@ public class MetalValueParser {
         }
         interGalacticUnitString = interGalacticUnitString.trim();
         log.debug("Parsed interGalacticUnitString: string -> {}", interGalacticUnitString);
+    }
+
+    private String convertToUpperCaseForFirstLetter(String str) {
+        if (str == null || str.isEmpty()) {
+            return str;
+        }
+
+        return str.substring(0, 1).toUpperCase() + str.substring(1);
     }
 
     public void reset() {

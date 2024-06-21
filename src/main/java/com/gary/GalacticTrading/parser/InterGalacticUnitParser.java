@@ -9,7 +9,6 @@ import lombok.extern.slf4j.Slf4j;
 import org.springframework.stereotype.Component;
 
 import java.util.HashMap;
-import java.util.Locale;
 import java.util.Map;
 
 /**
@@ -24,12 +23,11 @@ public class InterGalacticUnitParser {
     /**
      * This map is used to store the intergalactic unit and roman letter.
      */
-    private Map<String, String> interGalacticUnits = new HashMap<>();
+    private final Map<String, String> interGalacticUnits = new HashMap<>();
 
     /**
      * This method is used to parse intergalactic units.
-     * @param interGalacticUnits
-     * @return
+     * @param interGalacticUnits intergalactic units definition string to be parsed
      */
     public void parseIntergalacticUnits(final String interGalacticUnits) {
         String[] interGalacticUnitArray = interGalacticUnits.split(" ");
@@ -38,7 +36,7 @@ public class InterGalacticUnitParser {
         }
         log.debug("Parsed intergalactic unit: {} -> {}", interGalacticUnitArray[0],
                 interGalacticUnitArray[interGalacticUnitArray.length - 1]);
-        this.interGalacticUnits.put(interGalacticUnitArray[0],
+        this.interGalacticUnits.put(interGalacticUnitArray[0].toLowerCase(),
                 interGalacticUnitArray[interGalacticUnitArray.length - 1].toUpperCase());
         intergalacticUnitsToRomanStringConverter.setInterGalacticUnits(this.interGalacticUnits);
     }

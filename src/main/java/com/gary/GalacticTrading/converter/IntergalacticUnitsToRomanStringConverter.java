@@ -21,14 +21,14 @@ public class IntergalacticUnitsToRomanStringConverter {
 
     /**
      * This method is used to convert intergalactic units to roman string.
-     * @param interGalacticUnits
-     * @return
+     * @param interGalacticUnits intergalactic units string to be converted to roman string
+     * @return roman string
      */
     public String convertIntergalacticUnitsToRomanString(String interGalacticUnits) {
         String[] interGalacticUnitArray = interGalacticUnits.split(" ");
         StringBuilder romanString = new StringBuilder();
         for (String interGalacticUnit : interGalacticUnitArray) {
-            romanString.append(this.interGalacticUnits.get(interGalacticUnit));
+            romanString.append(this.interGalacticUnits.get(interGalacticUnit.toLowerCase()));
         }
         return romanString.toString();
     }

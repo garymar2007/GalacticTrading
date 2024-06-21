@@ -57,8 +57,8 @@ public class TradingService {
                  InvalidIntergalacticUnitException | NoQueryFoundException
                  | NoMetalValueDefinitionsFoundException | InvalidMetalValueDefinitionException e) {
             log.error(e.getMessage());
-            if (!outputProcessor.getContents().isEmpty()) {
-                outputProcessor.saveForOutput(new String[]{QueryConstants.INVALID_QUERY});
+            if (!outputProcessor.getContents().isEmpty() && e instanceof InvalidMetalValueDefinitionException ) {
+                outputProcessor.saveForOutput(new String[]{QueryConstants.QUERY_WITH_INVALID_UNIT_OF_METAL});
                 outputProcessor.writeToFile(outputFileName);
             }
             throw e;
