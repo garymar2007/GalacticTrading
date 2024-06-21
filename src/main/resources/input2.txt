@@ -8,7 +8,7 @@ prok glob glob Diamond is 315000 Credits
 diag pish Iron is 5005 Credits
 pish tegj glob glob Gold is 2541 Credits
 how much is diag pish tegj glob prok ?
-how many Credits is glob prok Silver ?
+how many Credits is glob pish Silver ?
 how many Credits is pish tegj Gold ?
 how many Credits is diag prok Iron ?
 how many Credits is glob glob glob Diamond ?

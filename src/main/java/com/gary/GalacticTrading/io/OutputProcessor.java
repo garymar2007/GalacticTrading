@@ -67,4 +67,8 @@ public class OutputProcessor {
         }
     }
 
+    public void reset() {
+        contents.clear();
+    }
+
 }

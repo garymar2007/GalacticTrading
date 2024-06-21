@@ -2309,3 +2309,869 @@
 2024-06-21T18:25:33.885+02:00 DEBUG 13940 --- [GalacticTrading ] [main] c.g.GalacticTrading.io.OutputProcessor   : Saving to buffer and ready for output file...
 2024-06-21T18:25:33.885+02:00  INFO 13940 --- [GalacticTrading ] [main] c.g.GalacticTrading.io.OutputProcessor   : File already exists.
 2024-06-21T18:25:33.886+02:00  INFO 13940 --- [GalacticTrading ] [main] c.g.GalacticTrading.io.OutputProcessor   : Output written to file: C:\garymar2007\GalacticTrading\src\main\resources\invalid-output.txt
+2024-06-21T18:35:06.771+02:00  INFO 55284 --- [GalacticTrading ] [restartedMain] c.g.G.GalacticTradingApplication         : Starting GalacticTradingApplication using Java 17.0.11 with PID 55284 (C:\garymar2007\GalacticTrading\target\classes started by gary.ma in C:\garymar2007\GalacticTrading)
+2024-06-21T18:35:06.772+02:00 DEBUG 55284 --- [GalacticTrading ] [restartedMain] c.g.G.GalacticTradingApplication         : Running with Spring Boot v3.3.1, Spring v6.1.10
+2024-06-21T18:35:06.773+02:00  INFO 55284 --- [GalacticTrading ] [restartedMain] c.g.G.GalacticTradingApplication         : No active profile set, falling back to 1 default profile: "default"
+2024-06-21T18:35:08.940+02:00  INFO 55284 --- [GalacticTrading ] [restartedMain] c.g.G.GalacticTradingApplication         : Started GalacticTradingApplication in 2.622 seconds (process running for 3.147)
+2024-06-21T18:36:18.584+02:00  INFO 55284 --- [GalacticTrading ] [restartedMain] c.g.G.GalacticTradingApplication         : Starting GalacticTradingApplication using Java 17.0.11 with PID 55284 (C:\garymar2007\GalacticTrading\target\classes started by gary.ma in C:\garymar2007\GalacticTrading)
+2024-06-21T18:36:18.584+02:00 DEBUG 55284 --- [GalacticTrading ] [restartedMain] c.g.G.GalacticTradingApplication         : Running with Spring Boot v3.3.1, Spring v6.1.10
+2024-06-21T18:36:18.584+02:00  INFO 55284 --- [GalacticTrading ] [restartedMain] c.g.G.GalacticTradingApplication         : No active profile set, falling back to 1 default profile: "default"
+2024-06-21T18:36:18.989+02:00  INFO 55284 --- [GalacticTrading ] [restartedMain] c.g.G.GalacticTradingApplication         : Started GalacticTradingApplication in 0.447 seconds (process running for 73.196)
+2024-06-21T18:36:21.509+02:00  INFO 55284 --- [GalacticTrading ] [restartedMain] c.g.G.GalacticTradingApplication         : Starting GalacticTradingApplication using Java 17.0.11 with PID 55284 (C:\garymar2007\GalacticTrading\target\classes started by gary.ma in C:\garymar2007\GalacticTrading)
+2024-06-21T18:36:21.509+02:00 DEBUG 55284 --- [GalacticTrading ] [restartedMain] c.g.G.GalacticTradingApplication         : Running with Spring Boot v3.3.1, Spring v6.1.10
+2024-06-21T18:36:21.510+02:00  INFO 55284 --- [GalacticTrading ] [restartedMain] c.g.G.GalacticTradingApplication         : No active profile set, falling back to 1 default profile: "default"
+2024-06-21T18:36:22.191+02:00  INFO 55284 --- [GalacticTrading ] [restartedMain] c.g.G.GalacticTradingApplication         : Started GalacticTradingApplication in 0.74 seconds (process running for 76.397)
+2024-06-21T18:36:24.693+02:00  INFO 4016 --- [GalacticTrading ] [main] c.g.G.GalacticTradingApplicationTests    : Starting GalacticTradingApplicationTests using Java 17.0.11 with PID 4016 (started by gary.ma in C:\garymar2007\GalacticTrading)
+2024-06-21T18:36:24.694+02:00 DEBUG 4016 --- [GalacticTrading ] [main] c.g.G.GalacticTradingApplicationTests    : Running with Spring Boot v3.3.1, Spring v6.1.10
+2024-06-21T18:36:24.695+02:00  INFO 4016 --- [GalacticTrading ] [main] c.g.G.GalacticTradingApplicationTests    : No active profile set, falling back to 1 default profile: "default"
+2024-06-21T18:36:26.222+02:00  INFO 4016 --- [GalacticTrading ] [main] c.g.G.GalacticTradingApplicationTests    : Started GalacticTradingApplicationTests in 1.811 seconds (process running for 2.977)
+2024-06-21T18:36:27.333+02:00 DEBUG 4016 --- [GalacticTrading ] [main] c.g.G.service.TradingService             : Galactic Trading Process...
+2024-06-21T18:36:27.333+02:00  INFO 4016 --- [GalacticTrading ] [main] c.g.GalacticTrading.io.InputProcessor    : Processing input from file...
+2024-06-21T18:36:27.346+02:00 DEBUG 4016 --- [GalacticTrading ] [main] c.g.GalacticTrading.io.InputProcessor    : Processing line: glob is I
+2024-06-21T18:36:27.350+02:00 DEBUG 4016 --- [GalacticTrading ] [main] c.g.GalacticTrading.io.InputProcessor    : Processing line: prok is V
+2024-06-21T18:36:27.350+02:00 DEBUG 4016 --- [GalacticTrading ] [main] c.g.GalacticTrading.io.InputProcessor    : Processing line: pish is X
+2024-06-21T18:36:27.350+02:00 DEBUG 4016 --- [GalacticTrading ] [main] c.g.GalacticTrading.io.InputProcessor    : Processing line: tegj is L
+2024-06-21T18:36:27.350+02:00 DEBUG 4016 --- [GalacticTrading ] [main] c.g.GalacticTrading.io.InputProcessor    : Processing line: glob glob Silver is 34 Credits
+2024-06-21T18:36:27.351+02:00 DEBUG 4016 --- [GalacticTrading ] [main] c.g.GalacticTrading.io.InputProcessor    : Processing line: glob prok Gold is 57800 Credits
+2024-06-21T18:36:27.352+02:00 DEBUG 4016 --- [GalacticTrading ] [main] c.g.GalacticTrading.io.InputProcessor    : Processing line: pish pish Iron is 3910 Credits
+2024-06-21T18:36:27.352+02:00 DEBUG 4016 --- [GalacticTrading ] [main] c.g.GalacticTrading.io.InputProcessor    : Processing line: how much is pish tegj glob glob ?
+2024-06-21T18:36:27.353+02:00 DEBUG 4016 --- [GalacticTrading ] [main] c.g.GalacticTrading.io.InputProcessor    : Processing line: how many Credits is glob prok Silver ?
+2024-06-21T18:36:27.354+02:00 DEBUG 4016 --- [GalacticTrading ] [main] c.g.GalacticTrading.io.InputProcessor    : Processing line: how many Credits is glob prok Gold ?
+2024-06-21T18:36:27.354+02:00 DEBUG 4016 --- [GalacticTrading ] [main] c.g.GalacticTrading.io.InputProcessor    : Processing line: how many Credits is glob prok Iron ?
+2024-06-21T18:36:27.355+02:00 DEBUG 4016 --- [GalacticTrading ] [main] c.g.GalacticTrading.io.InputProcessor    : Processing line: how much wood could a woodchuck chuck if a woodchuck could chuck wood?
+2024-06-21T18:36:27.355+02:00 DEBUG 4016 --- [GalacticTrading ] [main] c.g.G.parser.InterGalacticUnitParser     : Parsed intergalactic unit: glob -> I
+2024-06-21T18:36:27.356+02:00 DEBUG 4016 --- [GalacticTrading ] [main] c.g.G.parser.InterGalacticUnitParser     : Parsed intergalactic unit: prok -> V
+2024-06-21T18:36:27.356+02:00 DEBUG 4016 --- [GalacticTrading ] [main] c.g.G.parser.InterGalacticUnitParser     : Parsed intergalactic unit: pish -> X
+2024-06-21T18:36:27.356+02:00 DEBUG 4016 --- [GalacticTrading ] [main] c.g.G.parser.InterGalacticUnitParser     : Parsed intergalactic unit: tegj -> L
+2024-06-21T18:36:27.358+02:00 DEBUG 4016 --- [GalacticTrading ] [main] c.g.G.parser.MetalValueParser            : Parsed metal value: metal name -> Silver
+2024-06-21T18:36:27.359+02:00 DEBUG 4016 --- [GalacticTrading ] [main] c.g.G.parser.MetalValueParser            : Parsed total value: value -> 34
+2024-06-21T18:36:27.359+02:00 DEBUG 4016 --- [GalacticTrading ] [main] c.g.G.parser.MetalValueParser            : Parsed interGalacticUnitString: string -> glob glob
+2024-06-21T18:36:27.360+02:00 DEBUG 4016 --- [GalacticTrading ] [main] c.g.G.validator.RomanSymbolRules         : Validating Roman Symbol Rules...
+2024-06-21T18:36:27.360+02:00 DEBUG 4016 --- [GalacticTrading ] [main] c.g.G.parser.MetalValueParser            : Parsed metal value: metal name -> Gold
+2024-06-21T18:36:27.360+02:00 DEBUG 4016 --- [GalacticTrading ] [main] c.g.G.parser.MetalValueParser            : Parsed total value: value -> 57800
+2024-06-21T18:36:27.362+02:00 DEBUG 4016 --- [GalacticTrading ] [main] c.g.G.parser.MetalValueParser            : Parsed interGalacticUnitString: string -> glob prok
+2024-06-21T18:36:27.362+02:00 DEBUG 4016 --- [GalacticTrading ] [main] c.g.G.validator.RomanSymbolRules         : Validating Roman Symbol Rules...
+2024-06-21T18:36:27.362+02:00 DEBUG 4016 --- [GalacticTrading ] [main] c.g.G.parser.MetalValueParser            : Parsed metal value: metal name -> Iron
+2024-06-21T18:36:27.362+02:00 DEBUG 4016 --- [GalacticTrading ] [main] c.g.G.parser.MetalValueParser            : Parsed total value: value -> 3910
+2024-06-21T18:36:27.362+02:00 DEBUG 4016 --- [GalacticTrading ] [main] c.g.G.parser.MetalValueParser            : Parsed interGalacticUnitString: string -> pish pish
+2024-06-21T18:36:27.363+02:00 DEBUG 4016 --- [GalacticTrading ] [main] c.g.G.validator.RomanSymbolRules         : Validating Roman Symbol Rules...
+2024-06-21T18:36:27.364+02:00 DEBUG 4016 --- [GalacticTrading ] [main] c.g.GalacticTrading.parser.QueryParser   : Parsed query: query -> pish tegj glob glob
+2024-06-21T18:36:27.365+02:00 DEBUG 4016 --- [GalacticTrading ] [main] c.g.GalacticTrading.io.OutputProcessor   : Saving to buffer and ready for output file...
+2024-06-21T18:36:27.365+02:00 DEBUG 4016 --- [GalacticTrading ] [main] c.g.G.validator.RomanSymbolRules         : Validating Roman Symbol Rules...
+2024-06-21T18:36:27.366+02:00 DEBUG 4016 --- [GalacticTrading ] [main] c.g.GalacticTrading.parser.QueryParser   : Parsed query: query -> glob prok Silver
+2024-06-21T18:36:27.366+02:00 DEBUG 4016 --- [GalacticTrading ] [main] c.g.GalacticTrading.io.OutputProcessor   : Saving to buffer and ready for output file...
+2024-06-21T18:36:27.366+02:00 DEBUG 4016 --- [GalacticTrading ] [main] c.g.G.validator.RomanSymbolRules         : Validating Roman Symbol Rules...
+2024-06-21T18:36:27.367+02:00 DEBUG 4016 --- [GalacticTrading ] [main] c.g.GalacticTrading.parser.QueryParser   : Parsed query: query -> glob prok Gold
+2024-06-21T18:36:27.367+02:00 DEBUG 4016 --- [GalacticTrading ] [main] c.g.GalacticTrading.io.OutputProcessor   : Saving to buffer and ready for output file...
+2024-06-21T18:36:27.367+02:00 DEBUG 4016 --- [GalacticTrading ] [main] c.g.G.validator.RomanSymbolRules         : Validating Roman Symbol Rules...
+2024-06-21T18:36:27.367+02:00 DEBUG 4016 --- [GalacticTrading ] [main] c.g.GalacticTrading.parser.QueryParser   : Parsed query: query -> glob prok Iron
+2024-06-21T18:36:27.367+02:00 DEBUG 4016 --- [GalacticTrading ] [main] c.g.GalacticTrading.io.OutputProcessor   : Saving to buffer and ready for output file...
+2024-06-21T18:36:27.367+02:00 DEBUG 4016 --- [GalacticTrading ] [main] c.g.G.validator.RomanSymbolRules         : Validating Roman Symbol Rules...
+2024-06-21T18:36:27.367+02:00 DEBUG 4016 --- [GalacticTrading ] [main] c.g.GalacticTrading.io.OutputProcessor   : Saving to buffer and ready for output file...
+2024-06-21T18:36:27.368+02:00  INFO 4016 --- [GalacticTrading ] [main] c.g.GalacticTrading.io.OutputProcessor   : File already exists.
+2024-06-21T18:36:27.370+02:00  INFO 4016 --- [GalacticTrading ] [main] c.g.GalacticTrading.io.OutputProcessor   : Output written to file: C:\garymar2007\GalacticTrading\src\main\resources\output.txt
+2024-06-21T18:36:27.386+02:00 DEBUG 4016 --- [GalacticTrading ] [main] c.g.G.service.TradingService             : Galactic Trading Process...
+2024-06-21T18:36:27.386+02:00  INFO 4016 --- [GalacticTrading ] [main] c.g.GalacticTrading.io.InputProcessor    : Processing input from file...
+2024-06-21T18:36:27.400+02:00 DEBUG 4016 --- [GalacticTrading ] [main] c.g.GalacticTrading.io.InputProcessor    : Processing line: glob is I
+2024-06-21T18:36:27.400+02:00 DEBUG 4016 --- [GalacticTrading ] [main] c.g.GalacticTrading.io.InputProcessor    : Processing line: prok is V
+2024-06-21T18:36:27.400+02:00 DEBUG 4016 --- [GalacticTrading ] [main] c.g.GalacticTrading.io.InputProcessor    : Processing line: pish is X
+2024-06-21T18:36:27.400+02:00 DEBUG 4016 --- [GalacticTrading ] [main] c.g.GalacticTrading.io.InputProcessor    : Processing line: tegj is L
+2024-06-21T18:36:27.400+02:00 DEBUG 4016 --- [GalacticTrading ] [main] c.g.GalacticTrading.io.InputProcessor    : Processing line: diag is C
+2024-06-21T18:36:27.400+02:00 DEBUG 4016 --- [GalacticTrading ] [main] c.g.GalacticTrading.io.InputProcessor    : Processing line: glob prok Silver is 34 Credits
+2024-06-21T18:36:27.400+02:00 DEBUG 4016 --- [GalacticTrading ] [main] c.g.GalacticTrading.io.InputProcessor    : Processing line: prok glob glob Diamond is 315000 Credits
+2024-06-21T18:36:27.400+02:00 DEBUG 4016 --- [GalacticTrading ] [main] c.g.GalacticTrading.io.InputProcessor    : Processing line: diag pish Iron is 5005 Credits
+2024-06-21T18:36:27.400+02:00 DEBUG 4016 --- [GalacticTrading ] [main] c.g.GalacticTrading.io.InputProcessor    : Processing line: pish tegj glob glob Gold is 2541 Credits
+2024-06-21T18:36:27.400+02:00 DEBUG 4016 --- [GalacticTrading ] [main] c.g.GalacticTrading.io.InputProcessor    : Processing line: how much is diag pish tegj glob prok ?
+2024-06-21T18:36:27.400+02:00 DEBUG 4016 --- [GalacticTrading ] [main] c.g.GalacticTrading.io.InputProcessor    : Processing line: how many Credits is glob prok Silver ?
+2024-06-21T18:36:27.401+02:00 DEBUG 4016 --- [GalacticTrading ] [main] c.g.GalacticTrading.io.InputProcessor    : Processing line: how many Credits is pish tegj Gold ?
+2024-06-21T18:36:27.401+02:00 DEBUG 4016 --- [GalacticTrading ] [main] c.g.GalacticTrading.io.InputProcessor    : Processing line: how many Credits is diag prok Iron ?
+2024-06-21T18:36:27.402+02:00 DEBUG 4016 --- [GalacticTrading ] [main] c.g.GalacticTrading.io.InputProcessor    : Processing line: how many Credits is glob glob glob Diamond ?
+2024-06-21T18:36:27.402+02:00 DEBUG 4016 --- [GalacticTrading ] [main] c.g.GalacticTrading.io.InputProcessor    : Processing line: how much wood could a woodchuck chuck if a woodchuck could chuck wood?
+2024-06-21T18:36:27.402+02:00 DEBUG 4016 --- [GalacticTrading ] [main] c.g.G.parser.InterGalacticUnitParser     : Parsed intergalactic unit: glob -> I
+2024-06-21T18:36:27.403+02:00 DEBUG 4016 --- [GalacticTrading ] [main] c.g.G.parser.InterGalacticUnitParser     : Parsed intergalactic unit: prok -> V
+2024-06-21T18:36:27.403+02:00 DEBUG 4016 --- [GalacticTrading ] [main] c.g.G.parser.InterGalacticUnitParser     : Parsed intergalactic unit: pish -> X
+2024-06-21T18:36:27.403+02:00 DEBUG 4016 --- [GalacticTrading ] [main] c.g.G.parser.InterGalacticUnitParser     : Parsed intergalactic unit: tegj -> L
+2024-06-21T18:36:27.403+02:00 DEBUG 4016 --- [GalacticTrading ] [main] c.g.G.parser.InterGalacticUnitParser     : Parsed intergalactic unit: diag -> C
+2024-06-21T18:36:27.403+02:00 DEBUG 4016 --- [GalacticTrading ] [main] c.g.G.parser.MetalValueParser            : Parsed metal value: metal name -> Silver
+2024-06-21T18:36:27.403+02:00 DEBUG 4016 --- [GalacticTrading ] [main] c.g.G.parser.MetalValueParser            : Parsed total value: value -> 34
+2024-06-21T18:36:27.403+02:00 DEBUG 4016 --- [GalacticTrading ] [main] c.g.G.parser.MetalValueParser            : Parsed interGalacticUnitString: string -> glob prok
+2024-06-21T18:36:27.403+02:00  WARN 4016 --- [GalacticTrading ] [main] c.g.G.c.MetalAndMultipleCalculator       : Metal Silver already initialized with value 17.0! Skipping...
+2024-06-21T18:36:27.403+02:00 DEBUG 4016 --- [GalacticTrading ] [main] c.g.G.parser.MetalValueParser            : Parsed metal value: metal name -> Diamond
+2024-06-21T18:36:27.404+02:00 DEBUG 4016 --- [GalacticTrading ] [main] c.g.G.parser.MetalValueParser            : Parsed total value: value -> 315000
+2024-06-21T18:36:27.404+02:00 DEBUG 4016 --- [GalacticTrading ] [main] c.g.G.parser.MetalValueParser            : Parsed interGalacticUnitString: string -> prok glob glob
+2024-06-21T18:36:27.404+02:00 DEBUG 4016 --- [GalacticTrading ] [main] c.g.G.validator.RomanSymbolRules         : Validating Roman Symbol Rules...
+2024-06-21T18:36:27.404+02:00 DEBUG 4016 --- [GalacticTrading ] [main] c.g.G.parser.MetalValueParser            : Parsed metal value: metal name -> Iron
+2024-06-21T18:36:27.404+02:00 DEBUG 4016 --- [GalacticTrading ] [main] c.g.G.parser.MetalValueParser            : Parsed total value: value -> 5005
+2024-06-21T18:36:27.404+02:00 DEBUG 4016 --- [GalacticTrading ] [main] c.g.G.parser.MetalValueParser            : Parsed interGalacticUnitString: string -> diag pish
+2024-06-21T18:36:27.404+02:00  WARN 4016 --- [GalacticTrading ] [main] c.g.G.c.MetalAndMultipleCalculator       : Metal Iron already initialized with value 195.5! Skipping...
+2024-06-21T18:36:27.405+02:00 DEBUG 4016 --- [GalacticTrading ] [main] c.g.G.parser.MetalValueParser            : Parsed metal value: metal name -> Gold
+2024-06-21T18:36:27.405+02:00 DEBUG 4016 --- [GalacticTrading ] [main] c.g.G.parser.MetalValueParser            : Parsed total value: value -> 2541
+2024-06-21T18:36:27.405+02:00 DEBUG 4016 --- [GalacticTrading ] [main] c.g.G.parser.MetalValueParser            : Parsed interGalacticUnitString: string -> pish tegj glob glob
+2024-06-21T18:36:27.405+02:00  WARN 4016 --- [GalacticTrading ] [main] c.g.G.c.MetalAndMultipleCalculator       : Metal Gold already initialized with value 14450.0! Skipping...
+2024-06-21T18:36:27.405+02:00 DEBUG 4016 --- [GalacticTrading ] [main] c.g.GalacticTrading.parser.QueryParser   : Parsed query: query -> diag pish tegj glob prok
+2024-06-21T18:36:27.405+02:00 DEBUG 4016 --- [GalacticTrading ] [main] c.g.GalacticTrading.io.OutputProcessor   : Saving to buffer and ready for output file...
+2024-06-21T18:36:27.405+02:00 DEBUG 4016 --- [GalacticTrading ] [main] c.g.G.validator.RomanSymbolRules         : Validating Roman Symbol Rules...
+2024-06-21T18:36:27.405+02:00 DEBUG 4016 --- [GalacticTrading ] [main] c.g.GalacticTrading.parser.QueryParser   : Parsed query: query -> glob prok Silver
+2024-06-21T18:36:27.406+02:00 DEBUG 4016 --- [GalacticTrading ] [main] c.g.GalacticTrading.io.OutputProcessor   : Saving to buffer and ready for output file...
+2024-06-21T18:36:27.406+02:00 DEBUG 4016 --- [GalacticTrading ] [main] c.g.G.validator.RomanSymbolRules         : Validating Roman Symbol Rules...
+2024-06-21T18:36:27.406+02:00 DEBUG 4016 --- [GalacticTrading ] [main] c.g.GalacticTrading.parser.QueryParser   : Parsed query: query -> pish tegj Gold
+2024-06-21T18:36:27.406+02:00 DEBUG 4016 --- [GalacticTrading ] [main] c.g.GalacticTrading.io.OutputProcessor   : Saving to buffer and ready for output file...
+2024-06-21T18:36:27.406+02:00 DEBUG 4016 --- [GalacticTrading ] [main] c.g.G.validator.RomanSymbolRules         : Validating Roman Symbol Rules...
+2024-06-21T18:36:27.407+02:00 DEBUG 4016 --- [GalacticTrading ] [main] c.g.GalacticTrading.parser.QueryParser   : Parsed query: query -> diag prok Iron
+2024-06-21T18:36:27.407+02:00 DEBUG 4016 --- [GalacticTrading ] [main] c.g.GalacticTrading.io.OutputProcessor   : Saving to buffer and ready for output file...
+2024-06-21T18:36:27.407+02:00 DEBUG 4016 --- [GalacticTrading ] [main] c.g.G.validator.RomanSymbolRules         : Validating Roman Symbol Rules...
+2024-06-21T18:36:27.407+02:00 DEBUG 4016 --- [GalacticTrading ] [main] c.g.GalacticTrading.parser.QueryParser   : Parsed query: query -> glob glob glob Diamond
+2024-06-21T18:36:27.408+02:00 DEBUG 4016 --- [GalacticTrading ] [main] c.g.GalacticTrading.io.OutputProcessor   : Saving to buffer and ready for output file...
+2024-06-21T18:36:27.408+02:00 DEBUG 4016 --- [GalacticTrading ] [main] c.g.G.validator.RomanSymbolRules         : Validating Roman Symbol Rules...
+2024-06-21T18:36:27.408+02:00 DEBUG 4016 --- [GalacticTrading ] [main] c.g.GalacticTrading.io.OutputProcessor   : Saving to buffer and ready for output file...
+2024-06-21T18:36:27.408+02:00  INFO 4016 --- [GalacticTrading ] [main] c.g.GalacticTrading.io.OutputProcessor   : File already exists.
+2024-06-21T18:36:27.409+02:00  INFO 4016 --- [GalacticTrading ] [main] c.g.GalacticTrading.io.OutputProcessor   : Output written to file: C:\garymar2007\GalacticTrading\src\main\resources\output2.txt
+2024-06-21T18:36:27.416+02:00 DEBUG 4016 --- [GalacticTrading ] [main] c.g.G.service.TradingService             : Galactic Trading Process...
+2024-06-21T18:36:27.417+02:00  INFO 4016 --- [GalacticTrading ] [main] c.g.GalacticTrading.io.InputProcessor    : Processing input from file...
+2024-06-21T18:36:27.420+02:00 DEBUG 4016 --- [GalacticTrading ] [main] c.g.GalacticTrading.io.InputProcessor    : Processing line: glob is I
+2024-06-21T18:36:27.421+02:00 DEBUG 4016 --- [GalacticTrading ] [main] c.g.GalacticTrading.io.InputProcessor    : Processing line: prok is V
+2024-06-21T18:36:27.421+02:00 DEBUG 4016 --- [GalacticTrading ] [main] c.g.GalacticTrading.io.InputProcessor    : Processing line: pish is X
+2024-06-21T18:36:27.421+02:00 DEBUG 4016 --- [GalacticTrading ] [main] c.g.GalacticTrading.io.InputProcessor    : Processing line: tegj is L
+2024-06-21T18:36:27.421+02:00 DEBUG 4016 --- [GalacticTrading ] [main] c.g.GalacticTrading.io.InputProcessor    : Processing line: diag is C
+2024-06-21T18:36:27.421+02:00 DEBUG 4016 --- [GalacticTrading ] [main] c.g.GalacticTrading.io.InputProcessor    : Processing line: glob prok Silver is 34 Credits
+2024-06-21T18:36:27.422+02:00 DEBUG 4016 --- [GalacticTrading ] [main] c.g.GalacticTrading.io.InputProcessor    : Processing line: prok glob glob Diamond is 315000 Credits
+2024-06-21T18:36:27.422+02:00 DEBUG 4016 --- [GalacticTrading ] [main] c.g.GalacticTrading.io.InputProcessor    : Processing line: diag pish Iron is 5005 Credits
+2024-06-21T18:36:27.422+02:00 DEBUG 4016 --- [GalacticTrading ] [main] c.g.GalacticTrading.io.InputProcessor    : Processing line: pish tegj glob glob Gold is 2541 Credits
+2024-06-21T18:36:27.422+02:00 DEBUG 4016 --- [GalacticTrading ] [main] c.g.GalacticTrading.io.InputProcessor    : Processing line: how much is diag pish tegj glob prok ?
+2024-06-21T18:36:27.422+02:00 DEBUG 4016 --- [GalacticTrading ] [main] c.g.GalacticTrading.io.InputProcessor    : Processing line: how many Credits is glob prok Silver ?
+2024-06-21T18:36:27.423+02:00 DEBUG 4016 --- [GalacticTrading ] [main] c.g.GalacticTrading.io.InputProcessor    : Processing line: how many Credits is pish tegj Gold ?
+2024-06-21T18:36:27.423+02:00 DEBUG 4016 --- [GalacticTrading ] [main] c.g.GalacticTrading.io.InputProcessor    : Processing line: how many Credits is diag prok Iron ?
+2024-06-21T18:36:27.423+02:00 DEBUG 4016 --- [GalacticTrading ] [main] c.g.GalacticTrading.io.InputProcessor    : Processing line: how many Credits is glob glob glob Diamond ?
+2024-06-21T18:36:27.424+02:00 DEBUG 4016 --- [GalacticTrading ] [main] c.g.GalacticTrading.io.InputProcessor    : Processing line: how much wood could a woodchuck chuck if a woodchuck could chuck wood?
+2024-06-21T18:36:27.424+02:00 DEBUG 4016 --- [GalacticTrading ] [main] c.g.G.parser.InterGalacticUnitParser     : Parsed intergalactic unit: glob -> I
+2024-06-21T18:36:27.424+02:00 DEBUG 4016 --- [GalacticTrading ] [main] c.g.G.parser.InterGalacticUnitParser     : Parsed intergalactic unit: prok -> V
+2024-06-21T18:36:27.425+02:00 DEBUG 4016 --- [GalacticTrading ] [main] c.g.G.parser.InterGalacticUnitParser     : Parsed intergalactic unit: pish -> X
+2024-06-21T18:36:27.425+02:00 DEBUG 4016 --- [GalacticTrading ] [main] c.g.G.parser.InterGalacticUnitParser     : Parsed intergalactic unit: tegj -> L
+2024-06-21T18:36:27.425+02:00 DEBUG 4016 --- [GalacticTrading ] [main] c.g.G.parser.InterGalacticUnitParser     : Parsed intergalactic unit: diag -> C
+2024-06-21T18:36:27.425+02:00 DEBUG 4016 --- [GalacticTrading ] [main] c.g.G.parser.MetalValueParser            : Parsed metal value: metal name -> Silver
+2024-06-21T18:36:27.425+02:00 DEBUG 4016 --- [GalacticTrading ] [main] c.g.G.parser.MetalValueParser            : Parsed total value: value -> 34
+2024-06-21T18:36:27.425+02:00 DEBUG 4016 --- [GalacticTrading ] [main] c.g.G.parser.MetalValueParser            : Parsed interGalacticUnitString: string -> glob prok
+2024-06-21T18:36:27.426+02:00  WARN 4016 --- [GalacticTrading ] [main] c.g.G.c.MetalAndMultipleCalculator       : Metal Silver already initialized with value 17.0! Skipping...
+2024-06-21T18:36:27.426+02:00 DEBUG 4016 --- [GalacticTrading ] [main] c.g.G.parser.MetalValueParser            : Parsed metal value: metal name -> Diamond
+2024-06-21T18:36:27.426+02:00 DEBUG 4016 --- [GalacticTrading ] [main] c.g.G.parser.MetalValueParser            : Parsed total value: value -> 315000
+2024-06-21T18:36:27.426+02:00 DEBUG 4016 --- [GalacticTrading ] [main] c.g.G.parser.MetalValueParser            : Parsed interGalacticUnitString: string -> prok glob glob
+2024-06-21T18:36:27.426+02:00  WARN 4016 --- [GalacticTrading ] [main] c.g.G.c.MetalAndMultipleCalculator       : Metal Diamond already initialized with value 45000.0! Skipping...
+2024-06-21T18:36:27.426+02:00 DEBUG 4016 --- [GalacticTrading ] [main] c.g.G.parser.MetalValueParser            : Parsed metal value: metal name -> Iron
+2024-06-21T18:36:27.426+02:00 DEBUG 4016 --- [GalacticTrading ] [main] c.g.G.parser.MetalValueParser            : Parsed total value: value -> 5005
+2024-06-21T18:36:27.426+02:00 DEBUG 4016 --- [GalacticTrading ] [main] c.g.G.parser.MetalValueParser            : Parsed interGalacticUnitString: string -> diag pish
+2024-06-21T18:36:27.426+02:00  WARN 4016 --- [GalacticTrading ] [main] c.g.G.c.MetalAndMultipleCalculator       : Metal Iron already initialized with value 195.5! Skipping...
+2024-06-21T18:36:27.426+02:00 DEBUG 4016 --- [GalacticTrading ] [main] c.g.G.parser.MetalValueParser            : Parsed metal value: metal name -> Gold
+2024-06-21T18:36:27.427+02:00 DEBUG 4016 --- [GalacticTrading ] [main] c.g.G.parser.MetalValueParser            : Parsed total value: value -> 2541
+2024-06-21T18:36:27.427+02:00 DEBUG 4016 --- [GalacticTrading ] [main] c.g.G.parser.MetalValueParser            : Parsed interGalacticUnitString: string -> pish tegj glob glob
+2024-06-21T18:36:27.427+02:00  WARN 4016 --- [GalacticTrading ] [main] c.g.G.c.MetalAndMultipleCalculator       : Metal Gold already initialized with value 14450.0! Skipping...
+2024-06-21T18:36:27.427+02:00 DEBUG 4016 --- [GalacticTrading ] [main] c.g.GalacticTrading.parser.QueryParser   : Parsed query: query -> diag pish tegj glob prok
+2024-06-21T18:36:27.427+02:00 DEBUG 4016 --- [GalacticTrading ] [main] c.g.GalacticTrading.io.OutputProcessor   : Saving to buffer and ready for output file...
+2024-06-21T18:36:27.427+02:00 DEBUG 4016 --- [GalacticTrading ] [main] c.g.G.validator.RomanSymbolRules         : Validating Roman Symbol Rules...
+2024-06-21T18:36:27.427+02:00 DEBUG 4016 --- [GalacticTrading ] [main] c.g.GalacticTrading.parser.QueryParser   : Parsed query: query -> glob prok Silver
+2024-06-21T18:36:27.427+02:00 DEBUG 4016 --- [GalacticTrading ] [main] c.g.GalacticTrading.io.OutputProcessor   : Saving to buffer and ready for output file...
+2024-06-21T18:36:27.427+02:00 DEBUG 4016 --- [GalacticTrading ] [main] c.g.G.validator.RomanSymbolRules         : Validating Roman Symbol Rules...
+2024-06-21T18:36:27.427+02:00 DEBUG 4016 --- [GalacticTrading ] [main] c.g.GalacticTrading.parser.QueryParser   : Parsed query: query -> pish tegj Gold
+2024-06-21T18:36:27.429+02:00 DEBUG 4016 --- [GalacticTrading ] [main] c.g.GalacticTrading.io.OutputProcessor   : Saving to buffer and ready for output file...
+2024-06-21T18:36:27.429+02:00 DEBUG 4016 --- [GalacticTrading ] [main] c.g.G.validator.RomanSymbolRules         : Validating Roman Symbol Rules...
+2024-06-21T18:36:27.429+02:00 DEBUG 4016 --- [GalacticTrading ] [main] c.g.GalacticTrading.parser.QueryParser   : Parsed query: query -> diag prok Iron
+2024-06-21T18:36:27.430+02:00 DEBUG 4016 --- [GalacticTrading ] [main] c.g.GalacticTrading.io.OutputProcessor   : Saving to buffer and ready for output file...
+2024-06-21T18:36:27.430+02:00 DEBUG 4016 --- [GalacticTrading ] [main] c.g.G.validator.RomanSymbolRules         : Validating Roman Symbol Rules...
+2024-06-21T18:36:27.430+02:00 DEBUG 4016 --- [GalacticTrading ] [main] c.g.GalacticTrading.parser.QueryParser   : Parsed query: query -> glob glob glob Diamond
+2024-06-21T18:36:27.431+02:00 DEBUG 4016 --- [GalacticTrading ] [main] c.g.GalacticTrading.io.OutputProcessor   : Saving to buffer and ready for output file...
+2024-06-21T18:36:27.431+02:00 DEBUG 4016 --- [GalacticTrading ] [main] c.g.G.validator.RomanSymbolRules         : Validating Roman Symbol Rules...
+2024-06-21T18:36:27.431+02:00 DEBUG 4016 --- [GalacticTrading ] [main] c.g.GalacticTrading.io.OutputProcessor   : Saving to buffer and ready for output file...
+2024-06-21T18:36:27.431+02:00  INFO 4016 --- [GalacticTrading ] [main] c.g.GalacticTrading.io.OutputProcessor   : File already exists.
+2024-06-21T18:36:27.432+02:00  INFO 4016 --- [GalacticTrading ] [main] c.g.GalacticTrading.io.OutputProcessor   : Output written to file: C:\garymar2007\GalacticTrading\src\main\resources\invalid-output.txt
+2024-06-21T18:36:27.444+02:00 DEBUG 4016 --- [GalacticTrading ] [main] c.g.G.parser.InterGalacticUnitParser     : Parsed intergalactic unit: glob -> I
+2024-06-21T18:36:27.448+02:00 DEBUG 4016 --- [GalacticTrading ] [main] c.g.G.parser.InterGalacticUnitParser     : Parsed intergalactic unit: glob -> I
+2024-06-21T18:36:27.448+02:00 DEBUG 4016 --- [GalacticTrading ] [main] c.g.G.parser.InterGalacticUnitParser     : Parsed intergalactic unit: prok -> V
+2024-06-21T18:36:27.449+02:00 DEBUG 4016 --- [GalacticTrading ] [main] c.g.G.parser.InterGalacticUnitParser     : Parsed intergalactic unit: pish -> X
+2024-06-21T18:36:27.449+02:00 DEBUG 4016 --- [GalacticTrading ] [main] c.g.G.parser.InterGalacticUnitParser     : Parsed intergalactic unit: tegj -> L
+2024-06-21T18:36:27.459+02:00 DEBUG 4016 --- [GalacticTrading ] [main] c.g.G.parser.MetalValueParser            : Parsed metal value: metal name -> Silver
+2024-06-21T18:36:27.459+02:00 DEBUG 4016 --- [GalacticTrading ] [main] c.g.G.parser.MetalValueParser            : Parsed total value: value -> 34
+2024-06-21T18:36:27.459+02:00 DEBUG 4016 --- [GalacticTrading ] [main] c.g.G.parser.MetalValueParser            : Parsed interGalacticUnitString: string -> glob glob
+2024-06-21T18:36:27.460+02:00 DEBUG 4016 --- [GalacticTrading ] [main] c.g.G.parser.MetalValueParser            : Parsed metal value: metal name -> Gold
+2024-06-21T18:36:27.460+02:00 DEBUG 4016 --- [GalacticTrading ] [main] c.g.G.parser.MetalValueParser            : Parsed total value: value -> 57800
+2024-06-21T18:36:27.460+02:00 DEBUG 4016 --- [GalacticTrading ] [main] c.g.G.parser.MetalValueParser            : Parsed interGalacticUnitString: string -> glob prok
+2024-06-21T18:36:27.460+02:00 DEBUG 4016 --- [GalacticTrading ] [main] c.g.G.parser.MetalValueParser            : Parsed metal value: metal name -> Iron
+2024-06-21T18:36:27.460+02:00 DEBUG 4016 --- [GalacticTrading ] [main] c.g.G.parser.MetalValueParser            : Parsed total value: value -> 3910
+2024-06-21T18:36:27.461+02:00 DEBUG 4016 --- [GalacticTrading ] [main] c.g.G.parser.MetalValueParser            : Parsed interGalacticUnitString: string -> pish pish
+2024-06-21T18:36:27.474+02:00 ERROR 4016 --- [GalacticTrading ] [main] c.g.GalacticTrading.parser.QueryParser   : I have no idea what you are talking about
+2024-06-21T18:36:27.478+02:00 ERROR 4016 --- [GalacticTrading ] [main] c.g.GalacticTrading.parser.QueryParser   : I have no idea what you are talking about
+2024-06-21T18:36:27.480+02:00 ERROR 4016 --- [GalacticTrading ] [main] c.g.GalacticTrading.parser.QueryParser   : I have no idea what you are talking about
+2024-06-21T18:36:27.483+02:00 DEBUG 4016 --- [GalacticTrading ] [main] c.g.GalacticTrading.parser.QueryParser   : Parsed query: query -> pish tegj glob glob
+2024-06-21T18:36:27.501+02:00 DEBUG 4016 --- [GalacticTrading ] [main] c.g.GalacticTrading.parser.QueryParser   : Parsed query: query -> glob prok Gold
+2024-06-21T18:36:27.504+02:00 ERROR 4016 --- [GalacticTrading ] [main] c.g.GalacticTrading.parser.QueryParser   : I have no idea what you are talking about
+2024-06-21T18:36:27.507+02:00 DEBUG 4016 --- [GalacticTrading ] [main] c.g.GalacticTrading.parser.QueryParser   : Parsed query: query -> glob prok Gold
+2024-06-21T18:36:27.512+02:00 ERROR 4016 --- [GalacticTrading ] [main] c.g.GalacticTrading.parser.QueryParser   : I have no idea what you are talking about
+2024-06-21T18:36:27.529+02:00 DEBUG 4016 --- [GalacticTrading ] [main] c.g.G.validator.RomanSymbolRules         : Validating Roman Symbol Rules...
+2024-06-21T18:36:27.531+02:00 DEBUG 4016 --- [GalacticTrading ] [main] c.g.G.validator.RomanSymbolRules         : Failed on Rule 1 - Invalid Roman Symbol: MCMXLIVB
+2024-06-21T18:36:27.532+02:00 DEBUG 4016 --- [GalacticTrading ] [main] c.g.G.validator.RomanSymbolRules         : Validating Roman Symbol Rules...
+2024-06-21T18:36:27.534+02:00 DEBUG 4016 --- [GalacticTrading ] [main] c.g.G.validator.RomanSymbolRules         : Validating Roman Symbol Rules...
+2024-06-21T18:36:27.536+02:00 DEBUG 4016 --- [GalacticTrading ] [main] c.g.G.validator.RomanSymbolRules         : Validating Roman Symbol Rules...
+2024-06-21T18:36:27.540+02:00 DEBUG 4016 --- [GalacticTrading ] [main] c.g.G.validator.RomanSymbolRules         : Validating Roman Symbol Rules...
+2024-06-21T18:36:27.543+02:00 DEBUG 4016 --- [GalacticTrading ] [main] c.g.G.validator.RomanSymbolRules         : Validating Roman Symbol Rules...
+2024-06-21T18:36:27.544+02:00 DEBUG 4016 --- [GalacticTrading ] [main] c.g.G.validator.RomanSymbolRules         : Failed on Rule 1 - Invalid Roman Symbol: CCCLXXXXVIIII
+2024-06-21T18:36:27.546+02:00 DEBUG 4016 --- [GalacticTrading ] [main] c.g.G.validator.RomanSymbolRules         : Validating Roman Symbol Rules...
+2024-06-21T18:36:27.546+02:00 DEBUG 4016 --- [GalacticTrading ] [main] c.g.G.validator.RomanSymbolRules         : Failed on Rule 1 - Invalid Roman Symbol: CCCLLXXXVIIII
+2024-06-21T18:36:27.548+02:00 DEBUG 4016 --- [GalacticTrading ] [main] c.g.G.validator.RomanSymbolRules         : Validating Roman Symbol Rules...
+2024-06-21T18:36:27.548+02:00 DEBUG 4016 --- [GalacticTrading ] [main] c.g.G.validator.RomanSymbolRules         : Failed on Rule 1 - Invalid Roman Symbol: DMXIII
+2024-06-21T18:36:27.550+02:00 DEBUG 4016 --- [GalacticTrading ] [main] c.g.G.validator.RomanSymbolRules         : Validating Roman Symbol Rules...
+2024-06-21T18:36:27.550+02:00 DEBUG 4016 --- [GalacticTrading ] [main] c.g.G.validator.RomanSymbolRules         : Failed on Rule 1 - Invalid Roman Symbol: ICX
+2024-06-21T18:36:27.551+02:00 DEBUG 4016 --- [GalacticTrading ] [main] c.g.G.validator.RomanSymbolRules         : Validating Roman Symbol Rules...
+2024-06-21T18:36:27.553+02:00 DEBUG 4016 --- [GalacticTrading ] [main] c.g.G.validator.RomanSymbolRules         : Failed on Rule 1 - Invalid Roman Symbol: DLCXIII
+2024-06-21T18:36:27.555+02:00 DEBUG 4016 --- [GalacticTrading ] [main] c.g.G.validator.RomanSymbolRules         : Validating Roman Symbol Rules...
+2024-06-21T18:36:27.555+02:00 DEBUG 4016 --- [GalacticTrading ] [main] c.g.G.validator.RomanSymbolRules         : Failed on Rule 1 - Invalid Roman Symbol: VXIII
+2024-06-21T18:36:27.557+02:00 DEBUG 4016 --- [GalacticTrading ] [main] c.g.G.validator.RomanSymbolRules         : Validating Roman Symbol Rules...
+2024-06-21T18:36:27.558+02:00 DEBUG 4016 --- [GalacticTrading ] [main] c.g.G.validator.RomanSymbolRules         : Failed on Rule 1 - Invalid Roman Symbol: XDIII
+2024-06-21T18:36:27.560+02:00 DEBUG 4016 --- [GalacticTrading ] [main] c.g.G.validator.RomanSymbolRules         : Validating Roman Symbol Rules...
+2024-06-21T18:38:31.276+02:00  INFO 55284 --- [GalacticTrading ] [restartedMain] c.g.G.GalacticTradingApplication         : Starting GalacticTradingApplication using Java 17.0.11 with PID 55284 (C:\garymar2007\GalacticTrading\target\classes started by gary.ma in C:\garymar2007\GalacticTrading)
+2024-06-21T18:38:31.277+02:00 DEBUG 55284 --- [GalacticTrading ] [restartedMain] c.g.G.GalacticTradingApplication         : Running with Spring Boot v3.3.1, Spring v6.1.10
+2024-06-21T18:38:31.277+02:00  INFO 55284 --- [GalacticTrading ] [restartedMain] c.g.G.GalacticTradingApplication         : No active profile set, falling back to 1 default profile: "default"
+2024-06-21T18:38:31.730+02:00  INFO 55284 --- [GalacticTrading ] [restartedMain] c.g.G.GalacticTradingApplication         : Started GalacticTradingApplication in 0.496 seconds (process running for 205.936)
+2024-06-21T18:38:37.115+02:00  INFO 21076 --- [GalacticTrading ] [main] c.g.G.GalacticTradingApplicationTests    : Starting GalacticTradingApplicationTests using Java 17.0.11 with PID 21076 (started by gary.ma in C:\garymar2007\GalacticTrading)
+2024-06-21T18:38:37.116+02:00 DEBUG 21076 --- [GalacticTrading ] [main] c.g.G.GalacticTradingApplicationTests    : Running with Spring Boot v3.3.1, Spring v6.1.10
+2024-06-21T18:38:37.117+02:00  INFO 21076 --- [GalacticTrading ] [main] c.g.G.GalacticTradingApplicationTests    : No active profile set, falling back to 1 default profile: "default"
+2024-06-21T18:38:38.768+02:00  INFO 21076 --- [GalacticTrading ] [main] c.g.G.GalacticTradingApplicationTests    : Started GalacticTradingApplicationTests in 1.926 seconds (process running for 3.026)
+2024-06-21T18:38:39.760+02:00 DEBUG 21076 --- [GalacticTrading ] [main] c.g.G.service.TradingService             : Galactic Trading Process...
+2024-06-21T18:38:39.760+02:00  INFO 21076 --- [GalacticTrading ] [main] c.g.GalacticTrading.io.InputProcessor    : Processing input from file...
+2024-06-21T18:38:39.763+02:00 DEBUG 21076 --- [GalacticTrading ] [main] c.g.GalacticTrading.io.InputProcessor    : Processing line: glob is I
+2024-06-21T18:38:39.771+02:00 DEBUG 21076 --- [GalacticTrading ] [main] c.g.GalacticTrading.io.InputProcessor    : Processing line: prok is V
+2024-06-21T18:38:39.771+02:00 DEBUG 21076 --- [GalacticTrading ] [main] c.g.GalacticTrading.io.InputProcessor    : Processing line: pish is X
+2024-06-21T18:38:39.771+02:00 DEBUG 21076 --- [GalacticTrading ] [main] c.g.GalacticTrading.io.InputProcessor    : Processing line: tegj is L
+2024-06-21T18:38:39.771+02:00 DEBUG 21076 --- [GalacticTrading ] [main] c.g.GalacticTrading.io.InputProcessor    : Processing line: glob glob Silver is 34 Credits
+2024-06-21T18:38:39.771+02:00 DEBUG 21076 --- [GalacticTrading ] [main] c.g.GalacticTrading.io.InputProcessor    : Processing line: glob prok Gold is 57800 Credits
+2024-06-21T18:38:39.771+02:00 DEBUG 21076 --- [GalacticTrading ] [main] c.g.GalacticTrading.io.InputProcessor    : Processing line: pish pish Iron is 3910 Credits
+2024-06-21T18:38:39.771+02:00 DEBUG 21076 --- [GalacticTrading ] [main] c.g.GalacticTrading.io.InputProcessor    : Processing line: how much is pish tegj glob glob ?
+2024-06-21T18:38:39.771+02:00 DEBUG 21076 --- [GalacticTrading ] [main] c.g.GalacticTrading.io.InputProcessor    : Processing line: how many Credits is glob prok Silver ?
+2024-06-21T18:38:39.773+02:00 DEBUG 21076 --- [GalacticTrading ] [main] c.g.GalacticTrading.io.InputProcessor    : Processing line: how many Credits is glob prok Gold ?
+2024-06-21T18:38:39.773+02:00 DEBUG 21076 --- [GalacticTrading ] [main] c.g.GalacticTrading.io.InputProcessor    : Processing line: how many Credits is glob prok Iron ?
+2024-06-21T18:38:39.773+02:00 DEBUG 21076 --- [GalacticTrading ] [main] c.g.GalacticTrading.io.InputProcessor    : Processing line: how much wood could a woodchuck chuck if a woodchuck could chuck wood?
+2024-06-21T18:38:39.773+02:00 DEBUG 21076 --- [GalacticTrading ] [main] c.g.G.parser.InterGalacticUnitParser     : Parsed intergalactic unit: glob -> I
+2024-06-21T18:38:39.774+02:00 DEBUG 21076 --- [GalacticTrading ] [main] c.g.G.parser.InterGalacticUnitParser     : Parsed intergalactic unit: prok -> V
+2024-06-21T18:38:39.774+02:00 DEBUG 21076 --- [GalacticTrading ] [main] c.g.G.parser.InterGalacticUnitParser     : Parsed intergalactic unit: pish -> X
+2024-06-21T18:38:39.774+02:00 DEBUG 21076 --- [GalacticTrading ] [main] c.g.G.parser.InterGalacticUnitParser     : Parsed intergalactic unit: tegj -> L
+2024-06-21T18:38:39.774+02:00 DEBUG 21076 --- [GalacticTrading ] [main] c.g.G.parser.MetalValueParser            : Parsed metal value: metal name -> Silver
+2024-06-21T18:38:39.775+02:00 DEBUG 21076 --- [GalacticTrading ] [main] c.g.G.parser.MetalValueParser            : Parsed total value: value -> 34
+2024-06-21T18:38:39.775+02:00 DEBUG 21076 --- [GalacticTrading ] [main] c.g.G.parser.MetalValueParser            : Parsed interGalacticUnitString: string -> glob glob
+2024-06-21T18:38:39.775+02:00 DEBUG 21076 --- [GalacticTrading ] [main] c.g.G.validator.RomanSymbolRules         : Validating Roman Symbol Rules...
+2024-06-21T18:38:39.776+02:00 DEBUG 21076 --- [GalacticTrading ] [main] c.g.G.parser.MetalValueParser            : Parsed metal value: metal name -> Gold
+2024-06-21T18:38:39.776+02:00 DEBUG 21076 --- [GalacticTrading ] [main] c.g.G.parser.MetalValueParser            : Parsed total value: value -> 57800
+2024-06-21T18:38:39.776+02:00 DEBUG 21076 --- [GalacticTrading ] [main] c.g.G.parser.MetalValueParser            : Parsed interGalacticUnitString: string -> glob prok
+2024-06-21T18:38:39.776+02:00 DEBUG 21076 --- [GalacticTrading ] [main] c.g.G.validator.RomanSymbolRules         : Validating Roman Symbol Rules...
+2024-06-21T18:38:39.776+02:00 DEBUG 21076 --- [GalacticTrading ] [main] c.g.G.parser.MetalValueParser            : Parsed metal value: metal name -> Iron
+2024-06-21T18:38:39.776+02:00 DEBUG 21076 --- [GalacticTrading ] [main] c.g.G.parser.MetalValueParser            : Parsed total value: value -> 3910
+2024-06-21T18:38:39.776+02:00 DEBUG 21076 --- [GalacticTrading ] [main] c.g.G.parser.MetalValueParser            : Parsed interGalacticUnitString: string -> pish pish
+2024-06-21T18:38:39.778+02:00 DEBUG 21076 --- [GalacticTrading ] [main] c.g.G.validator.RomanSymbolRules         : Validating Roman Symbol Rules...
+2024-06-21T18:38:39.778+02:00 DEBUG 21076 --- [GalacticTrading ] [main] c.g.GalacticTrading.parser.QueryParser   : Parsed query: query -> pish tegj glob glob
+2024-06-21T18:38:39.778+02:00 DEBUG 21076 --- [GalacticTrading ] [main] c.g.GalacticTrading.io.OutputProcessor   : Saving to buffer and ready for output file...
+2024-06-21T18:38:39.779+02:00 DEBUG 21076 --- [GalacticTrading ] [main] c.g.G.validator.RomanSymbolRules         : Validating Roman Symbol Rules...
+2024-06-21T18:38:39.779+02:00 DEBUG 21076 --- [GalacticTrading ] [main] c.g.GalacticTrading.parser.QueryParser   : Parsed query: query -> glob prok Silver
+2024-06-21T18:38:39.779+02:00 DEBUG 21076 --- [GalacticTrading ] [main] c.g.GalacticTrading.io.OutputProcessor   : Saving to buffer and ready for output file...
+2024-06-21T18:38:39.779+02:00 DEBUG 21076 --- [GalacticTrading ] [main] c.g.G.validator.RomanSymbolRules         : Validating Roman Symbol Rules...
+2024-06-21T18:38:39.779+02:00 DEBUG 21076 --- [GalacticTrading ] [main] c.g.GalacticTrading.parser.QueryParser   : Parsed query: query -> glob prok Gold
+2024-06-21T18:38:39.780+02:00 DEBUG 21076 --- [GalacticTrading ] [main] c.g.GalacticTrading.io.OutputProcessor   : Saving to buffer and ready for output file...
+2024-06-21T18:38:39.780+02:00 DEBUG 21076 --- [GalacticTrading ] [main] c.g.G.validator.RomanSymbolRules         : Validating Roman Symbol Rules...
+2024-06-21T18:38:39.780+02:00 DEBUG 21076 --- [GalacticTrading ] [main] c.g.GalacticTrading.parser.QueryParser   : Parsed query: query -> glob prok Iron
+2024-06-21T18:38:39.780+02:00 DEBUG 21076 --- [GalacticTrading ] [main] c.g.GalacticTrading.io.OutputProcessor   : Saving to buffer and ready for output file...
+2024-06-21T18:38:39.780+02:00 DEBUG 21076 --- [GalacticTrading ] [main] c.g.G.validator.RomanSymbolRules         : Validating Roman Symbol Rules...
+2024-06-21T18:38:39.780+02:00 DEBUG 21076 --- [GalacticTrading ] [main] c.g.GalacticTrading.io.OutputProcessor   : Saving to buffer and ready for output file...
+2024-06-21T18:38:39.781+02:00  INFO 21076 --- [GalacticTrading ] [main] c.g.GalacticTrading.io.OutputProcessor   : File already exists.
+2024-06-21T18:38:39.781+02:00  INFO 21076 --- [GalacticTrading ] [main] c.g.GalacticTrading.io.OutputProcessor   : Output written to file: C:\garymar2007\GalacticTrading\src\main\resources\output.txt
+2024-06-21T18:38:39.789+02:00 DEBUG 21076 --- [GalacticTrading ] [main] c.g.G.service.TradingService             : Galactic Trading Process...
+2024-06-21T18:38:39.789+02:00  INFO 21076 --- [GalacticTrading ] [main] c.g.GalacticTrading.io.InputProcessor    : Processing input from file...
+2024-06-21T18:38:39.791+02:00 DEBUG 21076 --- [GalacticTrading ] [main] c.g.GalacticTrading.io.InputProcessor    : Processing line: glob is I
+2024-06-21T18:38:39.791+02:00 DEBUG 21076 --- [GalacticTrading ] [main] c.g.GalacticTrading.io.InputProcessor    : Processing line: prok is V
+2024-06-21T18:38:39.792+02:00 DEBUG 21076 --- [GalacticTrading ] [main] c.g.GalacticTrading.io.InputProcessor    : Processing line: pish is X
+2024-06-21T18:38:39.792+02:00 DEBUG 21076 --- [GalacticTrading ] [main] c.g.GalacticTrading.io.InputProcessor    : Processing line: tegj is L
+2024-06-21T18:38:39.792+02:00 DEBUG 21076 --- [GalacticTrading ] [main] c.g.GalacticTrading.io.InputProcessor    : Processing line: diag is C
+2024-06-21T18:38:39.792+02:00 DEBUG 21076 --- [GalacticTrading ] [main] c.g.GalacticTrading.io.InputProcessor    : Processing line: glob prok Silver is 34 Credits
+2024-06-21T18:38:39.792+02:00 DEBUG 21076 --- [GalacticTrading ] [main] c.g.GalacticTrading.io.InputProcessor    : Processing line: prok glob glob Diamond is 315000 Credits
+2024-06-21T18:38:39.792+02:00 DEBUG 21076 --- [GalacticTrading ] [main] c.g.GalacticTrading.io.InputProcessor    : Processing line: diag pish Iron is 5005 Credits
+2024-06-21T18:38:39.792+02:00 DEBUG 21076 --- [GalacticTrading ] [main] c.g.GalacticTrading.io.InputProcessor    : Processing line: pish tegj glob glob Gold is 2541 Credits
+2024-06-21T18:38:39.793+02:00 DEBUG 21076 --- [GalacticTrading ] [main] c.g.GalacticTrading.io.InputProcessor    : Processing line: how much is diag pish tegj glob prok ?
+2024-06-21T18:38:39.793+02:00 DEBUG 21076 --- [GalacticTrading ] [main] c.g.GalacticTrading.io.InputProcessor    : Processing line: how many Credits is glob prok Silver ?
+2024-06-21T18:38:39.793+02:00 DEBUG 21076 --- [GalacticTrading ] [main] c.g.GalacticTrading.io.InputProcessor    : Processing line: how many Credits is pish tegj Gold ?
+2024-06-21T18:38:39.793+02:00 DEBUG 21076 --- [GalacticTrading ] [main] c.g.GalacticTrading.io.InputProcessor    : Processing line: how many Credits is diag prok Iron ?
+2024-06-21T18:38:39.793+02:00 DEBUG 21076 --- [GalacticTrading ] [main] c.g.GalacticTrading.io.InputProcessor    : Processing line: how many Credits is glob glob glob Diamond ?
+2024-06-21T18:38:39.793+02:00 DEBUG 21076 --- [GalacticTrading ] [main] c.g.GalacticTrading.io.InputProcessor    : Processing line: how much wood could a woodchuck chuck if a woodchuck could chuck wood?
+2024-06-21T18:38:39.794+02:00 DEBUG 21076 --- [GalacticTrading ] [main] c.g.G.parser.InterGalacticUnitParser     : Parsed intergalactic unit: glob -> I
+2024-06-21T18:38:39.794+02:00 DEBUG 21076 --- [GalacticTrading ] [main] c.g.G.parser.InterGalacticUnitParser     : Parsed intergalactic unit: prok -> V
+2024-06-21T18:38:39.794+02:00 DEBUG 21076 --- [GalacticTrading ] [main] c.g.G.parser.InterGalacticUnitParser     : Parsed intergalactic unit: pish -> X
+2024-06-21T18:38:39.794+02:00 DEBUG 21076 --- [GalacticTrading ] [main] c.g.G.parser.InterGalacticUnitParser     : Parsed intergalactic unit: tegj -> L
+2024-06-21T18:38:39.794+02:00 DEBUG 21076 --- [GalacticTrading ] [main] c.g.G.parser.InterGalacticUnitParser     : Parsed intergalactic unit: diag -> C
+2024-06-21T18:38:39.794+02:00 DEBUG 21076 --- [GalacticTrading ] [main] c.g.G.parser.MetalValueParser            : Parsed metal value: metal name -> Silver
+2024-06-21T18:38:39.794+02:00 DEBUG 21076 --- [GalacticTrading ] [main] c.g.G.parser.MetalValueParser            : Parsed total value: value -> 34
+2024-06-21T18:38:39.794+02:00 DEBUG 21076 --- [GalacticTrading ] [main] c.g.G.parser.MetalValueParser            : Parsed interGalacticUnitString: string -> glob prok
+2024-06-21T18:38:39.794+02:00  WARN 21076 --- [GalacticTrading ] [main] c.g.G.c.MetalAndMultipleCalculator       : Metal Silver already initialized with value 17.0! Skipping...
+2024-06-21T18:38:39.794+02:00 DEBUG 21076 --- [GalacticTrading ] [main] c.g.G.parser.MetalValueParser            : Parsed metal value: metal name -> Diamond
+2024-06-21T18:38:39.794+02:00 DEBUG 21076 --- [GalacticTrading ] [main] c.g.G.parser.MetalValueParser            : Parsed total value: value -> 315000
+2024-06-21T18:38:39.795+02:00 DEBUG 21076 --- [GalacticTrading ] [main] c.g.G.parser.MetalValueParser            : Parsed interGalacticUnitString: string -> prok glob glob
+2024-06-21T18:38:39.795+02:00 DEBUG 21076 --- [GalacticTrading ] [main] c.g.G.validator.RomanSymbolRules         : Validating Roman Symbol Rules...
+2024-06-21T18:38:39.795+02:00 DEBUG 21076 --- [GalacticTrading ] [main] c.g.G.parser.MetalValueParser            : Parsed metal value: metal name -> Iron
+2024-06-21T18:38:39.795+02:00 DEBUG 21076 --- [GalacticTrading ] [main] c.g.G.parser.MetalValueParser            : Parsed total value: value -> 5005
+2024-06-21T18:38:39.795+02:00 DEBUG 21076 --- [GalacticTrading ] [main] c.g.G.parser.MetalValueParser            : Parsed interGalacticUnitString: string -> diag pish
+2024-06-21T18:38:39.795+02:00  WARN 21076 --- [GalacticTrading ] [main] c.g.G.c.MetalAndMultipleCalculator       : Metal Iron already initialized with value 195.5! Skipping...
+2024-06-21T18:38:39.795+02:00 DEBUG 21076 --- [GalacticTrading ] [main] c.g.G.parser.MetalValueParser            : Parsed metal value: metal name -> Gold
+2024-06-21T18:38:39.795+02:00 DEBUG 21076 --- [GalacticTrading ] [main] c.g.G.parser.MetalValueParser            : Parsed total value: value -> 2541
+2024-06-21T18:38:39.795+02:00 DEBUG 21076 --- [GalacticTrading ] [main] c.g.G.parser.MetalValueParser            : Parsed interGalacticUnitString: string -> pish tegj glob glob
+2024-06-21T18:38:39.795+02:00  WARN 21076 --- [GalacticTrading ] [main] c.g.G.c.MetalAndMultipleCalculator       : Metal Gold already initialized with value 14450.0! Skipping...
+2024-06-21T18:38:39.795+02:00 DEBUG 21076 --- [GalacticTrading ] [main] c.g.GalacticTrading.parser.QueryParser   : Parsed query: query -> diag pish tegj glob prok
+2024-06-21T18:38:39.795+02:00 DEBUG 21076 --- [GalacticTrading ] [main] c.g.GalacticTrading.io.OutputProcessor   : Saving to buffer and ready for output file...
+2024-06-21T18:38:39.795+02:00 DEBUG 21076 --- [GalacticTrading ] [main] c.g.G.validator.RomanSymbolRules         : Validating Roman Symbol Rules...
+2024-06-21T18:38:39.795+02:00 DEBUG 21076 --- [GalacticTrading ] [main] c.g.GalacticTrading.parser.QueryParser   : Parsed query: query -> glob prok Silver
+2024-06-21T18:38:39.795+02:00 DEBUG 21076 --- [GalacticTrading ] [main] c.g.GalacticTrading.io.OutputProcessor   : Saving to buffer and ready for output file...
+2024-06-21T18:38:39.796+02:00 DEBUG 21076 --- [GalacticTrading ] [main] c.g.G.validator.RomanSymbolRules         : Validating Roman Symbol Rules...
+2024-06-21T18:38:39.796+02:00 DEBUG 21076 --- [GalacticTrading ] [main] c.g.GalacticTrading.parser.QueryParser   : Parsed query: query -> pish tegj Gold
+2024-06-21T18:38:39.796+02:00 DEBUG 21076 --- [GalacticTrading ] [main] c.g.GalacticTrading.io.OutputProcessor   : Saving to buffer and ready for output file...
+2024-06-21T18:38:39.796+02:00 DEBUG 21076 --- [GalacticTrading ] [main] c.g.G.validator.RomanSymbolRules         : Validating Roman Symbol Rules...
+2024-06-21T18:38:39.796+02:00 DEBUG 21076 --- [GalacticTrading ] [main] c.g.GalacticTrading.parser.QueryParser   : Parsed query: query -> diag prok Iron
+2024-06-21T18:38:39.796+02:00 DEBUG 21076 --- [GalacticTrading ] [main] c.g.GalacticTrading.io.OutputProcessor   : Saving to buffer and ready for output file...
+2024-06-21T18:38:39.796+02:00 DEBUG 21076 --- [GalacticTrading ] [main] c.g.G.validator.RomanSymbolRules         : Validating Roman Symbol Rules...
+2024-06-21T18:38:39.796+02:00 DEBUG 21076 --- [GalacticTrading ] [main] c.g.GalacticTrading.parser.QueryParser   : Parsed query: query -> glob glob glob Diamond
+2024-06-21T18:38:39.796+02:00 DEBUG 21076 --- [GalacticTrading ] [main] c.g.GalacticTrading.io.OutputProcessor   : Saving to buffer and ready for output file...
+2024-06-21T18:38:39.796+02:00 DEBUG 21076 --- [GalacticTrading ] [main] c.g.G.validator.RomanSymbolRules         : Validating Roman Symbol Rules...
+2024-06-21T18:38:39.796+02:00 DEBUG 21076 --- [GalacticTrading ] [main] c.g.GalacticTrading.io.OutputProcessor   : Saving to buffer and ready for output file...
+2024-06-21T18:38:39.797+02:00  INFO 21076 --- [GalacticTrading ] [main] c.g.GalacticTrading.io.OutputProcessor   : File already exists.
+2024-06-21T18:38:39.797+02:00  INFO 21076 --- [GalacticTrading ] [main] c.g.GalacticTrading.io.OutputProcessor   : Output written to file: C:\garymar2007\GalacticTrading\src\main\resources\output2.txt
+2024-06-21T18:38:39.800+02:00 DEBUG 21076 --- [GalacticTrading ] [main] c.g.G.service.TradingService             : Galactic Trading Process...
+2024-06-21T18:38:39.801+02:00  INFO 21076 --- [GalacticTrading ] [main] c.g.GalacticTrading.io.InputProcessor    : Processing input from file...
+2024-06-21T18:38:39.802+02:00 DEBUG 21076 --- [GalacticTrading ] [main] c.g.GalacticTrading.io.InputProcessor    : Processing line: glob is I
+2024-06-21T18:38:39.803+02:00 DEBUG 21076 --- [GalacticTrading ] [main] c.g.GalacticTrading.io.InputProcessor    : Processing line: prok is V
+2024-06-21T18:38:39.803+02:00 DEBUG 21076 --- [GalacticTrading ] [main] c.g.GalacticTrading.io.InputProcessor    : Processing line: pish is X
+2024-06-21T18:38:39.803+02:00 DEBUG 21076 --- [GalacticTrading ] [main] c.g.GalacticTrading.io.InputProcessor    : Processing line: tegj is L
+2024-06-21T18:38:39.803+02:00 DEBUG 21076 --- [GalacticTrading ] [main] c.g.GalacticTrading.io.InputProcessor    : Processing line: diag is C
+2024-06-21T18:38:39.803+02:00 DEBUG 21076 --- [GalacticTrading ] [main] c.g.GalacticTrading.io.InputProcessor    : Processing line: glob prok Silver is 34 Credits
+2024-06-21T18:38:39.803+02:00 DEBUG 21076 --- [GalacticTrading ] [main] c.g.GalacticTrading.io.InputProcessor    : Processing line: prok glob glob Diamond is 315000 Credits
+2024-06-21T18:38:39.803+02:00 DEBUG 21076 --- [GalacticTrading ] [main] c.g.GalacticTrading.io.InputProcessor    : Processing line: diag pish Iron is 5005 Credits
+2024-06-21T18:38:39.803+02:00 DEBUG 21076 --- [GalacticTrading ] [main] c.g.GalacticTrading.io.InputProcessor    : Processing line: pish tegj glob glob Gold is 2541 Credits
+2024-06-21T18:38:39.803+02:00 DEBUG 21076 --- [GalacticTrading ] [main] c.g.GalacticTrading.io.InputProcessor    : Processing line: how much is diag pish tegj glob prok ?
+2024-06-21T18:38:39.803+02:00 DEBUG 21076 --- [GalacticTrading ] [main] c.g.GalacticTrading.io.InputProcessor    : Processing line: how many Credits is glob prok Silver ?
+2024-06-21T18:38:39.804+02:00 DEBUG 21076 --- [GalacticTrading ] [main] c.g.GalacticTrading.io.InputProcessor    : Processing line: how many Credits is pish tegj Gold ?
+2024-06-21T18:38:39.804+02:00 DEBUG 21076 --- [GalacticTrading ] [main] c.g.GalacticTrading.io.InputProcessor    : Processing line: how many Credits is diag prok Iron ?
+2024-06-21T18:38:39.804+02:00 DEBUG 21076 --- [GalacticTrading ] [main] c.g.GalacticTrading.io.InputProcessor    : Processing line: how many Credits is glob glob glob Diamond ?
+2024-06-21T18:38:39.804+02:00 DEBUG 21076 --- [GalacticTrading ] [main] c.g.GalacticTrading.io.InputProcessor    : Processing line: how much wood could a woodchuck chuck if a woodchuck could chuck wood?
+2024-06-21T18:38:39.804+02:00 DEBUG 21076 --- [GalacticTrading ] [main] c.g.G.parser.InterGalacticUnitParser     : Parsed intergalactic unit: glob -> I
+2024-06-21T18:38:39.804+02:00 DEBUG 21076 --- [GalacticTrading ] [main] c.g.G.parser.InterGalacticUnitParser     : Parsed intergalactic unit: prok -> V
+2024-06-21T18:38:39.804+02:00 DEBUG 21076 --- [GalacticTrading ] [main] c.g.G.parser.InterGalacticUnitParser     : Parsed intergalactic unit: pish -> X
+2024-06-21T18:38:39.804+02:00 DEBUG 21076 --- [GalacticTrading ] [main] c.g.G.parser.InterGalacticUnitParser     : Parsed intergalactic unit: tegj -> L
+2024-06-21T18:38:39.804+02:00 DEBUG 21076 --- [GalacticTrading ] [main] c.g.G.parser.InterGalacticUnitParser     : Parsed intergalactic unit: diag -> C
+2024-06-21T18:38:39.805+02:00 DEBUG 21076 --- [GalacticTrading ] [main] c.g.G.parser.MetalValueParser            : Parsed metal value: metal name -> Silver
+2024-06-21T18:38:39.805+02:00 DEBUG 21076 --- [GalacticTrading ] [main] c.g.G.parser.MetalValueParser            : Parsed total value: value -> 34
+2024-06-21T18:38:39.805+02:00 DEBUG 21076 --- [GalacticTrading ] [main] c.g.G.parser.MetalValueParser            : Parsed interGalacticUnitString: string -> glob prok
+2024-06-21T18:38:39.805+02:00  WARN 21076 --- [GalacticTrading ] [main] c.g.G.c.MetalAndMultipleCalculator       : Metal Silver already initialized with value 17.0! Skipping...
+2024-06-21T18:38:39.805+02:00 DEBUG 21076 --- [GalacticTrading ] [main] c.g.G.parser.MetalValueParser            : Parsed metal value: metal name -> Diamond
+2024-06-21T18:38:39.805+02:00 DEBUG 21076 --- [GalacticTrading ] [main] c.g.G.parser.MetalValueParser            : Parsed total value: value -> 315000
+2024-06-21T18:38:39.805+02:00 DEBUG 21076 --- [GalacticTrading ] [main] c.g.G.parser.MetalValueParser            : Parsed interGalacticUnitString: string -> prok glob glob
+2024-06-21T18:38:39.805+02:00  WARN 21076 --- [GalacticTrading ] [main] c.g.G.c.MetalAndMultipleCalculator       : Metal Diamond already initialized with value 45000.0! Skipping...
+2024-06-21T18:38:39.805+02:00 DEBUG 21076 --- [GalacticTrading ] [main] c.g.G.parser.MetalValueParser            : Parsed metal value: metal name -> Iron
+2024-06-21T18:38:39.805+02:00 DEBUG 21076 --- [GalacticTrading ] [main] c.g.G.parser.MetalValueParser            : Parsed total value: value -> 5005
+2024-06-21T18:38:39.805+02:00 DEBUG 21076 --- [GalacticTrading ] [main] c.g.G.parser.MetalValueParser            : Parsed interGalacticUnitString: string -> diag pish
+2024-06-21T18:38:39.805+02:00  WARN 21076 --- [GalacticTrading ] [main] c.g.G.c.MetalAndMultipleCalculator       : Metal Iron already initialized with value 195.5! Skipping...
+2024-06-21T18:38:39.805+02:00 DEBUG 21076 --- [GalacticTrading ] [main] c.g.G.parser.MetalValueParser            : Parsed metal value: metal name -> Gold
+2024-06-21T18:38:39.805+02:00 DEBUG 21076 --- [GalacticTrading ] [main] c.g.G.parser.MetalValueParser            : Parsed total value: value -> 2541
+2024-06-21T18:38:39.805+02:00 DEBUG 21076 --- [GalacticTrading ] [main] c.g.G.parser.MetalValueParser            : Parsed interGalacticUnitString: string -> pish tegj glob glob
+2024-06-21T18:38:39.805+02:00  WARN 21076 --- [GalacticTrading ] [main] c.g.G.c.MetalAndMultipleCalculator       : Metal Gold already initialized with value 14450.0! Skipping...
+2024-06-21T18:38:39.806+02:00 DEBUG 21076 --- [GalacticTrading ] [main] c.g.GalacticTrading.parser.QueryParser   : Parsed query: query -> diag pish tegj glob prok
+2024-06-21T18:38:39.806+02:00 DEBUG 21076 --- [GalacticTrading ] [main] c.g.GalacticTrading.io.OutputProcessor   : Saving to buffer and ready for output file...
+2024-06-21T18:38:39.806+02:00 DEBUG 21076 --- [GalacticTrading ] [main] c.g.G.validator.RomanSymbolRules         : Validating Roman Symbol Rules...
+2024-06-21T18:38:39.806+02:00 DEBUG 21076 --- [GalacticTrading ] [main] c.g.GalacticTrading.parser.QueryParser   : Parsed query: query -> glob prok Silver
+2024-06-21T18:38:39.806+02:00 DEBUG 21076 --- [GalacticTrading ] [main] c.g.GalacticTrading.io.OutputProcessor   : Saving to buffer and ready for output file...
+2024-06-21T18:38:39.806+02:00 DEBUG 21076 --- [GalacticTrading ] [main] c.g.G.validator.RomanSymbolRules         : Validating Roman Symbol Rules...
+2024-06-21T18:38:39.806+02:00 DEBUG 21076 --- [GalacticTrading ] [main] c.g.GalacticTrading.parser.QueryParser   : Parsed query: query -> pish tegj Gold
+2024-06-21T18:38:39.806+02:00 DEBUG 21076 --- [GalacticTrading ] [main] c.g.GalacticTrading.io.OutputProcessor   : Saving to buffer and ready for output file...
+2024-06-21T18:38:39.806+02:00 DEBUG 21076 --- [GalacticTrading ] [main] c.g.G.validator.RomanSymbolRules         : Validating Roman Symbol Rules...
+2024-06-21T18:38:39.806+02:00 DEBUG 21076 --- [GalacticTrading ] [main] c.g.GalacticTrading.parser.QueryParser   : Parsed query: query -> diag prok Iron
+2024-06-21T18:38:39.806+02:00 DEBUG 21076 --- [GalacticTrading ] [main] c.g.GalacticTrading.io.OutputProcessor   : Saving to buffer and ready for output file...
+2024-06-21T18:38:39.806+02:00 DEBUG 21076 --- [GalacticTrading ] [main] c.g.G.validator.RomanSymbolRules         : Validating Roman Symbol Rules...
+2024-06-21T18:38:39.808+02:00 DEBUG 21076 --- [GalacticTrading ] [main] c.g.GalacticTrading.parser.QueryParser   : Parsed query: query -> glob glob glob Diamond
+2024-06-21T18:38:39.808+02:00 DEBUG 21076 --- [GalacticTrading ] [main] c.g.GalacticTrading.io.OutputProcessor   : Saving to buffer and ready for output file...
+2024-06-21T18:38:39.808+02:00 DEBUG 21076 --- [GalacticTrading ] [main] c.g.G.validator.RomanSymbolRules         : Validating Roman Symbol Rules...
+2024-06-21T18:38:39.808+02:00 DEBUG 21076 --- [GalacticTrading ] [main] c.g.GalacticTrading.io.OutputProcessor   : Saving to buffer and ready for output file...
+2024-06-21T18:38:39.808+02:00  INFO 21076 --- [GalacticTrading ] [main] c.g.GalacticTrading.io.OutputProcessor   : File already exists.
+2024-06-21T18:38:39.809+02:00  INFO 21076 --- [GalacticTrading ] [main] c.g.GalacticTrading.io.OutputProcessor   : Output written to file: C:\garymar2007\GalacticTrading\src\main\resources\invalid-output.txt
+2024-06-21T18:38:39.815+02:00 DEBUG 21076 --- [GalacticTrading ] [main] c.g.G.parser.InterGalacticUnitParser     : Parsed intergalactic unit: glob -> I
+2024-06-21T18:38:39.816+02:00 DEBUG 21076 --- [GalacticTrading ] [main] c.g.G.parser.InterGalacticUnitParser     : Parsed intergalactic unit: glob -> I
+2024-06-21T18:38:39.816+02:00 DEBUG 21076 --- [GalacticTrading ] [main] c.g.G.parser.InterGalacticUnitParser     : Parsed intergalactic unit: prok -> V
+2024-06-21T18:38:39.816+02:00 DEBUG 21076 --- [GalacticTrading ] [main] c.g.G.parser.InterGalacticUnitParser     : Parsed intergalactic unit: pish -> X
+2024-06-21T18:38:39.816+02:00 DEBUG 21076 --- [GalacticTrading ] [main] c.g.G.parser.InterGalacticUnitParser     : Parsed intergalactic unit: tegj -> L
+2024-06-21T18:38:39.822+02:00 DEBUG 21076 --- [GalacticTrading ] [main] c.g.G.parser.MetalValueParser            : Parsed metal value: metal name -> Silver
+2024-06-21T18:38:39.822+02:00 DEBUG 21076 --- [GalacticTrading ] [main] c.g.G.parser.MetalValueParser            : Parsed total value: value -> 34
+2024-06-21T18:38:39.822+02:00 DEBUG 21076 --- [GalacticTrading ] [main] c.g.G.parser.MetalValueParser            : Parsed interGalacticUnitString: string -> glob glob
+2024-06-21T18:38:39.822+02:00 DEBUG 21076 --- [GalacticTrading ] [main] c.g.G.parser.MetalValueParser            : Parsed metal value: metal name -> Gold
+2024-06-21T18:38:39.822+02:00 DEBUG 21076 --- [GalacticTrading ] [main] c.g.G.parser.MetalValueParser            : Parsed total value: value -> 57800
+2024-06-21T18:38:39.822+02:00 DEBUG 21076 --- [GalacticTrading ] [main] c.g.G.parser.MetalValueParser            : Parsed interGalacticUnitString: string -> glob prok
+2024-06-21T18:38:39.823+02:00 DEBUG 21076 --- [GalacticTrading ] [main] c.g.G.parser.MetalValueParser            : Parsed metal value: metal name -> Iron
+2024-06-21T18:38:39.823+02:00 DEBUG 21076 --- [GalacticTrading ] [main] c.g.G.parser.MetalValueParser            : Parsed total value: value -> 3910
+2024-06-21T18:38:39.823+02:00 DEBUG 21076 --- [GalacticTrading ] [main] c.g.G.parser.MetalValueParser            : Parsed interGalacticUnitString: string -> pish pish
+2024-06-21T18:38:39.827+02:00 ERROR 21076 --- [GalacticTrading ] [main] c.g.GalacticTrading.parser.QueryParser   : I have no idea what you are talking about
+2024-06-21T18:38:39.829+02:00 ERROR 21076 --- [GalacticTrading ] [main] c.g.GalacticTrading.parser.QueryParser   : I have no idea what you are talking about
+2024-06-21T18:38:39.831+02:00 ERROR 21076 --- [GalacticTrading ] [main] c.g.GalacticTrading.parser.QueryParser   : I have no idea what you are talking about
+2024-06-21T18:38:39.833+02:00 DEBUG 21076 --- [GalacticTrading ] [main] c.g.GalacticTrading.parser.QueryParser   : Parsed query: query -> pish tegj glob glob
+2024-06-21T18:38:39.834+02:00 DEBUG 21076 --- [GalacticTrading ] [main] c.g.GalacticTrading.parser.QueryParser   : Parsed query: query -> glob prok Gold
+2024-06-21T18:38:39.835+02:00 ERROR 21076 --- [GalacticTrading ] [main] c.g.GalacticTrading.parser.QueryParser   : I have no idea what you are talking about
+2024-06-21T18:38:39.836+02:00 DEBUG 21076 --- [GalacticTrading ] [main] c.g.GalacticTrading.parser.QueryParser   : Parsed query: query -> glob prok Gold
+2024-06-21T18:38:39.839+02:00 ERROR 21076 --- [GalacticTrading ] [main] c.g.GalacticTrading.parser.QueryParser   : I have no idea what you are talking about
+2024-06-21T18:38:39.847+02:00 DEBUG 21076 --- [GalacticTrading ] [main] c.g.G.validator.RomanSymbolRules         : Validating Roman Symbol Rules...
+2024-06-21T18:38:39.847+02:00 DEBUG 21076 --- [GalacticTrading ] [main] c.g.G.validator.RomanSymbolRules         : Failed on Rule 1 - Invalid Roman Symbol: MCMXLIVB
+2024-06-21T18:38:39.848+02:00 DEBUG 21076 --- [GalacticTrading ] [main] c.g.G.validator.RomanSymbolRules         : Validating Roman Symbol Rules...
+2024-06-21T18:38:39.849+02:00 DEBUG 21076 --- [GalacticTrading ] [main] c.g.G.validator.RomanSymbolRules         : Validating Roman Symbol Rules...
+2024-06-21T18:38:39.851+02:00 DEBUG 21076 --- [GalacticTrading ] [main] c.g.G.validator.RomanSymbolRules         : Validating Roman Symbol Rules...
+2024-06-21T18:38:39.852+02:00 DEBUG 21076 --- [GalacticTrading ] [main] c.g.G.validator.RomanSymbolRules         : Validating Roman Symbol Rules...
+2024-06-21T18:38:39.853+02:00 DEBUG 21076 --- [GalacticTrading ] [main] c.g.G.validator.RomanSymbolRules         : Validating Roman Symbol Rules...
+2024-06-21T18:38:39.854+02:00 DEBUG 21076 --- [GalacticTrading ] [main] c.g.G.validator.RomanSymbolRules         : Failed on Rule 1 - Invalid Roman Symbol: CCCLXXXXVIIII
+2024-06-21T18:38:39.855+02:00 DEBUG 21076 --- [GalacticTrading ] [main] c.g.G.validator.RomanSymbolRules         : Validating Roman Symbol Rules...
+2024-06-21T18:38:39.855+02:00 DEBUG 21076 --- [GalacticTrading ] [main] c.g.G.validator.RomanSymbolRules         : Failed on Rule 1 - Invalid Roman Symbol: CCCLLXXXVIIII
+2024-06-21T18:38:39.856+02:00 DEBUG 21076 --- [GalacticTrading ] [main] c.g.G.validator.RomanSymbolRules         : Validating Roman Symbol Rules...
+2024-06-21T18:38:39.858+02:00 DEBUG 21076 --- [GalacticTrading ] [main] c.g.G.validator.RomanSymbolRules         : Failed on Rule 1 - Invalid Roman Symbol: DMXIII
+2024-06-21T18:38:39.859+02:00 DEBUG 21076 --- [GalacticTrading ] [main] c.g.G.validator.RomanSymbolRules         : Validating Roman Symbol Rules...
+2024-06-21T18:38:39.859+02:00 DEBUG 21076 --- [GalacticTrading ] [main] c.g.G.validator.RomanSymbolRules         : Failed on Rule 1 - Invalid Roman Symbol: ICX
+2024-06-21T18:38:39.860+02:00 DEBUG 21076 --- [GalacticTrading ] [main] c.g.G.validator.RomanSymbolRules         : Validating Roman Symbol Rules...
+2024-06-21T18:38:39.860+02:00 DEBUG 21076 --- [GalacticTrading ] [main] c.g.G.validator.RomanSymbolRules         : Failed on Rule 1 - Invalid Roman Symbol: DLCXIII
+2024-06-21T18:38:39.861+02:00 DEBUG 21076 --- [GalacticTrading ] [main] c.g.G.validator.RomanSymbolRules         : Validating Roman Symbol Rules...
+2024-06-21T18:38:39.861+02:00 DEBUG 21076 --- [GalacticTrading ] [main] c.g.G.validator.RomanSymbolRules         : Failed on Rule 1 - Invalid Roman Symbol: VXIII
+2024-06-21T18:38:39.863+02:00 DEBUG 21076 --- [GalacticTrading ] [main] c.g.G.validator.RomanSymbolRules         : Validating Roman Symbol Rules...
+2024-06-21T18:38:39.863+02:00 DEBUG 21076 --- [GalacticTrading ] [main] c.g.G.validator.RomanSymbolRules         : Failed on Rule 1 - Invalid Roman Symbol: XDIII
+2024-06-21T18:38:39.864+02:00 DEBUG 21076 --- [GalacticTrading ] [main] c.g.G.validator.RomanSymbolRules         : Validating Roman Symbol Rules...
+2024-06-21T19:27:14.435+02:00  INFO 1780 --- [GalacticTrading ] [main] c.g.G.GalacticTradingApplicationTests    : Starting GalacticTradingApplicationTests using Java 17.0.11 with PID 1780 (started by gary.ma in C:\garymar2007\GalacticTrading)
+2024-06-21T19:27:14.436+02:00 DEBUG 1780 --- [GalacticTrading ] [main] c.g.G.GalacticTradingApplicationTests    : Running with Spring Boot v3.3.1, Spring v6.1.10
+2024-06-21T19:27:14.436+02:00  INFO 1780 --- [GalacticTrading ] [main] c.g.G.GalacticTradingApplicationTests    : No active profile set, falling back to 1 default profile: "default"
+2024-06-21T19:27:15.807+02:00  INFO 1780 --- [GalacticTrading ] [main] c.g.G.GalacticTradingApplicationTests    : Started GalacticTradingApplicationTests in 1.774 seconds (process running for 3.059)
+2024-06-21T19:27:16.747+02:00 DEBUG 1780 --- [GalacticTrading ] [main] c.g.G.service.TradingService             : Galactic Trading Process...
+2024-06-21T19:27:16.747+02:00  INFO 1780 --- [GalacticTrading ] [main] c.g.GalacticTrading.io.InputProcessor    : Processing input from file...
+2024-06-21T19:27:16.758+02:00 DEBUG 1780 --- [GalacticTrading ] [main] c.g.GalacticTrading.io.InputProcessor    : Processing line: glob is I
+2024-06-21T19:27:16.760+02:00 DEBUG 1780 --- [GalacticTrading ] [main] c.g.GalacticTrading.io.InputProcessor    : Processing line: prok is V
+2024-06-21T19:27:16.760+02:00 DEBUG 1780 --- [GalacticTrading ] [main] c.g.GalacticTrading.io.InputProcessor    : Processing line: pish is X
+2024-06-21T19:27:16.760+02:00 DEBUG 1780 --- [GalacticTrading ] [main] c.g.GalacticTrading.io.InputProcessor    : Processing line: tegj is L
+2024-06-21T19:27:16.760+02:00 DEBUG 1780 --- [GalacticTrading ] [main] c.g.GalacticTrading.io.InputProcessor    : Processing line: glob glob Silver is 34 Credits
+2024-06-21T19:27:16.761+02:00 DEBUG 1780 --- [GalacticTrading ] [main] c.g.GalacticTrading.io.InputProcessor    : Processing line: glob prok Gold is 57800 Credits
+2024-06-21T19:27:16.761+02:00 DEBUG 1780 --- [GalacticTrading ] [main] c.g.GalacticTrading.io.InputProcessor    : Processing line: pish pish Iron is 3910 Credits
+2024-06-21T19:27:16.761+02:00 DEBUG 1780 --- [GalacticTrading ] [main] c.g.GalacticTrading.io.InputProcessor    : Processing line: how much is pish tegj glob glob ?
+2024-06-21T19:27:16.762+02:00 DEBUG 1780 --- [GalacticTrading ] [main] c.g.GalacticTrading.io.InputProcessor    : Processing line: how many Credits is glob prok Silver ?
+2024-06-21T19:27:16.762+02:00 DEBUG 1780 --- [GalacticTrading ] [main] c.g.GalacticTrading.io.InputProcessor    : Processing line: how many Credits is glob prok Gold ?
+2024-06-21T19:27:16.762+02:00 DEBUG 1780 --- [GalacticTrading ] [main] c.g.GalacticTrading.io.InputProcessor    : Processing line: how many Credits is glob prok Iron ?
+2024-06-21T19:27:16.763+02:00 DEBUG 1780 --- [GalacticTrading ] [main] c.g.GalacticTrading.io.InputProcessor    : Processing line: how much wood could a woodchuck chuck if a woodchuck could chuck wood?
+2024-06-21T19:27:16.763+02:00 DEBUG 1780 --- [GalacticTrading ] [main] c.g.G.parser.InterGalacticUnitParser     : Parsed intergalactic unit: glob -> I
+2024-06-21T19:27:16.763+02:00 DEBUG 1780 --- [GalacticTrading ] [main] c.g.G.parser.InterGalacticUnitParser     : Parsed intergalactic unit: prok -> V
+2024-06-21T19:27:16.763+02:00 DEBUG 1780 --- [GalacticTrading ] [main] c.g.G.parser.InterGalacticUnitParser     : Parsed intergalactic unit: pish -> X
+2024-06-21T19:27:16.763+02:00 DEBUG 1780 --- [GalacticTrading ] [main] c.g.G.parser.InterGalacticUnitParser     : Parsed intergalactic unit: tegj -> L
+2024-06-21T19:27:16.765+02:00 DEBUG 1780 --- [GalacticTrading ] [main] c.g.G.parser.MetalValueParser            : Parsed metal value: metal name -> Silver
+2024-06-21T19:27:16.765+02:00 DEBUG 1780 --- [GalacticTrading ] [main] c.g.G.parser.MetalValueParser            : Parsed total value: value -> 34
+2024-06-21T19:27:16.767+02:00 DEBUG 1780 --- [GalacticTrading ] [main] c.g.G.parser.MetalValueParser            : Parsed interGalacticUnitString: string -> glob glob
+2024-06-21T19:27:16.767+02:00 DEBUG 1780 --- [GalacticTrading ] [main] c.g.G.validator.RomanSymbolRules         : Validating Roman Symbol Rules...
+2024-06-21T19:27:16.767+02:00 DEBUG 1780 --- [GalacticTrading ] [main] c.g.G.parser.MetalValueParser            : Parsed metal value: metal name -> Gold
+2024-06-21T19:27:16.767+02:00 DEBUG 1780 --- [GalacticTrading ] [main] c.g.G.parser.MetalValueParser            : Parsed total value: value -> 57800
+2024-06-21T19:27:16.768+02:00 DEBUG 1780 --- [GalacticTrading ] [main] c.g.G.parser.MetalValueParser            : Parsed interGalacticUnitString: string -> glob prok
+2024-06-21T19:27:16.768+02:00 DEBUG 1780 --- [GalacticTrading ] [main] c.g.G.validator.RomanSymbolRules         : Validating Roman Symbol Rules...
+2024-06-21T19:27:16.768+02:00 DEBUG 1780 --- [GalacticTrading ] [main] c.g.G.parser.MetalValueParser            : Parsed metal value: metal name -> Iron
+2024-06-21T19:27:16.768+02:00 DEBUG 1780 --- [GalacticTrading ] [main] c.g.G.parser.MetalValueParser            : Parsed total value: value -> 3910
+2024-06-21T19:27:16.768+02:00 DEBUG 1780 --- [GalacticTrading ] [main] c.g.G.parser.MetalValueParser            : Parsed interGalacticUnitString: string -> pish pish
+2024-06-21T19:27:16.768+02:00 DEBUG 1780 --- [GalacticTrading ] [main] c.g.G.validator.RomanSymbolRules         : Validating Roman Symbol Rules...
+2024-06-21T19:27:16.769+02:00 DEBUG 1780 --- [GalacticTrading ] [main] c.g.GalacticTrading.parser.QueryParser   : Parsed query: query -> pish tegj glob glob
+2024-06-21T19:27:16.769+02:00 DEBUG 1780 --- [GalacticTrading ] [main] c.g.GalacticTrading.io.OutputProcessor   : Saving to buffer and ready for output file...
+2024-06-21T19:27:16.770+02:00 DEBUG 1780 --- [GalacticTrading ] [main] c.g.G.validator.RomanSymbolRules         : Validating Roman Symbol Rules...
+2024-06-21T19:27:16.770+02:00 DEBUG 1780 --- [GalacticTrading ] [main] c.g.GalacticTrading.parser.QueryParser   : Parsed query: query -> glob prok Silver
+2024-06-21T19:27:16.770+02:00 DEBUG 1780 --- [GalacticTrading ] [main] c.g.GalacticTrading.io.OutputProcessor   : Saving to buffer and ready for output file...
+2024-06-21T19:27:16.770+02:00 DEBUG 1780 --- [GalacticTrading ] [main] c.g.G.validator.RomanSymbolRules         : Validating Roman Symbol Rules...
+2024-06-21T19:27:16.770+02:00 DEBUG 1780 --- [GalacticTrading ] [main] c.g.GalacticTrading.parser.QueryParser   : Parsed query: query -> glob prok Gold
+2024-06-21T19:27:16.771+02:00 DEBUG 1780 --- [GalacticTrading ] [main] c.g.GalacticTrading.io.OutputProcessor   : Saving to buffer and ready for output file...
+2024-06-21T19:27:16.771+02:00 DEBUG 1780 --- [GalacticTrading ] [main] c.g.G.validator.RomanSymbolRules         : Validating Roman Symbol Rules...
+2024-06-21T19:27:16.771+02:00 DEBUG 1780 --- [GalacticTrading ] [main] c.g.GalacticTrading.parser.QueryParser   : Parsed query: query -> glob prok Iron
+2024-06-21T19:27:16.771+02:00 DEBUG 1780 --- [GalacticTrading ] [main] c.g.GalacticTrading.io.OutputProcessor   : Saving to buffer and ready for output file...
+2024-06-21T19:27:16.771+02:00 DEBUG 1780 --- [GalacticTrading ] [main] c.g.G.validator.RomanSymbolRules         : Validating Roman Symbol Rules...
+2024-06-21T19:27:16.771+02:00 DEBUG 1780 --- [GalacticTrading ] [main] c.g.GalacticTrading.io.OutputProcessor   : Saving to buffer and ready for output file...
+2024-06-21T19:27:16.772+02:00  INFO 1780 --- [GalacticTrading ] [main] c.g.GalacticTrading.io.OutputProcessor   : File already exists.
+2024-06-21T19:27:16.772+02:00  INFO 1780 --- [GalacticTrading ] [main] c.g.GalacticTrading.io.OutputProcessor   : Output written to file: C:\garymar2007\GalacticTrading\src\main\resources\output.txt
+2024-06-21T19:27:16.794+02:00 DEBUG 1780 --- [GalacticTrading ] [main] c.g.G.service.TradingService             : Galactic Trading Process...
+2024-06-21T19:27:16.794+02:00  INFO 1780 --- [GalacticTrading ] [main] c.g.GalacticTrading.io.InputProcessor    : Processing input from file...
+2024-06-21T19:27:16.806+02:00 DEBUG 1780 --- [GalacticTrading ] [main] c.g.GalacticTrading.io.InputProcessor    : Processing line: glob is I
+2024-06-21T19:27:16.806+02:00 DEBUG 1780 --- [GalacticTrading ] [main] c.g.GalacticTrading.io.InputProcessor    : Processing line: prok is V
+2024-06-21T19:27:16.806+02:00 DEBUG 1780 --- [GalacticTrading ] [main] c.g.GalacticTrading.io.InputProcessor    : Processing line: pish is X
+2024-06-21T19:27:16.806+02:00 DEBUG 1780 --- [GalacticTrading ] [main] c.g.GalacticTrading.io.InputProcessor    : Processing line: tegj is L
+2024-06-21T19:27:16.806+02:00 DEBUG 1780 --- [GalacticTrading ] [main] c.g.GalacticTrading.io.InputProcessor    : Processing line: diag is C
+2024-06-21T19:27:16.806+02:00 DEBUG 1780 --- [GalacticTrading ] [main] c.g.GalacticTrading.io.InputProcessor    : Processing line: glob prok Silver is 34 Credits
+2024-06-21T19:27:16.807+02:00 DEBUG 1780 --- [GalacticTrading ] [main] c.g.GalacticTrading.io.InputProcessor    : Processing line: prok glob glob Diamond is 315000 Credits
+2024-06-21T19:27:16.807+02:00 DEBUG 1780 --- [GalacticTrading ] [main] c.g.GalacticTrading.io.InputProcessor    : Processing line: diag pish Iron is 5005 Credits
+2024-06-21T19:27:16.807+02:00 DEBUG 1780 --- [GalacticTrading ] [main] c.g.GalacticTrading.io.InputProcessor    : Processing line: pish tegj glob glob Gold is 2541 Credits
+2024-06-21T19:27:16.807+02:00 DEBUG 1780 --- [GalacticTrading ] [main] c.g.GalacticTrading.io.InputProcessor    : Processing line: how much is diag pish tegj glob prok ?
+2024-06-21T19:27:16.808+02:00 DEBUG 1780 --- [GalacticTrading ] [main] c.g.GalacticTrading.io.InputProcessor    : Processing line: how many Credits is glob prok Silver ?
+2024-06-21T19:27:16.808+02:00 DEBUG 1780 --- [GalacticTrading ] [main] c.g.GalacticTrading.io.InputProcessor    : Processing line: how many Credits is pish tegj Gold ?
+2024-06-21T19:27:16.808+02:00 DEBUG 1780 --- [GalacticTrading ] [main] c.g.GalacticTrading.io.InputProcessor    : Processing line: how many Credits is diag prok Iron ?
+2024-06-21T19:27:16.808+02:00 DEBUG 1780 --- [GalacticTrading ] [main] c.g.GalacticTrading.io.InputProcessor    : Processing line: how many Credits is glob glob glob Diamond ?
+2024-06-21T19:27:16.808+02:00 DEBUG 1780 --- [GalacticTrading ] [main] c.g.GalacticTrading.io.InputProcessor    : Processing line: how much wood could a woodchuck chuck if a woodchuck could chuck wood?
+2024-06-21T19:27:16.808+02:00 DEBUG 1780 --- [GalacticTrading ] [main] c.g.G.parser.InterGalacticUnitParser     : Parsed intergalactic unit: glob -> I
+2024-06-21T19:27:16.809+02:00 DEBUG 1780 --- [GalacticTrading ] [main] c.g.G.parser.InterGalacticUnitParser     : Parsed intergalactic unit: prok -> V
+2024-06-21T19:27:16.809+02:00 DEBUG 1780 --- [GalacticTrading ] [main] c.g.G.parser.InterGalacticUnitParser     : Parsed intergalactic unit: pish -> X
+2024-06-21T19:27:16.809+02:00 DEBUG 1780 --- [GalacticTrading ] [main] c.g.G.parser.InterGalacticUnitParser     : Parsed intergalactic unit: tegj -> L
+2024-06-21T19:27:16.809+02:00 DEBUG 1780 --- [GalacticTrading ] [main] c.g.G.parser.InterGalacticUnitParser     : Parsed intergalactic unit: diag -> C
+2024-06-21T19:27:16.809+02:00 DEBUG 1780 --- [GalacticTrading ] [main] c.g.G.parser.MetalValueParser            : Parsed metal value: metal name -> Silver
+2024-06-21T19:27:16.809+02:00 DEBUG 1780 --- [GalacticTrading ] [main] c.g.G.parser.MetalValueParser            : Parsed total value: value -> 34
+2024-06-21T19:27:16.809+02:00 DEBUG 1780 --- [GalacticTrading ] [main] c.g.G.parser.MetalValueParser            : Parsed interGalacticUnitString: string -> glob prok
+2024-06-21T19:27:16.809+02:00  WARN 1780 --- [GalacticTrading ] [main] c.g.G.c.MetalAndMultipleCalculator       : Metal Silver already initialized with value 17.0! Skipping...
+2024-06-21T19:27:16.809+02:00 DEBUG 1780 --- [GalacticTrading ] [main] c.g.G.parser.MetalValueParser            : Parsed metal value: metal name -> Diamond
+2024-06-21T19:27:16.809+02:00 DEBUG 1780 --- [GalacticTrading ] [main] c.g.G.parser.MetalValueParser            : Parsed total value: value -> 315000
+2024-06-21T19:27:16.809+02:00 DEBUG 1780 --- [GalacticTrading ] [main] c.g.G.parser.MetalValueParser            : Parsed interGalacticUnitString: string -> prok glob glob
+2024-06-21T19:27:16.809+02:00 DEBUG 1780 --- [GalacticTrading ] [main] c.g.G.validator.RomanSymbolRules         : Validating Roman Symbol Rules...
+2024-06-21T19:27:16.810+02:00 DEBUG 1780 --- [GalacticTrading ] [main] c.g.G.parser.MetalValueParser            : Parsed metal value: metal name -> Iron
+2024-06-21T19:27:16.810+02:00 DEBUG 1780 --- [GalacticTrading ] [main] c.g.G.parser.MetalValueParser            : Parsed total value: value -> 5005
+2024-06-21T19:27:16.810+02:00 DEBUG 1780 --- [GalacticTrading ] [main] c.g.G.parser.MetalValueParser            : Parsed interGalacticUnitString: string -> diag pish
+2024-06-21T19:27:16.810+02:00  WARN 1780 --- [GalacticTrading ] [main] c.g.G.c.MetalAndMultipleCalculator       : Metal Iron already initialized with value 195.5! Skipping...
+2024-06-21T19:27:16.810+02:00 DEBUG 1780 --- [GalacticTrading ] [main] c.g.G.parser.MetalValueParser            : Parsed metal value: metal name -> Gold
+2024-06-21T19:27:16.810+02:00 DEBUG 1780 --- [GalacticTrading ] [main] c.g.G.parser.MetalValueParser            : Parsed total value: value -> 2541
+2024-06-21T19:27:16.810+02:00 DEBUG 1780 --- [GalacticTrading ] [main] c.g.G.parser.MetalValueParser            : Parsed interGalacticUnitString: string -> pish tegj glob glob
+2024-06-21T19:27:16.810+02:00  WARN 1780 --- [GalacticTrading ] [main] c.g.G.c.MetalAndMultipleCalculator       : Metal Gold already initialized with value 14450.0! Skipping...
+2024-06-21T19:27:16.810+02:00 DEBUG 1780 --- [GalacticTrading ] [main] c.g.GalacticTrading.parser.QueryParser   : Parsed query: query -> diag pish tegj glob prok
+2024-06-21T19:27:16.810+02:00 DEBUG 1780 --- [GalacticTrading ] [main] c.g.GalacticTrading.io.OutputProcessor   : Saving to buffer and ready for output file...
+2024-06-21T19:27:16.810+02:00 DEBUG 1780 --- [GalacticTrading ] [main] c.g.G.validator.RomanSymbolRules         : Validating Roman Symbol Rules...
+2024-06-21T19:27:16.810+02:00 DEBUG 1780 --- [GalacticTrading ] [main] c.g.GalacticTrading.parser.QueryParser   : Parsed query: query -> glob prok Silver
+2024-06-21T19:27:16.810+02:00 DEBUG 1780 --- [GalacticTrading ] [main] c.g.GalacticTrading.io.OutputProcessor   : Saving to buffer and ready for output file...
+2024-06-21T19:27:16.810+02:00 DEBUG 1780 --- [GalacticTrading ] [main] c.g.G.validator.RomanSymbolRules         : Validating Roman Symbol Rules...
+2024-06-21T19:27:16.810+02:00 DEBUG 1780 --- [GalacticTrading ] [main] c.g.GalacticTrading.parser.QueryParser   : Parsed query: query -> pish tegj Gold
+2024-06-21T19:27:16.810+02:00 DEBUG 1780 --- [GalacticTrading ] [main] c.g.GalacticTrading.io.OutputProcessor   : Saving to buffer and ready for output file...
+2024-06-21T19:27:16.811+02:00 DEBUG 1780 --- [GalacticTrading ] [main] c.g.G.validator.RomanSymbolRules         : Validating Roman Symbol Rules...
+2024-06-21T19:27:16.811+02:00 DEBUG 1780 --- [GalacticTrading ] [main] c.g.GalacticTrading.parser.QueryParser   : Parsed query: query -> diag prok Iron
+2024-06-21T19:27:16.811+02:00 DEBUG 1780 --- [GalacticTrading ] [main] c.g.GalacticTrading.io.OutputProcessor   : Saving to buffer and ready for output file...
+2024-06-21T19:27:16.811+02:00 DEBUG 1780 --- [GalacticTrading ] [main] c.g.G.validator.RomanSymbolRules         : Validating Roman Symbol Rules...
+2024-06-21T19:27:16.811+02:00 DEBUG 1780 --- [GalacticTrading ] [main] c.g.GalacticTrading.parser.QueryParser   : Parsed query: query -> glob glob glob Diamond
+2024-06-21T19:27:16.811+02:00 DEBUG 1780 --- [GalacticTrading ] [main] c.g.GalacticTrading.io.OutputProcessor   : Saving to buffer and ready for output file...
+2024-06-21T19:27:16.811+02:00 DEBUG 1780 --- [GalacticTrading ] [main] c.g.G.validator.RomanSymbolRules         : Validating Roman Symbol Rules...
+2024-06-21T19:27:16.811+02:00 DEBUG 1780 --- [GalacticTrading ] [main] c.g.GalacticTrading.io.OutputProcessor   : Saving to buffer and ready for output file...
+2024-06-21T19:27:16.811+02:00  INFO 1780 --- [GalacticTrading ] [main] c.g.GalacticTrading.io.OutputProcessor   : File already exists.
+2024-06-21T19:27:16.812+02:00  INFO 1780 --- [GalacticTrading ] [main] c.g.GalacticTrading.io.OutputProcessor   : Output written to file: C:\garymar2007\GalacticTrading\src\main\resources\output2.txt
+2024-06-21T19:27:16.816+02:00 DEBUG 1780 --- [GalacticTrading ] [main] c.g.G.service.TradingService             : Galactic Trading Process...
+2024-06-21T19:27:16.817+02:00  INFO 1780 --- [GalacticTrading ] [main] c.g.GalacticTrading.io.InputProcessor    : Processing input from file...
+2024-06-21T19:27:16.819+02:00 DEBUG 1780 --- [GalacticTrading ] [main] c.g.GalacticTrading.io.InputProcessor    : Processing line: glob is I
+2024-06-21T19:27:16.819+02:00 DEBUG 1780 --- [GalacticTrading ] [main] c.g.GalacticTrading.io.InputProcessor    : Processing line: prok is V
+2024-06-21T19:27:16.819+02:00 DEBUG 1780 --- [GalacticTrading ] [main] c.g.GalacticTrading.io.InputProcessor    : Processing line: pish is X
+2024-06-21T19:27:16.819+02:00 DEBUG 1780 --- [GalacticTrading ] [main] c.g.GalacticTrading.io.InputProcessor    : Processing line: tegj is L
+2024-06-21T19:27:16.819+02:00 DEBUG 1780 --- [GalacticTrading ] [main] c.g.GalacticTrading.io.InputProcessor    : Processing line: diag is C
+2024-06-21T19:27:16.819+02:00 DEBUG 1780 --- [GalacticTrading ] [main] c.g.GalacticTrading.io.InputProcessor    : Processing line: glob prok Silver is 34 Credits
+2024-06-21T19:27:16.820+02:00 DEBUG 1780 --- [GalacticTrading ] [main] c.g.GalacticTrading.io.InputProcessor    : Processing line: prok glob glob Diamond is 315000 Credits
+2024-06-21T19:27:16.820+02:00 DEBUG 1780 --- [GalacticTrading ] [main] c.g.GalacticTrading.io.InputProcessor    : Processing line: diag pish Iron is 5005 Credits
+2024-06-21T19:27:16.820+02:00 DEBUG 1780 --- [GalacticTrading ] [main] c.g.GalacticTrading.io.InputProcessor    : Processing line: pish tegj glob glob Gold is 2541 Credits
+2024-06-21T19:27:16.820+02:00 DEBUG 1780 --- [GalacticTrading ] [main] c.g.GalacticTrading.io.InputProcessor    : Processing line: how much is diag pish tegj glob prok ?
+2024-06-21T19:27:16.820+02:00 DEBUG 1780 --- [GalacticTrading ] [main] c.g.GalacticTrading.io.InputProcessor    : Processing line: how many Credits is glob prok Silver ?
+2024-06-21T19:27:16.820+02:00 DEBUG 1780 --- [GalacticTrading ] [main] c.g.GalacticTrading.io.InputProcessor    : Processing line: how many Credits is pish tegj Gold ?
+2024-06-21T19:27:16.820+02:00 DEBUG 1780 --- [GalacticTrading ] [main] c.g.GalacticTrading.io.InputProcessor    : Processing line: how many Credits is diag prok Iron ?
+2024-06-21T19:27:16.820+02:00 DEBUG 1780 --- [GalacticTrading ] [main] c.g.GalacticTrading.io.InputProcessor    : Processing line: how many Credits is glob glob glob Diamond ?
+2024-06-21T19:27:16.821+02:00 DEBUG 1780 --- [GalacticTrading ] [main] c.g.GalacticTrading.io.InputProcessor    : Processing line: how much wood could a woodchuck chuck if a woodchuck could chuck wood?
+2024-06-21T19:27:16.821+02:00 DEBUG 1780 --- [GalacticTrading ] [main] c.g.G.parser.InterGalacticUnitParser     : Parsed intergalactic unit: glob -> I
+2024-06-21T19:27:16.821+02:00 DEBUG 1780 --- [GalacticTrading ] [main] c.g.G.parser.InterGalacticUnitParser     : Parsed intergalactic unit: prok -> V
+2024-06-21T19:27:16.821+02:00 DEBUG 1780 --- [GalacticTrading ] [main] c.g.G.parser.InterGalacticUnitParser     : Parsed intergalactic unit: pish -> X
+2024-06-21T19:27:16.821+02:00 DEBUG 1780 --- [GalacticTrading ] [main] c.g.G.parser.InterGalacticUnitParser     : Parsed intergalactic unit: tegj -> L
+2024-06-21T19:27:16.821+02:00 DEBUG 1780 --- [GalacticTrading ] [main] c.g.G.parser.InterGalacticUnitParser     : Parsed intergalactic unit: diag -> C
+2024-06-21T19:27:16.821+02:00 DEBUG 1780 --- [GalacticTrading ] [main] c.g.G.parser.MetalValueParser            : Parsed metal value: metal name -> Silver
+2024-06-21T19:27:16.821+02:00 DEBUG 1780 --- [GalacticTrading ] [main] c.g.G.parser.MetalValueParser            : Parsed total value: value -> 34
+2024-06-21T19:27:16.821+02:00 DEBUG 1780 --- [GalacticTrading ] [main] c.g.G.parser.MetalValueParser            : Parsed interGalacticUnitString: string -> glob prok
+2024-06-21T19:27:16.821+02:00  WARN 1780 --- [GalacticTrading ] [main] c.g.G.c.MetalAndMultipleCalculator       : Metal Silver already initialized with value 17.0! Skipping...
+2024-06-21T19:27:16.821+02:00 DEBUG 1780 --- [GalacticTrading ] [main] c.g.G.parser.MetalValueParser            : Parsed metal value: metal name -> Diamond
+2024-06-21T19:27:16.821+02:00 DEBUG 1780 --- [GalacticTrading ] [main] c.g.G.parser.MetalValueParser            : Parsed total value: value -> 315000
+2024-06-21T19:27:16.821+02:00 DEBUG 1780 --- [GalacticTrading ] [main] c.g.G.parser.MetalValueParser            : Parsed interGalacticUnitString: string -> prok glob glob
+2024-06-21T19:27:16.822+02:00  WARN 1780 --- [GalacticTrading ] [main] c.g.G.c.MetalAndMultipleCalculator       : Metal Diamond already initialized with value 45000.0! Skipping...
+2024-06-21T19:27:16.822+02:00 DEBUG 1780 --- [GalacticTrading ] [main] c.g.G.parser.MetalValueParser            : Parsed metal value: metal name -> Iron
+2024-06-21T19:27:16.822+02:00 DEBUG 1780 --- [GalacticTrading ] [main] c.g.G.parser.MetalValueParser            : Parsed total value: value -> 5005
+2024-06-21T19:27:16.822+02:00 DEBUG 1780 --- [GalacticTrading ] [main] c.g.G.parser.MetalValueParser            : Parsed interGalacticUnitString: string -> diag pish
+2024-06-21T19:27:16.822+02:00  WARN 1780 --- [GalacticTrading ] [main] c.g.G.c.MetalAndMultipleCalculator       : Metal Iron already initialized with value 195.5! Skipping...
+2024-06-21T19:27:16.822+02:00 DEBUG 1780 --- [GalacticTrading ] [main] c.g.G.parser.MetalValueParser            : Parsed metal value: metal name -> Gold
+2024-06-21T19:27:16.822+02:00 DEBUG 1780 --- [GalacticTrading ] [main] c.g.G.parser.MetalValueParser            : Parsed total value: value -> 2541
+2024-06-21T19:27:16.822+02:00 DEBUG 1780 --- [GalacticTrading ] [main] c.g.G.parser.MetalValueParser            : Parsed interGalacticUnitString: string -> pish tegj glob glob
+2024-06-21T19:27:16.822+02:00  WARN 1780 --- [GalacticTrading ] [main] c.g.G.c.MetalAndMultipleCalculator       : Metal Gold already initialized with value 14450.0! Skipping...
+2024-06-21T19:27:16.822+02:00 DEBUG 1780 --- [GalacticTrading ] [main] c.g.GalacticTrading.parser.QueryParser   : Parsed query: query -> diag pish tegj glob prok
+2024-06-21T19:27:16.822+02:00 DEBUG 1780 --- [GalacticTrading ] [main] c.g.GalacticTrading.io.OutputProcessor   : Saving to buffer and ready for output file...
+2024-06-21T19:27:16.822+02:00 DEBUG 1780 --- [GalacticTrading ] [main] c.g.G.validator.RomanSymbolRules         : Validating Roman Symbol Rules...
+2024-06-21T19:27:16.822+02:00 DEBUG 1780 --- [GalacticTrading ] [main] c.g.GalacticTrading.parser.QueryParser   : Parsed query: query -> glob prok Silver
+2024-06-21T19:27:16.822+02:00 DEBUG 1780 --- [GalacticTrading ] [main] c.g.GalacticTrading.io.OutputProcessor   : Saving to buffer and ready for output file...
+2024-06-21T19:27:16.822+02:00 DEBUG 1780 --- [GalacticTrading ] [main] c.g.G.validator.RomanSymbolRules         : Validating Roman Symbol Rules...
+2024-06-21T19:27:16.822+02:00 DEBUG 1780 --- [GalacticTrading ] [main] c.g.GalacticTrading.parser.QueryParser   : Parsed query: query -> pish tegj Gold
+2024-06-21T19:27:16.822+02:00 DEBUG 1780 --- [GalacticTrading ] [main] c.g.GalacticTrading.io.OutputProcessor   : Saving to buffer and ready for output file...
+2024-06-21T19:27:16.822+02:00 DEBUG 1780 --- [GalacticTrading ] [main] c.g.G.validator.RomanSymbolRules         : Validating Roman Symbol Rules...
+2024-06-21T19:27:16.822+02:00 DEBUG 1780 --- [GalacticTrading ] [main] c.g.GalacticTrading.parser.QueryParser   : Parsed query: query -> diag prok Iron
+2024-06-21T19:27:16.822+02:00 DEBUG 1780 --- [GalacticTrading ] [main] c.g.GalacticTrading.io.OutputProcessor   : Saving to buffer and ready for output file...
+2024-06-21T19:27:16.822+02:00 DEBUG 1780 --- [GalacticTrading ] [main] c.g.G.validator.RomanSymbolRules         : Validating Roman Symbol Rules...
+2024-06-21T19:27:16.823+02:00 DEBUG 1780 --- [GalacticTrading ] [main] c.g.GalacticTrading.parser.QueryParser   : Parsed query: query -> glob glob glob Diamond
+2024-06-21T19:27:16.823+02:00 DEBUG 1780 --- [GalacticTrading ] [main] c.g.GalacticTrading.io.OutputProcessor   : Saving to buffer and ready for output file...
+2024-06-21T19:27:16.823+02:00 DEBUG 1780 --- [GalacticTrading ] [main] c.g.G.validator.RomanSymbolRules         : Validating Roman Symbol Rules...
+2024-06-21T19:27:16.823+02:00 DEBUG 1780 --- [GalacticTrading ] [main] c.g.GalacticTrading.io.OutputProcessor   : Saving to buffer and ready for output file...
+2024-06-21T19:27:16.823+02:00  INFO 1780 --- [GalacticTrading ] [main] c.g.GalacticTrading.io.OutputProcessor   : File already exists.
+2024-06-21T19:27:16.823+02:00  INFO 1780 --- [GalacticTrading ] [main] c.g.GalacticTrading.io.OutputProcessor   : Output written to file: C:\garymar2007\GalacticTrading\src\main\resources\invalid-output.txt
+2024-06-21T19:27:53.643+02:00  INFO 31584 --- [GalacticTrading ] [main] c.g.G.GalacticTradingApplicationTests    : Starting GalacticTradingApplicationTests using Java 17.0.11 with PID 31584 (started by gary.ma in C:\garymar2007\GalacticTrading)
+2024-06-21T19:27:53.644+02:00 DEBUG 31584 --- [GalacticTrading ] [main] c.g.G.GalacticTradingApplicationTests    : Running with Spring Boot v3.3.1, Spring v6.1.10
+2024-06-21T19:27:53.645+02:00  INFO 31584 --- [GalacticTrading ] [main] c.g.G.GalacticTradingApplicationTests    : No active profile set, falling back to 1 default profile: "default"
+2024-06-21T19:27:54.984+02:00  INFO 31584 --- [GalacticTrading ] [main] c.g.G.GalacticTradingApplicationTests    : Started GalacticTradingApplicationTests in 1.696 seconds (process running for 2.872)
+2024-06-21T19:27:55.923+02:00 DEBUG 31584 --- [GalacticTrading ] [main] c.g.G.service.TradingService             : Galactic Trading Process...
+2024-06-21T19:27:55.923+02:00  INFO 31584 --- [GalacticTrading ] [main] c.g.GalacticTrading.io.InputProcessor    : Processing input from file...
+2024-06-21T19:27:55.923+02:00 DEBUG 31584 --- [GalacticTrading ] [main] c.g.GalacticTrading.io.InputProcessor    : Processing line: glob is I
+2024-06-21T19:27:55.927+02:00 DEBUG 31584 --- [GalacticTrading ] [main] c.g.GalacticTrading.io.InputProcessor    : Processing line: prok is V
+2024-06-21T19:27:55.927+02:00 DEBUG 31584 --- [GalacticTrading ] [main] c.g.GalacticTrading.io.InputProcessor    : Processing line: pish is X
+2024-06-21T19:27:55.927+02:00 DEBUG 31584 --- [GalacticTrading ] [main] c.g.GalacticTrading.io.InputProcessor    : Processing line: tegj is L
+2024-06-21T19:27:55.927+02:00 DEBUG 31584 --- [GalacticTrading ] [main] c.g.GalacticTrading.io.InputProcessor    : Processing line: glob glob Silver is 34 Credits
+2024-06-21T19:27:55.927+02:00 DEBUG 31584 --- [GalacticTrading ] [main] c.g.GalacticTrading.io.InputProcessor    : Processing line: glob prok Gold is 57800 Credits
+2024-06-21T19:27:55.928+02:00 DEBUG 31584 --- [GalacticTrading ] [main] c.g.GalacticTrading.io.InputProcessor    : Processing line: pish pish Iron is 3910 Credits
+2024-06-21T19:27:55.928+02:00 DEBUG 31584 --- [GalacticTrading ] [main] c.g.GalacticTrading.io.InputProcessor    : Processing line: how much is pish tegj glob glob ?
+2024-06-21T19:27:55.928+02:00 DEBUG 31584 --- [GalacticTrading ] [main] c.g.GalacticTrading.io.InputProcessor    : Processing line: how many Credits is glob prok Silver ?
+2024-06-21T19:27:55.928+02:00 DEBUG 31584 --- [GalacticTrading ] [main] c.g.GalacticTrading.io.InputProcessor    : Processing line: how many Credits is glob prok Gold ?
+2024-06-21T19:27:55.929+02:00 DEBUG 31584 --- [GalacticTrading ] [main] c.g.GalacticTrading.io.InputProcessor    : Processing line: how many Credits is glob prok Iron ?
+2024-06-21T19:27:55.929+02:00 DEBUG 31584 --- [GalacticTrading ] [main] c.g.GalacticTrading.io.InputProcessor    : Processing line: how much wood could a woodchuck chuck if a woodchuck could chuck wood?
+2024-06-21T19:27:55.930+02:00 DEBUG 31584 --- [GalacticTrading ] [main] c.g.G.parser.InterGalacticUnitParser     : Parsed intergalactic unit: glob -> I
+2024-06-21T19:27:55.930+02:00 DEBUG 31584 --- [GalacticTrading ] [main] c.g.G.parser.InterGalacticUnitParser     : Parsed intergalactic unit: prok -> V
+2024-06-21T19:27:55.930+02:00 DEBUG 31584 --- [GalacticTrading ] [main] c.g.G.parser.InterGalacticUnitParser     : Parsed intergalactic unit: pish -> X
+2024-06-21T19:27:55.930+02:00 DEBUG 31584 --- [GalacticTrading ] [main] c.g.G.parser.InterGalacticUnitParser     : Parsed intergalactic unit: tegj -> L
+2024-06-21T19:27:55.931+02:00 DEBUG 31584 --- [GalacticTrading ] [main] c.g.G.parser.MetalValueParser            : Parsed metal value: metal name -> Silver
+2024-06-21T19:27:55.932+02:00 DEBUG 31584 --- [GalacticTrading ] [main] c.g.G.parser.MetalValueParser            : Parsed total value: value -> 34
+2024-06-21T19:27:55.933+02:00 DEBUG 31584 --- [GalacticTrading ] [main] c.g.G.parser.MetalValueParser            : Parsed interGalacticUnitString: string -> glob glob
+2024-06-21T19:27:55.933+02:00 DEBUG 31584 --- [GalacticTrading ] [main] c.g.G.validator.RomanSymbolRules         : Validating Roman Symbol Rules...
+2024-06-21T19:27:55.933+02:00 DEBUG 31584 --- [GalacticTrading ] [main] c.g.G.parser.MetalValueParser            : Parsed metal value: metal name -> Gold
+2024-06-21T19:27:55.933+02:00 DEBUG 31584 --- [GalacticTrading ] [main] c.g.G.parser.MetalValueParser            : Parsed total value: value -> 57800
+2024-06-21T19:27:55.933+02:00 DEBUG 31584 --- [GalacticTrading ] [main] c.g.G.parser.MetalValueParser            : Parsed interGalacticUnitString: string -> glob prok
+2024-06-21T19:27:55.933+02:00 DEBUG 31584 --- [GalacticTrading ] [main] c.g.G.validator.RomanSymbolRules         : Validating Roman Symbol Rules...
+2024-06-21T19:27:55.934+02:00 DEBUG 31584 --- [GalacticTrading ] [main] c.g.G.parser.MetalValueParser            : Parsed metal value: metal name -> Iron
+2024-06-21T19:27:55.934+02:00 DEBUG 31584 --- [GalacticTrading ] [main] c.g.G.parser.MetalValueParser            : Parsed total value: value -> 3910
+2024-06-21T19:27:55.934+02:00 DEBUG 31584 --- [GalacticTrading ] [main] c.g.G.parser.MetalValueParser            : Parsed interGalacticUnitString: string -> pish pish
+2024-06-21T19:27:55.934+02:00 DEBUG 31584 --- [GalacticTrading ] [main] c.g.G.validator.RomanSymbolRules         : Validating Roman Symbol Rules...
+2024-06-21T19:27:55.935+02:00 DEBUG 31584 --- [GalacticTrading ] [main] c.g.GalacticTrading.parser.QueryParser   : Parsed query: query -> pish tegj glob glob
+2024-06-21T19:27:55.935+02:00 DEBUG 31584 --- [GalacticTrading ] [main] c.g.GalacticTrading.io.OutputProcessor   : Saving to buffer and ready for output file...
+2024-06-21T19:27:55.935+02:00 DEBUG 31584 --- [GalacticTrading ] [main] c.g.G.validator.RomanSymbolRules         : Validating Roman Symbol Rules...
+2024-06-21T19:27:55.936+02:00 DEBUG 31584 --- [GalacticTrading ] [main] c.g.GalacticTrading.parser.QueryParser   : Parsed query: query -> glob prok Silver
+2024-06-21T19:27:55.936+02:00 DEBUG 31584 --- [GalacticTrading ] [main] c.g.GalacticTrading.io.OutputProcessor   : Saving to buffer and ready for output file...
+2024-06-21T19:27:55.936+02:00 DEBUG 31584 --- [GalacticTrading ] [main] c.g.G.validator.RomanSymbolRules         : Validating Roman Symbol Rules...
+2024-06-21T19:27:55.936+02:00 DEBUG 31584 --- [GalacticTrading ] [main] c.g.GalacticTrading.parser.QueryParser   : Parsed query: query -> glob prok Gold
+2024-06-21T19:27:55.936+02:00 DEBUG 31584 --- [GalacticTrading ] [main] c.g.GalacticTrading.io.OutputProcessor   : Saving to buffer and ready for output file...
+2024-06-21T19:27:55.936+02:00 DEBUG 31584 --- [GalacticTrading ] [main] c.g.G.validator.RomanSymbolRules         : Validating Roman Symbol Rules...
+2024-06-21T19:27:55.937+02:00 DEBUG 31584 --- [GalacticTrading ] [main] c.g.GalacticTrading.parser.QueryParser   : Parsed query: query -> glob prok Iron
+2024-06-21T19:27:55.937+02:00 DEBUG 31584 --- [GalacticTrading ] [main] c.g.GalacticTrading.io.OutputProcessor   : Saving to buffer and ready for output file...
+2024-06-21T19:27:55.937+02:00 DEBUG 31584 --- [GalacticTrading ] [main] c.g.G.validator.RomanSymbolRules         : Validating Roman Symbol Rules...
+2024-06-21T19:27:55.937+02:00 DEBUG 31584 --- [GalacticTrading ] [main] c.g.GalacticTrading.io.OutputProcessor   : Saving to buffer and ready for output file...
+2024-06-21T19:27:55.938+02:00  INFO 31584 --- [GalacticTrading ] [main] c.g.GalacticTrading.io.OutputProcessor   : File created: output.txt
+2024-06-21T19:27:55.939+02:00  INFO 31584 --- [GalacticTrading ] [main] c.g.GalacticTrading.io.OutputProcessor   : Output written to file: C:\garymar2007\GalacticTrading\src\main\resources\output.txt
+2024-06-21T19:27:55.960+02:00 DEBUG 31584 --- [GalacticTrading ] [main] c.g.G.service.TradingService             : Galactic Trading Process...
+2024-06-21T19:27:55.960+02:00  INFO 31584 --- [GalacticTrading ] [main] c.g.GalacticTrading.io.InputProcessor    : Processing input from file...
+2024-06-21T19:27:55.960+02:00 DEBUG 31584 --- [GalacticTrading ] [main] c.g.GalacticTrading.io.InputProcessor    : Processing line: glob is I
+2024-06-21T19:27:55.960+02:00 DEBUG 31584 --- [GalacticTrading ] [main] c.g.GalacticTrading.io.InputProcessor    : Processing line: prok is V
+2024-06-21T19:27:55.961+02:00 DEBUG 31584 --- [GalacticTrading ] [main] c.g.GalacticTrading.io.InputProcessor    : Processing line: pish is X
+2024-06-21T19:27:55.961+02:00 DEBUG 31584 --- [GalacticTrading ] [main] c.g.GalacticTrading.io.InputProcessor    : Processing line: tegj is L
+2024-06-21T19:27:55.961+02:00 DEBUG 31584 --- [GalacticTrading ] [main] c.g.GalacticTrading.io.InputProcessor    : Processing line: diag is C
+2024-06-21T19:27:55.961+02:00 DEBUG 31584 --- [GalacticTrading ] [main] c.g.GalacticTrading.io.InputProcessor    : Processing line: glob prok Silver is 34 Credits
+2024-06-21T19:27:55.961+02:00 DEBUG 31584 --- [GalacticTrading ] [main] c.g.GalacticTrading.io.InputProcessor    : Processing line: prok glob glob Diamond is 315000 Credits
+2024-06-21T19:27:55.961+02:00 DEBUG 31584 --- [GalacticTrading ] [main] c.g.GalacticTrading.io.InputProcessor    : Processing line: diag pish Iron is 5005 Credits
+2024-06-21T19:27:55.961+02:00 DEBUG 31584 --- [GalacticTrading ] [main] c.g.GalacticTrading.io.InputProcessor    : Processing line: pish tegj glob glob Gold is 2541 Credits
+2024-06-21T19:27:55.961+02:00 DEBUG 31584 --- [GalacticTrading ] [main] c.g.GalacticTrading.io.InputProcessor    : Processing line: how much is diag pish tegj glob prok ?
+2024-06-21T19:27:55.961+02:00 DEBUG 31584 --- [GalacticTrading ] [main] c.g.GalacticTrading.io.InputProcessor    : Processing line: how many Credits is glob prok Silver ?
+2024-06-21T19:27:55.961+02:00 DEBUG 31584 --- [GalacticTrading ] [main] c.g.GalacticTrading.io.InputProcessor    : Processing line: how many Credits is pish tegj Gold ?
+2024-06-21T19:27:55.962+02:00 DEBUG 31584 --- [GalacticTrading ] [main] c.g.GalacticTrading.io.InputProcessor    : Processing line: how many Credits is diag prok Iron ?
+2024-06-21T19:27:55.962+02:00 DEBUG 31584 --- [GalacticTrading ] [main] c.g.GalacticTrading.io.InputProcessor    : Processing line: how many Credits is glob glob glob Diamond ?
+2024-06-21T19:27:55.962+02:00 DEBUG 31584 --- [GalacticTrading ] [main] c.g.GalacticTrading.io.InputProcessor    : Processing line: how much wood could a woodchuck chuck if a woodchuck could chuck wood?
+2024-06-21T19:27:55.962+02:00 DEBUG 31584 --- [GalacticTrading ] [main] c.g.G.parser.InterGalacticUnitParser     : Parsed intergalactic unit: glob -> I
+2024-06-21T19:27:55.962+02:00 DEBUG 31584 --- [GalacticTrading ] [main] c.g.G.parser.InterGalacticUnitParser     : Parsed intergalactic unit: prok -> V
+2024-06-21T19:27:55.962+02:00 DEBUG 31584 --- [GalacticTrading ] [main] c.g.G.parser.InterGalacticUnitParser     : Parsed intergalactic unit: pish -> X
+2024-06-21T19:27:55.962+02:00 DEBUG 31584 --- [GalacticTrading ] [main] c.g.G.parser.InterGalacticUnitParser     : Parsed intergalactic unit: tegj -> L
+2024-06-21T19:27:55.962+02:00 DEBUG 31584 --- [GalacticTrading ] [main] c.g.G.parser.InterGalacticUnitParser     : Parsed intergalactic unit: diag -> C
+2024-06-21T19:27:55.962+02:00 DEBUG 31584 --- [GalacticTrading ] [main] c.g.G.parser.MetalValueParser            : Parsed metal value: metal name -> Silver
+2024-06-21T19:27:55.963+02:00 DEBUG 31584 --- [GalacticTrading ] [main] c.g.G.parser.MetalValueParser            : Parsed total value: value -> 34
+2024-06-21T19:27:55.963+02:00 DEBUG 31584 --- [GalacticTrading ] [main] c.g.G.parser.MetalValueParser            : Parsed interGalacticUnitString: string -> glob prok
+2024-06-21T19:27:55.963+02:00  WARN 31584 --- [GalacticTrading ] [main] c.g.G.c.MetalAndMultipleCalculator       : Metal Silver already initialized with value 17.0! Skipping...
+2024-06-21T19:27:55.963+02:00 DEBUG 31584 --- [GalacticTrading ] [main] c.g.G.parser.MetalValueParser            : Parsed metal value: metal name -> Diamond
+2024-06-21T19:27:55.963+02:00 DEBUG 31584 --- [GalacticTrading ] [main] c.g.G.parser.MetalValueParser            : Parsed total value: value -> 315000
+2024-06-21T19:27:55.963+02:00 DEBUG 31584 --- [GalacticTrading ] [main] c.g.G.parser.MetalValueParser            : Parsed interGalacticUnitString: string -> prok glob glob
+2024-06-21T19:27:55.963+02:00 DEBUG 31584 --- [GalacticTrading ] [main] c.g.G.validator.RomanSymbolRules         : Validating Roman Symbol Rules...
+2024-06-21T19:27:55.963+02:00 DEBUG 31584 --- [GalacticTrading ] [main] c.g.G.parser.MetalValueParser            : Parsed metal value: metal name -> Iron
+2024-06-21T19:27:55.963+02:00 DEBUG 31584 --- [GalacticTrading ] [main] c.g.G.parser.MetalValueParser            : Parsed total value: value -> 5005
+2024-06-21T19:27:55.963+02:00 DEBUG 31584 --- [GalacticTrading ] [main] c.g.G.parser.MetalValueParser            : Parsed interGalacticUnitString: string -> diag pish
+2024-06-21T19:27:55.963+02:00  WARN 31584 --- [GalacticTrading ] [main] c.g.G.c.MetalAndMultipleCalculator       : Metal Iron already initialized with value 195.5! Skipping...
+2024-06-21T19:27:55.963+02:00 DEBUG 31584 --- [GalacticTrading ] [main] c.g.G.parser.MetalValueParser            : Parsed metal value: metal name -> Gold
+2024-06-21T19:27:55.964+02:00 DEBUG 31584 --- [GalacticTrading ] [main] c.g.G.parser.MetalValueParser            : Parsed total value: value -> 2541
+2024-06-21T19:27:55.964+02:00 DEBUG 31584 --- [GalacticTrading ] [main] c.g.G.parser.MetalValueParser            : Parsed interGalacticUnitString: string -> pish tegj glob glob
+2024-06-21T19:27:55.964+02:00  WARN 31584 --- [GalacticTrading ] [main] c.g.G.c.MetalAndMultipleCalculator       : Metal Gold already initialized with value 14450.0! Skipping...
+2024-06-21T19:27:55.964+02:00 DEBUG 31584 --- [GalacticTrading ] [main] c.g.GalacticTrading.parser.QueryParser   : Parsed query: query -> diag pish tegj glob prok
+2024-06-21T19:27:55.964+02:00 DEBUG 31584 --- [GalacticTrading ] [main] c.g.GalacticTrading.io.OutputProcessor   : Saving to buffer and ready for output file...
+2024-06-21T19:27:55.964+02:00 DEBUG 31584 --- [GalacticTrading ] [main] c.g.G.validator.RomanSymbolRules         : Validating Roman Symbol Rules...
+2024-06-21T19:27:55.964+02:00 DEBUG 31584 --- [GalacticTrading ] [main] c.g.GalacticTrading.parser.QueryParser   : Parsed query: query -> glob prok Silver
+2024-06-21T19:27:55.964+02:00 DEBUG 31584 --- [GalacticTrading ] [main] c.g.GalacticTrading.io.OutputProcessor   : Saving to buffer and ready for output file...
+2024-06-21T19:27:55.964+02:00 DEBUG 31584 --- [GalacticTrading ] [main] c.g.G.validator.RomanSymbolRules         : Validating Roman Symbol Rules...
+2024-06-21T19:27:55.964+02:00 DEBUG 31584 --- [GalacticTrading ] [main] c.g.GalacticTrading.parser.QueryParser   : Parsed query: query -> pish tegj Gold
+2024-06-21T19:27:55.964+02:00 DEBUG 31584 --- [GalacticTrading ] [main] c.g.GalacticTrading.io.OutputProcessor   : Saving to buffer and ready for output file...
+2024-06-21T19:27:55.964+02:00 DEBUG 31584 --- [GalacticTrading ] [main] c.g.G.validator.RomanSymbolRules         : Validating Roman Symbol Rules...
+2024-06-21T19:27:55.965+02:00 DEBUG 31584 --- [GalacticTrading ] [main] c.g.GalacticTrading.parser.QueryParser   : Parsed query: query -> diag prok Iron
+2024-06-21T19:27:55.965+02:00 DEBUG 31584 --- [GalacticTrading ] [main] c.g.GalacticTrading.io.OutputProcessor   : Saving to buffer and ready for output file...
+2024-06-21T19:27:55.965+02:00 DEBUG 31584 --- [GalacticTrading ] [main] c.g.G.validator.RomanSymbolRules         : Validating Roman Symbol Rules...
+2024-06-21T19:27:55.965+02:00 DEBUG 31584 --- [GalacticTrading ] [main] c.g.GalacticTrading.parser.QueryParser   : Parsed query: query -> glob glob glob Diamond
+2024-06-21T19:27:55.965+02:00 DEBUG 31584 --- [GalacticTrading ] [main] c.g.GalacticTrading.io.OutputProcessor   : Saving to buffer and ready for output file...
+2024-06-21T19:27:55.965+02:00 DEBUG 31584 --- [GalacticTrading ] [main] c.g.G.validator.RomanSymbolRules         : Validating Roman Symbol Rules...
+2024-06-21T19:27:55.965+02:00 DEBUG 31584 --- [GalacticTrading ] [main] c.g.GalacticTrading.io.OutputProcessor   : Saving to buffer and ready for output file...
+2024-06-21T19:27:55.966+02:00  INFO 31584 --- [GalacticTrading ] [main] c.g.GalacticTrading.io.OutputProcessor   : File created: output2.txt
+2024-06-21T19:27:55.966+02:00  INFO 31584 --- [GalacticTrading ] [main] c.g.GalacticTrading.io.OutputProcessor   : Output written to file: C:\garymar2007\GalacticTrading\src\main\resources\output2.txt
+2024-06-21T19:27:55.970+02:00 DEBUG 31584 --- [GalacticTrading ] [main] c.g.G.service.TradingService             : Galactic Trading Process...
+2024-06-21T19:27:55.970+02:00  INFO 31584 --- [GalacticTrading ] [main] c.g.GalacticTrading.io.InputProcessor    : Processing input from file...
+2024-06-21T19:27:55.971+02:00 DEBUG 31584 --- [GalacticTrading ] [main] c.g.GalacticTrading.io.InputProcessor    : Processing line: glob is I
+2024-06-21T19:27:55.971+02:00 DEBUG 31584 --- [GalacticTrading ] [main] c.g.GalacticTrading.io.InputProcessor    : Processing line: prok is V
+2024-06-21T19:27:55.971+02:00 DEBUG 31584 --- [GalacticTrading ] [main] c.g.GalacticTrading.io.InputProcessor    : Processing line: pish is X
+2024-06-21T19:27:55.971+02:00 DEBUG 31584 --- [GalacticTrading ] [main] c.g.GalacticTrading.io.InputProcessor    : Processing line: tegj is L
+2024-06-21T19:27:55.971+02:00 DEBUG 31584 --- [GalacticTrading ] [main] c.g.GalacticTrading.io.InputProcessor    : Processing line: diag is C
+2024-06-21T19:27:55.971+02:00 DEBUG 31584 --- [GalacticTrading ] [main] c.g.GalacticTrading.io.InputProcessor    : Processing line: glob prok Silver is 34 Credits
+2024-06-21T19:27:55.971+02:00 DEBUG 31584 --- [GalacticTrading ] [main] c.g.GalacticTrading.io.InputProcessor    : Processing line: prok glob glob Diamond is 315000 Credits
+2024-06-21T19:27:55.971+02:00 DEBUG 31584 --- [GalacticTrading ] [main] c.g.GalacticTrading.io.InputProcessor    : Processing line: diag pish Iron is 5005 Credits
+2024-06-21T19:27:55.971+02:00 DEBUG 31584 --- [GalacticTrading ] [main] c.g.GalacticTrading.io.InputProcessor    : Processing line: pish tegj glob glob Gold is 2541 Credits
+2024-06-21T19:27:55.971+02:00 DEBUG 31584 --- [GalacticTrading ] [main] c.g.GalacticTrading.io.InputProcessor    : Processing line: how much is diag pish tegj glob prok ?
+2024-06-21T19:27:55.971+02:00 DEBUG 31584 --- [GalacticTrading ] [main] c.g.GalacticTrading.io.InputProcessor    : Processing line: how many Credits is glob prok Silver ?
+2024-06-21T19:27:55.972+02:00 DEBUG 31584 --- [GalacticTrading ] [main] c.g.GalacticTrading.io.InputProcessor    : Processing line: how many Credits is pish tegj Gold ?
+2024-06-21T19:27:55.972+02:00 DEBUG 31584 --- [GalacticTrading ] [main] c.g.GalacticTrading.io.InputProcessor    : Processing line: how many Credits is diag prok Iron ?
+2024-06-21T19:27:55.972+02:00 DEBUG 31584 --- [GalacticTrading ] [main] c.g.GalacticTrading.io.InputProcessor    : Processing line: how many Credits is glob glob glob Diamond ?
+2024-06-21T19:27:55.972+02:00 DEBUG 31584 --- [GalacticTrading ] [main] c.g.GalacticTrading.io.InputProcessor    : Processing line: how much wood could a woodchuck chuck if a woodchuck could chuck wood?
+2024-06-21T19:27:55.972+02:00 DEBUG 31584 --- [GalacticTrading ] [main] c.g.G.parser.InterGalacticUnitParser     : Parsed intergalactic unit: glob -> I
+2024-06-21T19:27:55.972+02:00 DEBUG 31584 --- [GalacticTrading ] [main] c.g.G.parser.InterGalacticUnitParser     : Parsed intergalactic unit: prok -> V
+2024-06-21T19:27:55.972+02:00 DEBUG 31584 --- [GalacticTrading ] [main] c.g.G.parser.InterGalacticUnitParser     : Parsed intergalactic unit: pish -> X
+2024-06-21T19:27:55.972+02:00 DEBUG 31584 --- [GalacticTrading ] [main] c.g.G.parser.InterGalacticUnitParser     : Parsed intergalactic unit: tegj -> L
+2024-06-21T19:27:55.972+02:00 DEBUG 31584 --- [GalacticTrading ] [main] c.g.G.parser.InterGalacticUnitParser     : Parsed intergalactic unit: diag -> C
+2024-06-21T19:27:55.972+02:00 DEBUG 31584 --- [GalacticTrading ] [main] c.g.G.parser.MetalValueParser            : Parsed metal value: metal name -> Silver
+2024-06-21T19:27:55.972+02:00 DEBUG 31584 --- [GalacticTrading ] [main] c.g.G.parser.MetalValueParser            : Parsed total value: value -> 34
+2024-06-21T19:27:55.973+02:00 DEBUG 31584 --- [GalacticTrading ] [main] c.g.G.parser.MetalValueParser            : Parsed interGalacticUnitString: string -> glob prok
+2024-06-21T19:27:55.973+02:00  WARN 31584 --- [GalacticTrading ] [main] c.g.G.c.MetalAndMultipleCalculator       : Metal Silver already initialized with value 17.0! Skipping...
+2024-06-21T19:27:55.973+02:00 DEBUG 31584 --- [GalacticTrading ] [main] c.g.G.parser.MetalValueParser            : Parsed metal value: metal name -> Diamond
+2024-06-21T19:27:55.973+02:00 DEBUG 31584 --- [GalacticTrading ] [main] c.g.G.parser.MetalValueParser            : Parsed total value: value -> 315000
+2024-06-21T19:27:55.973+02:00 DEBUG 31584 --- [GalacticTrading ] [main] c.g.G.parser.MetalValueParser            : Parsed interGalacticUnitString: string -> prok glob glob
+2024-06-21T19:27:55.973+02:00  WARN 31584 --- [GalacticTrading ] [main] c.g.G.c.MetalAndMultipleCalculator       : Metal Diamond already initialized with value 45000.0! Skipping...
+2024-06-21T19:27:55.973+02:00 DEBUG 31584 --- [GalacticTrading ] [main] c.g.G.parser.MetalValueParser            : Parsed metal value: metal name -> Iron
+2024-06-21T19:27:55.973+02:00 DEBUG 31584 --- [GalacticTrading ] [main] c.g.G.parser.MetalValueParser            : Parsed total value: value -> 5005
+2024-06-21T19:27:55.973+02:00 DEBUG 31584 --- [GalacticTrading ] [main] c.g.G.parser.MetalValueParser            : Parsed interGalacticUnitString: string -> diag pish
+2024-06-21T19:27:55.973+02:00  WARN 31584 --- [GalacticTrading ] [main] c.g.G.c.MetalAndMultipleCalculator       : Metal Iron already initialized with value 195.5! Skipping...
+2024-06-21T19:27:55.973+02:00 DEBUG 31584 --- [GalacticTrading ] [main] c.g.G.parser.MetalValueParser            : Parsed metal value: metal name -> Gold
+2024-06-21T19:27:55.973+02:00 DEBUG 31584 --- [GalacticTrading ] [main] c.g.G.parser.MetalValueParser            : Parsed total value: value -> 2541
+2024-06-21T19:27:55.973+02:00 DEBUG 31584 --- [GalacticTrading ] [main] c.g.G.parser.MetalValueParser            : Parsed interGalacticUnitString: string -> pish tegj glob glob
+2024-06-21T19:27:55.973+02:00  WARN 31584 --- [GalacticTrading ] [main] c.g.G.c.MetalAndMultipleCalculator       : Metal Gold already initialized with value 14450.0! Skipping...
+2024-06-21T19:27:55.973+02:00 DEBUG 31584 --- [GalacticTrading ] [main] c.g.GalacticTrading.parser.QueryParser   : Parsed query: query -> diag pish tegj glob prok
+2024-06-21T19:27:55.973+02:00 DEBUG 31584 --- [GalacticTrading ] [main] c.g.GalacticTrading.io.OutputProcessor   : Saving to buffer and ready for output file...
+2024-06-21T19:27:55.973+02:00 DEBUG 31584 --- [GalacticTrading ] [main] c.g.G.validator.RomanSymbolRules         : Validating Roman Symbol Rules...
+2024-06-21T19:27:55.974+02:00 DEBUG 31584 --- [GalacticTrading ] [main] c.g.GalacticTrading.parser.QueryParser   : Parsed query: query -> glob prok Silver
+2024-06-21T19:27:55.974+02:00 DEBUG 31584 --- [GalacticTrading ] [main] c.g.GalacticTrading.io.OutputProcessor   : Saving to buffer and ready for output file...
+2024-06-21T19:27:55.974+02:00 DEBUG 31584 --- [GalacticTrading ] [main] c.g.G.validator.RomanSymbolRules         : Validating Roman Symbol Rules...
+2024-06-21T19:27:55.974+02:00 DEBUG 31584 --- [GalacticTrading ] [main] c.g.GalacticTrading.parser.QueryParser   : Parsed query: query -> pish tegj Gold
+2024-06-21T19:27:55.974+02:00 DEBUG 31584 --- [GalacticTrading ] [main] c.g.GalacticTrading.io.OutputProcessor   : Saving to buffer and ready for output file...
+2024-06-21T19:27:55.974+02:00 DEBUG 31584 --- [GalacticTrading ] [main] c.g.G.validator.RomanSymbolRules         : Validating Roman Symbol Rules...
+2024-06-21T19:27:55.974+02:00 DEBUG 31584 --- [GalacticTrading ] [main] c.g.GalacticTrading.parser.QueryParser   : Parsed query: query -> diag prok Iron
+2024-06-21T19:27:55.974+02:00 DEBUG 31584 --- [GalacticTrading ] [main] c.g.GalacticTrading.io.OutputProcessor   : Saving to buffer and ready for output file...
+2024-06-21T19:27:55.974+02:00 DEBUG 31584 --- [GalacticTrading ] [main] c.g.G.validator.RomanSymbolRules         : Validating Roman Symbol Rules...
+2024-06-21T19:27:55.975+02:00 DEBUG 31584 --- [GalacticTrading ] [main] c.g.GalacticTrading.parser.QueryParser   : Parsed query: query -> glob glob glob Diamond
+2024-06-21T19:27:55.975+02:00 DEBUG 31584 --- [GalacticTrading ] [main] c.g.GalacticTrading.io.OutputProcessor   : Saving to buffer and ready for output file...
+2024-06-21T19:27:55.975+02:00 DEBUG 31584 --- [GalacticTrading ] [main] c.g.G.validator.RomanSymbolRules         : Validating Roman Symbol Rules...
+2024-06-21T19:27:55.975+02:00 DEBUG 31584 --- [GalacticTrading ] [main] c.g.GalacticTrading.io.OutputProcessor   : Saving to buffer and ready for output file...
+2024-06-21T19:27:55.976+02:00  INFO 31584 --- [GalacticTrading ] [main] c.g.GalacticTrading.io.OutputProcessor   : File created: invalid-output.txt
+2024-06-21T19:27:55.976+02:00  INFO 31584 --- [GalacticTrading ] [main] c.g.GalacticTrading.io.OutputProcessor   : Output written to file: C:\garymar2007\GalacticTrading\src\main\resources\invalid-output.txt
+2024-06-21T19:32:23.780+02:00  INFO 55052 --- [GalacticTrading ] [main] c.g.G.GalacticTradingApplicationTests    : Starting GalacticTradingApplicationTests using Java 17.0.11 with PID 55052 (started by gary.ma in C:\garymar2007\GalacticTrading)
+2024-06-21T19:32:23.781+02:00 DEBUG 55052 --- [GalacticTrading ] [main] c.g.G.GalacticTradingApplicationTests    : Running with Spring Boot v3.3.1, Spring v6.1.10
+2024-06-21T19:32:23.782+02:00  INFO 55052 --- [GalacticTrading ] [main] c.g.G.GalacticTradingApplicationTests    : No active profile set, falling back to 1 default profile: "default"
+2024-06-21T19:32:25.065+02:00  INFO 55052 --- [GalacticTrading ] [main] c.g.G.GalacticTradingApplicationTests    : Started GalacticTradingApplicationTests in 1.677 seconds (process running for 2.844)
+2024-06-21T19:32:25.993+02:00 DEBUG 55052 --- [GalacticTrading ] [main] c.g.G.service.TradingService             : Galactic Trading Process...
+2024-06-21T19:32:25.994+02:00  INFO 55052 --- [GalacticTrading ] [main] c.g.GalacticTrading.io.InputProcessor    : Processing input from file...
+2024-06-21T19:32:26.003+02:00 DEBUG 55052 --- [GalacticTrading ] [main] c.g.GalacticTrading.io.InputProcessor    : Processing line: glob is I
+2024-06-21T19:32:26.005+02:00 DEBUG 55052 --- [GalacticTrading ] [main] c.g.GalacticTrading.io.InputProcessor    : Processing line: prok is V
+2024-06-21T19:32:26.005+02:00 DEBUG 55052 --- [GalacticTrading ] [main] c.g.GalacticTrading.io.InputProcessor    : Processing line: pish is X
+2024-06-21T19:32:26.005+02:00 DEBUG 55052 --- [GalacticTrading ] [main] c.g.GalacticTrading.io.InputProcessor    : Processing line: tegj is L
+2024-06-21T19:32:26.006+02:00 DEBUG 55052 --- [GalacticTrading ] [main] c.g.GalacticTrading.io.InputProcessor    : Processing line: diag is C
+2024-06-21T19:32:26.006+02:00 DEBUG 55052 --- [GalacticTrading ] [main] c.g.GalacticTrading.io.InputProcessor    : Processing line: glob prok Silver is 34 Credits
+2024-06-21T19:32:26.006+02:00 DEBUG 55052 --- [GalacticTrading ] [main] c.g.GalacticTrading.io.InputProcessor    : Processing line: prok glob glob Diamond is 315000 Credits
+2024-06-21T19:32:26.006+02:00 DEBUG 55052 --- [GalacticTrading ] [main] c.g.GalacticTrading.io.InputProcessor    : Processing line: diag pish Iron is 5005 Credits
+2024-06-21T19:32:26.007+02:00 DEBUG 55052 --- [GalacticTrading ] [main] c.g.GalacticTrading.io.InputProcessor    : Processing line: pish tegj glob glob Gold is 2541 Credits
+2024-06-21T19:32:26.007+02:00 DEBUG 55052 --- [GalacticTrading ] [main] c.g.GalacticTrading.io.InputProcessor    : Processing line: how much is diag pish tegj glob prok ?
+2024-06-21T19:32:26.007+02:00 DEBUG 55052 --- [GalacticTrading ] [main] c.g.GalacticTrading.io.InputProcessor    : Processing line: how many Credits is glob prok Silver ?
+2024-06-21T19:32:26.008+02:00 DEBUG 55052 --- [GalacticTrading ] [main] c.g.GalacticTrading.io.InputProcessor    : Processing line: how many Credits is pish tegj Gold ?
+2024-06-21T19:32:26.008+02:00 DEBUG 55052 --- [GalacticTrading ] [main] c.g.GalacticTrading.io.InputProcessor    : Processing line: how many Credits is diag prok Iron ?
+2024-06-21T19:32:26.008+02:00 DEBUG 55052 --- [GalacticTrading ] [main] c.g.GalacticTrading.io.InputProcessor    : Processing line: how many Credits is glob glob glob Diamond ?
+2024-06-21T19:32:26.010+02:00 DEBUG 55052 --- [GalacticTrading ] [main] c.g.GalacticTrading.io.InputProcessor    : Processing line: how much wood could a woodchuck chuck if a woodchuck could chuck wood?
+2024-06-21T19:32:26.010+02:00 DEBUG 55052 --- [GalacticTrading ] [main] c.g.G.parser.InterGalacticUnitParser     : Parsed intergalactic unit: glob -> I
+2024-06-21T19:32:26.011+02:00 DEBUG 55052 --- [GalacticTrading ] [main] c.g.G.parser.InterGalacticUnitParser     : Parsed intergalactic unit: prok -> V
+2024-06-21T19:32:26.011+02:00 DEBUG 55052 --- [GalacticTrading ] [main] c.g.G.parser.InterGalacticUnitParser     : Parsed intergalactic unit: pish -> X
+2024-06-21T19:32:26.011+02:00 DEBUG 55052 --- [GalacticTrading ] [main] c.g.G.parser.InterGalacticUnitParser     : Parsed intergalactic unit: tegj -> L
+2024-06-21T19:32:26.011+02:00 DEBUG 55052 --- [GalacticTrading ] [main] c.g.G.parser.InterGalacticUnitParser     : Parsed intergalactic unit: diag -> C
+2024-06-21T19:32:26.012+02:00 DEBUG 55052 --- [GalacticTrading ] [main] c.g.G.parser.MetalValueParser            : Parsed metal value: metal name -> Silver
+2024-06-21T19:32:26.013+02:00 DEBUG 55052 --- [GalacticTrading ] [main] c.g.G.parser.MetalValueParser            : Parsed total value: value -> 34
+2024-06-21T19:32:26.014+02:00 DEBUG 55052 --- [GalacticTrading ] [main] c.g.G.parser.MetalValueParser            : Parsed interGalacticUnitString: string -> glob prok
+2024-06-21T19:32:26.014+02:00 DEBUG 55052 --- [GalacticTrading ] [main] c.g.G.validator.RomanSymbolRules         : Validating Roman Symbol Rules...
+2024-06-21T19:32:26.014+02:00 DEBUG 55052 --- [GalacticTrading ] [main] c.g.G.parser.MetalValueParser            : Parsed metal value: metal name -> Diamond
+2024-06-21T19:32:26.014+02:00 DEBUG 55052 --- [GalacticTrading ] [main] c.g.G.parser.MetalValueParser            : Parsed total value: value -> 315000
+2024-06-21T19:32:26.014+02:00 DEBUG 55052 --- [GalacticTrading ] [main] c.g.G.parser.MetalValueParser            : Parsed interGalacticUnitString: string -> prok glob glob
+2024-06-21T19:32:26.014+02:00 DEBUG 55052 --- [GalacticTrading ] [main] c.g.G.validator.RomanSymbolRules         : Validating Roman Symbol Rules...
+2024-06-21T19:32:26.014+02:00 DEBUG 55052 --- [GalacticTrading ] [main] c.g.G.parser.MetalValueParser            : Parsed metal value: metal name -> Iron
+2024-06-21T19:32:26.014+02:00 DEBUG 55052 --- [GalacticTrading ] [main] c.g.G.parser.MetalValueParser            : Parsed total value: value -> 5005
+2024-06-21T19:32:26.015+02:00 DEBUG 55052 --- [GalacticTrading ] [main] c.g.G.parser.MetalValueParser            : Parsed interGalacticUnitString: string -> diag pish
+2024-06-21T19:32:26.015+02:00 DEBUG 55052 --- [GalacticTrading ] [main] c.g.G.validator.RomanSymbolRules         : Validating Roman Symbol Rules...
+2024-06-21T19:32:26.015+02:00 DEBUG 55052 --- [GalacticTrading ] [main] c.g.G.parser.MetalValueParser            : Parsed metal value: metal name -> Gold
+2024-06-21T19:32:26.015+02:00 DEBUG 55052 --- [GalacticTrading ] [main] c.g.G.parser.MetalValueParser            : Parsed total value: value -> 2541
+2024-06-21T19:32:26.015+02:00 DEBUG 55052 --- [GalacticTrading ] [main] c.g.G.parser.MetalValueParser            : Parsed interGalacticUnitString: string -> pish tegj glob glob
+2024-06-21T19:32:26.015+02:00 DEBUG 55052 --- [GalacticTrading ] [main] c.g.G.validator.RomanSymbolRules         : Validating Roman Symbol Rules...
+2024-06-21T19:32:26.017+02:00 DEBUG 55052 --- [GalacticTrading ] [main] c.g.GalacticTrading.parser.QueryParser   : Parsed query: query -> diag pish tegj glob prok
+2024-06-21T19:32:26.017+02:00 DEBUG 55052 --- [GalacticTrading ] [main] c.g.GalacticTrading.io.OutputProcessor   : Saving to buffer and ready for output file...
+2024-06-21T19:32:26.018+02:00 DEBUG 55052 --- [GalacticTrading ] [main] c.g.G.validator.RomanSymbolRules         : Validating Roman Symbol Rules...
+2024-06-21T19:32:26.018+02:00 DEBUG 55052 --- [GalacticTrading ] [main] c.g.GalacticTrading.parser.QueryParser   : Parsed query: query -> glob prok Silver
+2024-06-21T19:32:26.018+02:00 DEBUG 55052 --- [GalacticTrading ] [main] c.g.GalacticTrading.io.OutputProcessor   : Saving to buffer and ready for output file...
+2024-06-21T19:32:26.018+02:00 DEBUG 55052 --- [GalacticTrading ] [main] c.g.G.validator.RomanSymbolRules         : Validating Roman Symbol Rules...
+2024-06-21T19:32:26.018+02:00 DEBUG 55052 --- [GalacticTrading ] [main] c.g.GalacticTrading.parser.QueryParser   : Parsed query: query -> pish tegj Gold
+2024-06-21T19:32:26.018+02:00 DEBUG 55052 --- [GalacticTrading ] [main] c.g.GalacticTrading.io.OutputProcessor   : Saving to buffer and ready for output file...
+2024-06-21T19:32:26.018+02:00 DEBUG 55052 --- [GalacticTrading ] [main] c.g.G.validator.RomanSymbolRules         : Validating Roman Symbol Rules...
+2024-06-21T19:32:26.019+02:00 DEBUG 55052 --- [GalacticTrading ] [main] c.g.GalacticTrading.parser.QueryParser   : Parsed query: query -> diag prok Iron
+2024-06-21T19:32:26.019+02:00 DEBUG 55052 --- [GalacticTrading ] [main] c.g.GalacticTrading.io.OutputProcessor   : Saving to buffer and ready for output file...
+2024-06-21T19:32:26.019+02:00 DEBUG 55052 --- [GalacticTrading ] [main] c.g.G.validator.RomanSymbolRules         : Validating Roman Symbol Rules...
+2024-06-21T19:32:26.019+02:00 DEBUG 55052 --- [GalacticTrading ] [main] c.g.GalacticTrading.parser.QueryParser   : Parsed query: query -> glob glob glob Diamond
+2024-06-21T19:32:26.019+02:00 DEBUG 55052 --- [GalacticTrading ] [main] c.g.GalacticTrading.io.OutputProcessor   : Saving to buffer and ready for output file...
+2024-06-21T19:32:26.019+02:00 DEBUG 55052 --- [GalacticTrading ] [main] c.g.G.validator.RomanSymbolRules         : Validating Roman Symbol Rules...
+2024-06-21T19:32:26.019+02:00 DEBUG 55052 --- [GalacticTrading ] [main] c.g.GalacticTrading.io.OutputProcessor   : Saving to buffer and ready for output file...
+2024-06-21T19:32:26.019+02:00  INFO 55052 --- [GalacticTrading ] [main] c.g.GalacticTrading.io.OutputProcessor   : File already exists.
+2024-06-21T19:32:26.020+02:00  INFO 55052 --- [GalacticTrading ] [main] c.g.GalacticTrading.io.OutputProcessor   : Output written to file: C:\garymar2007\GalacticTrading\src\main\resources\output2.txt
+2024-06-21T19:33:49.572+02:00  INFO 51692 --- [GalacticTrading ] [main] c.g.G.GalacticTradingApplicationTests    : Starting GalacticTradingApplicationTests using Java 17.0.11 with PID 51692 (started by gary.ma in C:\garymar2007\GalacticTrading)
+2024-06-21T19:33:49.573+02:00 DEBUG 51692 --- [GalacticTrading ] [main] c.g.G.GalacticTradingApplicationTests    : Running with Spring Boot v3.3.1, Spring v6.1.10
+2024-06-21T19:33:49.574+02:00  INFO 51692 --- [GalacticTrading ] [main] c.g.G.GalacticTradingApplicationTests    : No active profile set, falling back to 1 default profile: "default"
+2024-06-21T19:33:50.950+02:00  INFO 51692 --- [GalacticTrading ] [main] c.g.G.GalacticTradingApplicationTests    : Started GalacticTradingApplicationTests in 1.74 seconds (process running for 2.741)
+2024-06-21T19:33:51.766+02:00 DEBUG 51692 --- [GalacticTrading ] [main] c.g.G.service.TradingService             : Galactic Trading Process...
+2024-06-21T19:33:51.766+02:00  INFO 51692 --- [GalacticTrading ] [main] c.g.GalacticTrading.io.InputProcessor    : Processing input from file...
+2024-06-21T19:33:51.777+02:00 DEBUG 51692 --- [GalacticTrading ] [main] c.g.GalacticTrading.io.InputProcessor    : Processing line: glob is I
+2024-06-21T19:33:51.779+02:00 DEBUG 51692 --- [GalacticTrading ] [main] c.g.GalacticTrading.io.InputProcessor    : Processing line: prok is V
+2024-06-21T19:33:51.779+02:00 DEBUG 51692 --- [GalacticTrading ] [main] c.g.GalacticTrading.io.InputProcessor    : Processing line: pish is X
+2024-06-21T19:33:51.779+02:00 DEBUG 51692 --- [GalacticTrading ] [main] c.g.GalacticTrading.io.InputProcessor    : Processing line: tegj is L
+2024-06-21T19:33:51.780+02:00 DEBUG 51692 --- [GalacticTrading ] [main] c.g.GalacticTrading.io.InputProcessor    : Processing line: diag is C
+2024-06-21T19:33:51.780+02:00 DEBUG 51692 --- [GalacticTrading ] [main] c.g.GalacticTrading.io.InputProcessor    : Processing line: glob prok Silver is 34 Credits
+2024-06-21T19:33:51.780+02:00 DEBUG 51692 --- [GalacticTrading ] [main] c.g.GalacticTrading.io.InputProcessor    : Processing line: prok glob glob Diamond is 315000 Credits
+2024-06-21T19:33:51.780+02:00 DEBUG 51692 --- [GalacticTrading ] [main] c.g.GalacticTrading.io.InputProcessor    : Processing line: diag pish Iron is 5005 Credits
+2024-06-21T19:33:51.780+02:00 DEBUG 51692 --- [GalacticTrading ] [main] c.g.GalacticTrading.io.InputProcessor    : Processing line: pish tegj glob glob Gold is 2541 Credits
+2024-06-21T19:33:51.781+02:00 DEBUG 51692 --- [GalacticTrading ] [main] c.g.GalacticTrading.io.InputProcessor    : Processing line: how much is diag pish tegj glob prok ?
+2024-06-21T19:33:51.781+02:00 DEBUG 51692 --- [GalacticTrading ] [main] c.g.GalacticTrading.io.InputProcessor    : Processing line: how many Credits is glob pish Silver ?
+2024-06-21T19:33:51.781+02:00 DEBUG 51692 --- [GalacticTrading ] [main] c.g.GalacticTrading.io.InputProcessor    : Processing line: how many Credits is pish tegj Gold ?
+2024-06-21T19:33:51.783+02:00 DEBUG 51692 --- [GalacticTrading ] [main] c.g.GalacticTrading.io.InputProcessor    : Processing line: how many Credits is diag prok Iron ?
+2024-06-21T19:33:51.783+02:00 DEBUG 51692 --- [GalacticTrading ] [main] c.g.GalacticTrading.io.InputProcessor    : Processing line: how many Credits is glob glob glob Diamond ?
+2024-06-21T19:33:51.783+02:00 DEBUG 51692 --- [GalacticTrading ] [main] c.g.GalacticTrading.io.InputProcessor    : Processing line: how much wood could a woodchuck chuck if a woodchuck could chuck wood?
+2024-06-21T19:33:51.784+02:00 DEBUG 51692 --- [GalacticTrading ] [main] c.g.G.parser.InterGalacticUnitParser     : Parsed intergalactic unit: glob -> I
+2024-06-21T19:33:51.784+02:00 DEBUG 51692 --- [GalacticTrading ] [main] c.g.G.parser.InterGalacticUnitParser     : Parsed intergalactic unit: prok -> V
+2024-06-21T19:33:51.784+02:00 DEBUG 51692 --- [GalacticTrading ] [main] c.g.G.parser.InterGalacticUnitParser     : Parsed intergalactic unit: pish -> X
+2024-06-21T19:33:51.784+02:00 DEBUG 51692 --- [GalacticTrading ] [main] c.g.G.parser.InterGalacticUnitParser     : Parsed intergalactic unit: tegj -> L
+2024-06-21T19:33:51.784+02:00 DEBUG 51692 --- [GalacticTrading ] [main] c.g.G.parser.InterGalacticUnitParser     : Parsed intergalactic unit: diag -> C
+2024-06-21T19:33:51.784+02:00 DEBUG 51692 --- [GalacticTrading ] [main] c.g.G.parser.MetalValueParser            : Parsed metal value: metal name -> Silver
+2024-06-21T19:33:51.784+02:00 DEBUG 51692 --- [GalacticTrading ] [main] c.g.G.parser.MetalValueParser            : Parsed total value: value -> 34
+2024-06-21T19:33:51.785+02:00 DEBUG 51692 --- [GalacticTrading ] [main] c.g.G.parser.MetalValueParser            : Parsed interGalacticUnitString: string -> glob prok
+2024-06-21T19:33:51.785+02:00 DEBUG 51692 --- [GalacticTrading ] [main] c.g.G.validator.RomanSymbolRules         : Validating Roman Symbol Rules...
+2024-06-21T19:33:51.786+02:00 DEBUG 51692 --- [GalacticTrading ] [main] c.g.G.parser.MetalValueParser            : Parsed metal value: metal name -> Diamond
+2024-06-21T19:33:51.786+02:00 DEBUG 51692 --- [GalacticTrading ] [main] c.g.G.parser.MetalValueParser            : Parsed total value: value -> 315000
+2024-06-21T19:33:51.786+02:00 DEBUG 51692 --- [GalacticTrading ] [main] c.g.G.parser.MetalValueParser            : Parsed interGalacticUnitString: string -> prok glob glob
+2024-06-21T19:33:51.786+02:00 DEBUG 51692 --- [GalacticTrading ] [main] c.g.G.validator.RomanSymbolRules         : Validating Roman Symbol Rules...
+2024-06-21T19:33:51.786+02:00 DEBUG 51692 --- [GalacticTrading ] [main] c.g.G.parser.MetalValueParser            : Parsed metal value: metal name -> Iron
+2024-06-21T19:33:51.786+02:00 DEBUG 51692 --- [GalacticTrading ] [main] c.g.G.parser.MetalValueParser            : Parsed total value: value -> 5005
+2024-06-21T19:33:51.786+02:00 DEBUG 51692 --- [GalacticTrading ] [main] c.g.G.parser.MetalValueParser            : Parsed interGalacticUnitString: string -> diag pish
+2024-06-21T19:33:51.786+02:00 DEBUG 51692 --- [GalacticTrading ] [main] c.g.G.validator.RomanSymbolRules         : Validating Roman Symbol Rules...
+2024-06-21T19:33:51.787+02:00 DEBUG 51692 --- [GalacticTrading ] [main] c.g.G.parser.MetalValueParser            : Parsed metal value: metal name -> Gold
+2024-06-21T19:33:51.787+02:00 DEBUG 51692 --- [GalacticTrading ] [main] c.g.G.parser.MetalValueParser            : Parsed total value: value -> 2541
+2024-06-21T19:33:51.787+02:00 DEBUG 51692 --- [GalacticTrading ] [main] c.g.G.parser.MetalValueParser            : Parsed interGalacticUnitString: string -> pish tegj glob glob
+2024-06-21T19:33:51.787+02:00 DEBUG 51692 --- [GalacticTrading ] [main] c.g.G.validator.RomanSymbolRules         : Validating Roman Symbol Rules...
+2024-06-21T19:33:51.788+02:00 DEBUG 51692 --- [GalacticTrading ] [main] c.g.GalacticTrading.parser.QueryParser   : Parsed query: query -> diag pish tegj glob prok
+2024-06-21T19:33:51.788+02:00 DEBUG 51692 --- [GalacticTrading ] [main] c.g.GalacticTrading.io.OutputProcessor   : Saving to buffer and ready for output file...
+2024-06-21T19:33:51.788+02:00 DEBUG 51692 --- [GalacticTrading ] [main] c.g.G.validator.RomanSymbolRules         : Validating Roman Symbol Rules...
+2024-06-21T19:33:51.789+02:00 DEBUG 51692 --- [GalacticTrading ] [main] c.g.GalacticTrading.parser.QueryParser   : Parsed query: query -> glob pish Silver
+2024-06-21T19:33:51.789+02:00 DEBUG 51692 --- [GalacticTrading ] [main] c.g.GalacticTrading.io.OutputProcessor   : Saving to buffer and ready for output file...
+2024-06-21T19:33:51.789+02:00 DEBUG 51692 --- [GalacticTrading ] [main] c.g.G.validator.RomanSymbolRules         : Validating Roman Symbol Rules...
+2024-06-21T19:33:51.789+02:00 DEBUG 51692 --- [GalacticTrading ] [main] c.g.GalacticTrading.parser.QueryParser   : Parsed query: query -> pish tegj Gold
+2024-06-21T19:33:51.789+02:00 DEBUG 51692 --- [GalacticTrading ] [main] c.g.GalacticTrading.io.OutputProcessor   : Saving to buffer and ready for output file...
+2024-06-21T19:33:51.789+02:00 DEBUG 51692 --- [GalacticTrading ] [main] c.g.G.validator.RomanSymbolRules         : Validating Roman Symbol Rules...
+2024-06-21T19:33:51.790+02:00 DEBUG 51692 --- [GalacticTrading ] [main] c.g.GalacticTrading.parser.QueryParser   : Parsed query: query -> diag prok Iron
+2024-06-21T19:33:51.790+02:00 DEBUG 51692 --- [GalacticTrading ] [main] c.g.GalacticTrading.io.OutputProcessor   : Saving to buffer and ready for output file...
+2024-06-21T19:33:51.790+02:00 DEBUG 51692 --- [GalacticTrading ] [main] c.g.G.validator.RomanSymbolRules         : Validating Roman Symbol Rules...
+2024-06-21T19:33:51.790+02:00 DEBUG 51692 --- [GalacticTrading ] [main] c.g.GalacticTrading.parser.QueryParser   : Parsed query: query -> glob glob glob Diamond
+2024-06-21T19:33:51.790+02:00 DEBUG 51692 --- [GalacticTrading ] [main] c.g.GalacticTrading.io.OutputProcessor   : Saving to buffer and ready for output file...
+2024-06-21T19:33:51.790+02:00 DEBUG 51692 --- [GalacticTrading ] [main] c.g.G.validator.RomanSymbolRules         : Validating Roman Symbol Rules...
+2024-06-21T19:33:51.790+02:00 DEBUG 51692 --- [GalacticTrading ] [main] c.g.GalacticTrading.io.OutputProcessor   : Saving to buffer and ready for output file...
+2024-06-21T19:33:51.791+02:00  INFO 51692 --- [GalacticTrading ] [main] c.g.GalacticTrading.io.OutputProcessor   : File already exists.
+2024-06-21T19:33:51.792+02:00  INFO 51692 --- [GalacticTrading ] [main] c.g.GalacticTrading.io.OutputProcessor   : Output written to file: C:\garymar2007\GalacticTrading\src\main\resources\output2.txt

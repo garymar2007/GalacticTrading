@@ -69,12 +69,10 @@ public class TradingService {
     }
 
     private void cleanup() {
-        interGalacticUnitParser.getInterGalacticUnits().clear();
+        interGalacticUnitParser.reset();
         metalValueParser.reset();
-        inputProcessor.getQueryDefinitions().clear();
-        inputProcessor.getInterGalacticUnitDefinitions().clear();
-        inputProcessor.getMetalValueDefinitions().clear();
-        outputProcessor.getContents().clear();
+        inputProcessor.reset();
+        outputProcessor.reset();
     }
 
     private void processInterGalacticUnitDefinitions(List<String> interGalacticUnitDefinitions) {
@@ -91,7 +89,7 @@ public class TradingService {
     private void processMetalValueDefinitions(List<String> metalValueDefinitions) {
         if (metalValueDefinitions == null || metalValueDefinitions.isEmpty()) {
             log.error(ExceptionMsgConstants.METAL_VALUE_DEFN_NOT_FOUND);
-            throw new NoMetalValueDefinitionsFoundException(ExceptionMsgConstants.METAL_VALUE_DEFN_NOT_FOUND);
+                throw new NoMetalValueDefinitionsFoundException(ExceptionMsgConstants.METAL_VALUE_DEFN_NOT_FOUND);
         }
 
         for (String metalValueDefinition : metalValueDefinitions) {

@@ -1,6 +1,6 @@
 diag pish tegj glob prok is 144
-glob prok Silver is 68 Credits
-pish tegj Gold is 578000 Credits
-diag prok Iron is 20527 Credits
+glob pish Silver is 76 Credits
+pish tegj Gold is 2420 Credits
+diag prok Iron is 4777 Credits
 glob glob glob Diamond is 135000 Credits
 I have no idea what you are talking about

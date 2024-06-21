@@ -39,7 +39,6 @@ public class InputProcessor {
                     queryDefinitions.add(line);
                 } else {
                     invalidQuery = QueryConstants.INVALID_QUERY;
-                    //outputProcessor.saveToOutputFile(new String[]{QueryConstants.INVALID_QUERY});
                 }
             }
             return true;
@@ -47,5 +46,12 @@ public class InputProcessor {
             log.error("Error: Unable to read file input.txt");
             return false;
         }
+    }
+
+    public void reset() {
+        interGalacticUnitDefinitions.clear();
+        metalValueDefinitions.clear();
+        queryDefinitions.clear();
+        invalidQuery = null;
     }
 }

@@ -68,20 +68,20 @@ class QueryParserTest {
     void parseQueryReturnValidQueryWithoutMetal() {
         final String[] query = queryParser.parseQuery("how much is pish tegj glob glob ?",
                 metalValues, interGalacticUnits);
-        assertEquals("pish tegj glob glob", query[0]);
+        assertEquals("pish tegj glob glob", String.join(" ", query));
     }
 
     @Test
     void parseQueryReturnValidQueryWithMetal() {
         final String query[] = queryParser.parseQuery("how much is glob prok Gold ?",
                 metalValues, interGalacticUnits);
-        assertEquals("glob prok Gold", query[0]);
+        assertEquals("glob prok Gold",String.join(" ", query));
     }
 
     @Test
     void parseQueryReturnValidQueryWithMetalAndSpaces() {
         final String[] query = queryParser.parseQuery("how  much   is glob   prok   Gold ?",
                 metalValues, interGalacticUnits);
-        assertEquals("glob prok Gold", query[0]);
+        assertEquals("glob prok Gold", String.join(" ", query));
     }
 }

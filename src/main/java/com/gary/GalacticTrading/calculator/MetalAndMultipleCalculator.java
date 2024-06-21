@@ -36,12 +36,6 @@ public class MetalAndMultipleCalculator {
      * @return
      */
     public void initializeMetalAndMultipler(final String interGalacticUnits, final String metalName, final Integer value) {
-        if (metalNameMultiplerMap.containsKey(metalName)) {
-            log.warn("Metal {} already initialized with value {}! Skipping...",
-                    metalName, metalNameMultiplerMap.get(metalName));
-            return;
-        }
-
         final String romanString = intergalacticUnitsToRomanStringConverter
                 .convertIntergalacticUnitsToRomanString(interGalacticUnits);
         if (!romanSymbolRules.validateRomanSymbols(romanString)) {

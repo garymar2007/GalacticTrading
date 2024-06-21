@@ -42,4 +42,8 @@ public class InterGalacticUnitParser {
                 interGalacticUnitArray[interGalacticUnitArray.length - 1].toUpperCase());
         intergalacticUnitsToRomanStringConverter.setInterGalacticUnits(this.interGalacticUnits);
     }
+
+    public void reset() {
+        interGalacticUnits.clear();
+    }
 }
