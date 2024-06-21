@@ -3,15 +3,22 @@ package com.gary.GalacticTrading.validator;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.stereotype.Component;
 
+import java.util.regex.Matcher;
+import java.util.regex.Pattern;
+
 @Component
 @Slf4j
 public class RomanSymbolRules {
+    private static final String ROMAN_SYMBOL_REGEX = "^M{0,3}(CM|CD|D?C{0,3})(XC|XL|L?X{0,3})(IX|IV|V?I{0,3})$";
 
     public boolean validateRomanSymbols(String romanSymbol) {
         boolean isValid;
         //Rule 1: Format of Roman Symbol
         log.debug("Validating Roman Symbol Rules...");
-        isValid = romanSymbol.matches("^M{0,3}(CM|CD|D?C{0,3})(XC|XL|L?X{0,3})(IX|IV|V?I{0,3})$");
+        Pattern p = Pattern.compile(ROMAN_SYMBOL_REGEX);
+        Matcher m = p.matcher(romanSymbol);
+
+        isValid = m.matches();
 
         if (!isValid) {
             log.debug("Failed on Rule 1 - Invalid Roman Symbol: {}", romanSymbol);

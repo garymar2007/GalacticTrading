@@ -23,10 +23,10 @@ public class InputProcessor {
     private List<String> queryDefinitions = new ArrayList<>();
     private String invalidQuery = null;
 
-    public boolean processInputFromFile() {
+    public boolean processInputFromFile(String fileName) {
         log.info("Processing input from file...");
         try {
-            File file = new ClassPathResource("input.txt").getFile();
+            File file = new ClassPathResource(fileName).getFile();
             BufferedReader bufferedReader = new BufferedReader(new FileReader(file));
             String line;
             while ((line = bufferedReader.readLine()) != null) {

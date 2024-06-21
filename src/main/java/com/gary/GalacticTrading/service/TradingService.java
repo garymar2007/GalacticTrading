@@ -7,6 +7,7 @@ import com.gary.GalacticTrading.io.OutputProcessor;
 import com.gary.GalacticTrading.parser.InterGalacticUnitParser;
 import com.gary.GalacticTrading.parser.MetalValueParser;
 import com.gary.GalacticTrading.parser.QueryParser;
+import com.gary.GalacticTrading.utils.QueryConstants;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.stereotype.Service;
@@ -28,10 +29,10 @@ public class TradingService {
     private final MetalAndMultipleCalculator metalAndMultipleCalculator;
     private final OutputProcessor outputProcessor;
 
-    public void trade() throws IOException {
+    public void trade(String inputFileName, String outputFileName) throws IOException {
         log.debug("Galactic Trading Process...");
         try {
-            boolean isInputProcessedSuccessfully = inputProcessor.processInputFromFile();
+            boolean isInputProcessedSuccessfully = inputProcessor.processInputFromFile(inputFileName);
 
             if (isInputProcessedSuccessfully) {
                 List<String> interGalacticUnitDefinitions = inputProcessor.getInterGalacticUnitDefinitions();
@@ -47,7 +48,8 @@ public class TradingService {
                     outputProcessor.saveForOutput(new String[]{inputProcessor.getInvalidQuery()});
                 }
 
-                outputProcessor.writeToFile();
+                outputProcessor.writeToFile(outputFileName);
+                cleanup();
             } else {
                 throw new FailedProcessInputFile(ExceptionMsgConstants.UNABLE_PROCESS_INPUT_FILE);
             }
@@ -55,11 +57,24 @@ public class TradingService {
                  InvalidIntergalacticUnitException | NoQueryFoundException
                  | NoMetalValueDefinitionsFoundException | InvalidMetalValueDefinitionException e) {
             log.error(e.getMessage());
+            if (!outputProcessor.getContents().isEmpty()) {
+                outputProcessor.saveForOutput(new String[]{QueryConstants.INVALID_QUERY});
+                outputProcessor.writeToFile(outputFileName);
+            }
             throw e;
         } catch (IOException ex) {
             log.error(ex.getMessage());
             throw ex;
         }
+    }
+
+    private void cleanup() {
+        interGalacticUnitParser.getInterGalacticUnits().clear();
+        metalValueParser.reset();
+        inputProcessor.getQueryDefinitions().clear();
+        inputProcessor.getInterGalacticUnitDefinitions().clear();
+        inputProcessor.getMetalValueDefinitions().clear();
+        outputProcessor.getContents().clear();
     }
 
     private void processInterGalacticUnitDefinitions(List<String> interGalacticUnitDefinitions) {

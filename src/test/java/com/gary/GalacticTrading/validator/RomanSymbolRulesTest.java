@@ -2,6 +2,9 @@ package com.gary.GalacticTrading.validator;
 
 import org.junit.jupiter.api.Test;
 
+import java.util.regex.Matcher;
+import java.util.regex.Pattern;
+
 import static org.junit.jupiter.api.Assertions.*;
 
 class RomanSymbolRulesTest {
@@ -25,6 +28,11 @@ class RomanSymbolRulesTest {
     @Test
     void validateRomanSymbolsReturnValid3() {
         assertTrue(romanSymbolRules.validateRomanSymbols("MMMCCCL"));
+    }
+
+    @Test
+    void validateRomanSymbolsReturnValid4() {
+        assertTrue(romanSymbolRules.validateRomanSymbols("CXLIV"));
     }
 
     @Test

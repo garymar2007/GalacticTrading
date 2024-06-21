@@ -62,6 +62,11 @@ public class MetalAndMultipleCalculator {
     public int calculateMetalValue(final String interGalacticUnits, final String metalName) {
         final String romanString = intergalacticUnitsToRomanStringConverter
                 .convertIntergalacticUnitsToRomanString(interGalacticUnits);
+        if (!romanSymbolRules.validateRomanSymbols(romanString)) {
+            log.error("Invalid Roman String: {}", romanString);
+            throw new InvalidMetalValueDefinitionException(ExceptionMsgConstants.INVALID_UNITS_IN_QUERY);
+        }
+
         final int totalValue = romanStringToIntegerConverter.convertRomanStringToInteger(romanString);
         if (metalName == null) {
             return totalValue;

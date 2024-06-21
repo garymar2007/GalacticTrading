@@ -13,7 +13,23 @@ class GalacticTradingApplicationTests {
 	private TradingService tradingService;
 
 	@Test
-	void testSampleInputFile() throws IOException {
-		tradingService.trade();
+	void testValidInputFile1() throws IOException {
+		String inputFileName = "input.txt";
+		String outputFileName = "output.txt";
+		tradingService.trade(inputFileName, outputFileName);
+	}
+
+	@Test
+	void testValidInputFile2() throws IOException {
+		String inputFileName = "input2.txt";
+		String outputFileName = "output2.txt";
+		tradingService.trade(inputFileName, outputFileName);
+	}
+
+	@Test
+	void testInvalidInputFile() throws IOException {
+		String inputFileName = "invalid-input.txt";
+		String outputFileName = "invalid-output.txt";
+		tradingService.trade(inputFileName, outputFileName);
 	}
 }

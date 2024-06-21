@@ -1,6 +1,7 @@
 package com.gary.GalacticTrading.io;
 
 import com.gary.GalacticTrading.calculator.MetalAndMultipleCalculator;
+import lombok.Getter;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.stereotype.Service;
@@ -15,6 +16,7 @@ import java.util.List;
 @Service
 @Slf4j
 @RequiredArgsConstructor
+@Getter
 public class OutputProcessor {
     private final MetalAndMultipleCalculator metalAndMultipleCalculator;
     private List<String> contents = new ArrayList<>();
@@ -43,9 +45,9 @@ public class OutputProcessor {
             contents.add(temp);
     }
 
-    public void writeToFile() throws IOException {
-        File resourcesDir = new File("src/main/resources");
-        File file = new File(resourcesDir.getAbsolutePath() + "/output.txt");
+    public void writeToFile(String outputFileName) throws IOException {
+        File resourcesDir = new File("src/main/resources/");
+        File file = new File(resourcesDir.getAbsolutePath() + File.separator + outputFileName);
         if (file.createNewFile()) {
             log.info("File created: " + file.getName());
         } else {
@@ -56,6 +58,9 @@ public class OutputProcessor {
             for (String str : contents) {
                 writer.write(str + System.lineSeparator());
             }
+
+            log.info("Output written to file: {}", file.getAbsolutePath());
+            contents.clear();
         } catch (IOException e) {
             log.error("Error: Unable to write to file output.txt");
             throw e;
