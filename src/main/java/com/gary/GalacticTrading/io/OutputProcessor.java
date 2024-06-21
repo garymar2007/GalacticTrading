@@ -28,7 +28,7 @@ public class OutputProcessor {
     private List<String> contents = new ArrayList<>();
 
     public void saveToOutputFile(final String[] unitsAndMetalQuery) {
-        log.debug("Saving to output file...");
+        log.debug("Saving to buffer and ready for output file...");
 
             if (unitsAndMetalQuery.length == 1) {
                 contents.add(unitsAndMetalQuery[0]);
