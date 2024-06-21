@@ -3,7 +3,6 @@ package com.gary.GalacticTrading.io;
 import com.gary.GalacticTrading.calculator.MetalAndMultipleCalculator;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
-import org.springframework.core.io.ResourceLoader;
 import org.springframework.stereotype.Service;
 
 import java.io.BufferedWriter;

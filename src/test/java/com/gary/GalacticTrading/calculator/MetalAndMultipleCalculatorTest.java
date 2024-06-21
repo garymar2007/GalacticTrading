@@ -2,6 +2,7 @@ package com.gary.GalacticTrading.calculator;
 
 import com.gary.GalacticTrading.converter.IntergalacticUnitsToRomanStringConverter;
 import com.gary.GalacticTrading.converter.RomanStringToIntegerConverter;
+import com.gary.GalacticTrading.validator.RomanSymbolRules;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
@@ -13,13 +14,15 @@ class MetalAndMultipleCalculatorTest {
     private MetalAndMultipleCalculator metalAndMultipleCalculator;
     private IntergalacticUnitsToRomanStringConverter intergalacticUnitsToRomanStringConverter;
     private RomanStringToIntegerConverter romanStringToIntegerConverter;
+    private RomanSymbolRules romanSymbolRules;
 
     @BeforeEach
     void setUp() {
         intergalacticUnitsToRomanStringConverter = new IntergalacticUnitsToRomanStringConverter(
                 Map.of("glob", "I", "prok", "V", "pish", "X", "tegj", "L"));
         romanStringToIntegerConverter = new RomanStringToIntegerConverter();
-        metalAndMultipleCalculator = new MetalAndMultipleCalculator(romanStringToIntegerConverter,
+        romanSymbolRules = new RomanSymbolRules();
+        metalAndMultipleCalculator = new MetalAndMultipleCalculator(romanSymbolRules, romanStringToIntegerConverter,
                 intergalacticUnitsToRomanStringConverter);
     }
 

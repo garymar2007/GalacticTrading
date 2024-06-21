@@ -2,6 +2,9 @@ package com.gary.GalacticTrading.calculator;
 
 import com.gary.GalacticTrading.converter.IntergalacticUnitsToRomanStringConverter;
 import com.gary.GalacticTrading.converter.RomanStringToIntegerConverter;
+import com.gary.GalacticTrading.exception.ExceptionMsgConstants;
+import com.gary.GalacticTrading.exception.InvalidMetalValueDefinitionException;
+import com.gary.GalacticTrading.validator.RomanSymbolRules;
 import lombok.Getter;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
@@ -18,12 +21,13 @@ import java.util.Map;
 @Slf4j
 @Getter
 public class MetalAndMultipleCalculator {
+    private final RomanSymbolRules romanSymbolRules;
+    private final RomanStringToIntegerConverter romanStringToIntegerConverter;
+    private final IntergalacticUnitsToRomanStringConverter intergalacticUnitsToRomanStringConverter;
     /**
      * This map is used to store the metal name and multiple.
      */
     private Map<String, Double> metalNameMultiplerMap = new HashMap<>();
-    private final RomanStringToIntegerConverter romanStringToIntegerConverter;
-    private final IntergalacticUnitsToRomanStringConverter intergalacticUnitsToRomanStringConverter;
 
     /**
      * This method is used to calculate the value of metal and multiple.
@@ -40,12 +44,22 @@ public class MetalAndMultipleCalculator {
 
         final String romanString = intergalacticUnitsToRomanStringConverter
                 .convertIntergalacticUnitsToRomanString(interGalacticUnits);
+        if (!romanSymbolRules.validateRomanSymbols(romanString)) {
+            log.error("Invalid Roman String: {}", romanString);
+            throw new InvalidMetalValueDefinitionException(ExceptionMsgConstants.INVALID_METAL_VALUE_DEFINITIONS);
+        }
+
         final int totalValue = romanStringToIntegerConverter.convertRomanStringToInteger(romanString);
+        if (totalValue == 0) {
+            log.error("Invalid Roman String: {}", romanString);
+            throw new InvalidMetalValueDefinitionException(ExceptionMsgConstants.INVALID_METAL_VALUE_DEFINITIONS);
+        }
+
         final double multipler = (double)value / totalValue;
         metalNameMultiplerMap.put(metalName, multipler);
     }
 
-    public double calculateMetalValue(final String interGalacticUnits, final String metalName) {
+    public int calculateMetalValue(final String interGalacticUnits, final String metalName) {
         final String romanString = intergalacticUnitsToRomanStringConverter
                 .convertIntergalacticUnitsToRomanString(interGalacticUnits);
         final int totalValue = romanStringToIntegerConverter.convertRomanStringToInteger(romanString);
@@ -53,6 +67,6 @@ public class MetalAndMultipleCalculator {
             return totalValue;
         }
 
-        return totalValue * metalNameMultiplerMap.get(metalName);
+        return (int)(totalValue * metalNameMultiplerMap.get(metalName));
     }
 }
