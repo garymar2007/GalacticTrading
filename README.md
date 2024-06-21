@@ -115,4 +115,23 @@ The problem can be broken down into 3 parts:
    - Calculate the value of the query;
 4. Validator:
    - Validate the input;
+   - Validate the queries;
+   - Validate the format of converted roman string;
+5. Exception Handler:
+   - Handle the exceptions;
+
+### Test
+1. Unit Test;
+2. Integration Test;
+
+## How to run the program
+1. Clone the repository;
+2. Maven build:
+    ```
+    mvn clean install
+    ```
+3. In order to run the program easily, you should use integration test to run against your input file which resides in resource folder.
+
+The integration test will read the input file as input test and generate a output file for the outcome.
+    
 
