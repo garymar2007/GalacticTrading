@@ -59,5 +59,4 @@ class InputRegExTest {
         assertFalse("how much is pish tegj glob glob".matches(InputRegEx.QUERY));
         assertFalse("how many Credits is glob prok Silver".matches(InputRegEx.QUERY));
     }
-
 }

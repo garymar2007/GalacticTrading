@@ -1,5 +1,6 @@
 package com.gary.GalacticTrading.parser;
 
+import com.gary.GalacticTrading.exception.ExceptionMsgConstants;
 import com.gary.GalacticTrading.exception.InvalidMetalValueDefinitionException;
 import com.gary.GalacticTrading.utils.InputRegEx;
 import lombok.Getter;
@@ -22,7 +23,7 @@ public class MetalValueParser {
     public void parseMetalValue(final String metalValueDefn) {
         if (metalValueDefn == null || metalValueDefn.isEmpty() ||
                 !metalValueDefn.matches(InputRegEx.METAL_VALUE_DEFINITION)) {
-            throw new InvalidMetalValueDefinitionException("Error: Invalid metal value definition!");
+            throw new InvalidMetalValueDefinitionException(ExceptionMsgConstants.INVALID_METAL_VALUE_DEFINITIONS);
         }
         String[] metalValueArray = Arrays.stream(metalValueDefn.split(" ")).filter(s -> !s.equals(""))
                 .toArray(String[]::new);
@@ -33,7 +34,7 @@ public class MetalValueParser {
             value = Integer.parseInt(metalValueArray[indexOfIs + 1]);
             log.debug("Parsed total value: value -> {}", value);
         } else {
-            throw new InvalidMetalValueDefinitionException("Error: Invalid metal value definition!");
+            throw new InvalidMetalValueDefinitionException(ExceptionMsgConstants.INVALID_METAL_VALUE_DEFINITIONS);
         }
 
         for (int i = 0; i <  indexOfIs -1; i++) {

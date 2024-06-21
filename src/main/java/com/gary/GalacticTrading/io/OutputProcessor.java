@@ -3,8 +3,6 @@ package com.gary.GalacticTrading.io;
 import com.gary.GalacticTrading.calculator.MetalAndMultipleCalculator;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
-import org.springframework.core.io.ClassPathResource;
-import org.springframework.core.io.Resource;
 import org.springframework.core.io.ResourceLoader;
 import org.springframework.stereotype.Service;
 
@@ -12,10 +10,6 @@ import java.io.BufferedWriter;
 import java.io.File;
 import java.io.FileWriter;
 import java.io.IOException;
-import java.nio.file.Files;
-import java.nio.file.Path;
-import java.nio.file.Paths;
-import java.nio.file.StandardOpenOption;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -24,10 +18,9 @@ import java.util.List;
 @RequiredArgsConstructor
 public class OutputProcessor {
     private final MetalAndMultipleCalculator metalAndMultipleCalculator;
-    private final ResourceLoader resourceLoader;
     private List<String> contents = new ArrayList<>();
 
-    public void saveToOutputFile(final String[] unitsAndMetalQuery) {
+    public void saveForOutput(final String[] unitsAndMetalQuery) {
         log.debug("Saving to buffer and ready for output file...");
 
             if (unitsAndMetalQuery.length == 1) {
@@ -51,14 +44,22 @@ public class OutputProcessor {
             contents.add(temp);
     }
 
-    public void writeToFile() {
-        Resource resource =  resourceLoader.getResource("classpath:output.txt");
-        try (BufferedWriter writer = new BufferedWriter(new FileWriter(resource.getFile()))) {
+    public void writeToFile() throws IOException {
+        File resourcesDir = new File("src/main/resources");
+        File file = new File(resourcesDir.getAbsolutePath() + "/output.txt");
+        if (file.createNewFile()) {
+            log.info("File created: " + file.getName());
+        } else {
+            log.info("File already exists.");
+        }
+
+        try (BufferedWriter writer = new BufferedWriter(new FileWriter(file))) {
             for (String str : contents) {
                 writer.write(str + System.lineSeparator());
             }
         } catch (IOException e) {
             log.error("Error: Unable to write to file output.txt");
+            throw e;
         }
     }
 

@@ -83,16 +83,15 @@ The problem can be broken down into 3 parts:
     - Conversion rates for metals
     - Queries
 2. The queries are in the format:
-3. The queries are in the format:
     - how much is pish tegj glob glob ?
     - how many Credits is glob prok Silver ?
     - how many Credits is glob prok Gold ?
     - how many Credits is glob prok Iron ?
     - how much wood could a woodchuck chuck if a woodchuck could chuck wood ?
-4. The queries are case insensitive.
-5. The queries are ending with a question mark.
-6. The conversion rates are case insensitive.
-7. The conversion rates are in the format:
+3. The queries are case insensitive.
+4. The queries are ending with a question mark.
+5. The conversion rates are case insensitive.
+6. The conversion rates are in the format:
     - glob is I
     - prok is V
     - pish is X
