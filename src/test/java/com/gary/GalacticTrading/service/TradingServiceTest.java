@@ -48,14 +48,14 @@ class TradingServiceTest {
     }
 
     @Test
-    void testTradeThrowFailedProcessInptFileException() {
+    void testTradeThrowFailedProcessInptFileException() throws IOException {
         when(inputProcessor.processInputFromFile(any())).thenReturn(false);
 
         assertThrows(FailedProcessInputFile.class, () -> tradingService.trade("inputFileName", "outputFileName"));
     }
 
     @Test
-    void testTradeThrowNoInterGalacticUnitDefinitionsFoundException() {
+    void testTradeThrowNoInterGalacticUnitDefinitionsFoundException() throws IOException {
         when(inputProcessor.processInputFromFile(any())).thenReturn(true);
         when(inputProcessor.getInterGalacticUnitDefinitions()).thenReturn(null);
 
@@ -63,7 +63,7 @@ class TradingServiceTest {
     }
 
     @Test
-    void testTradeThrowNoMetalValueDefinitionsFoundException() {
+    void testTradeThrowNoMetalValueDefinitionsFoundException() throws IOException {
         when(inputProcessor.processInputFromFile(any())).thenReturn(true);
         when(inputProcessor.getInterGalacticUnitDefinitions()).thenReturn(List.of("glob is I", "prok is V", "pish is X", "tegj is L"));
         doNothing().when(interGalacticUnitParser).parseIntergalacticUnits(any());
@@ -73,7 +73,7 @@ class TradingServiceTest {
     }
 
     @Test
-    void testTradeThrowNoQueryFoundException() {
+    void testTradeThrowNoQueryFoundException() throws IOException {
         when(inputProcessor.processInputFromFile(any())).thenReturn(true);
         when(inputProcessor.getInterGalacticUnitDefinitions()).thenReturn(List.of("glob is I", "prok is V", "pish is X", "tegj is L"));
         doNothing().when(interGalacticUnitParser).parseIntergalacticUnits(any());

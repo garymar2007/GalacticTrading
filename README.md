@@ -73,9 +73,9 @@ queries appropriately.
 
 ## Solution Design
 The problem can be broken down into 3 parts:
-1. Parse the input and store the conversion rates for intergalatic units in a dictionary.
-2. Parse the input and calculate the value of the metals based on credits and then store the metal values in a dictionary.
-3. Parse the input and convert the intergalactic units to roman numerals and then to calculate the number of units of metals.
+1. Parse the unit inputs and store the conversion rates for intergalatic units in a dictionary.
+2. Parse the metal inputs and calculate the value of the metals based on credits and then store the metal values in a dictionary.
+3. Parse the query inputs and convert the intergalactic units to roman numerals and then to calculate the number of units of metals.
 
 ### Assumptions
 1. The inputs are following the order: 

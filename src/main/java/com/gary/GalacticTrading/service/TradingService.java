@@ -57,14 +57,43 @@ public class TradingService {
                  InvalidIntergalacticUnitException | NoQueryFoundException
                  | NoMetalValueDefinitionsFoundException | InvalidMetalValueDefinitionException e) {
             log.error(e.getMessage());
-            if (!outputProcessor.getContents().isEmpty() && e instanceof InvalidMetalValueDefinitionException ) {
-                outputProcessor.saveForOutput(new String[]{QueryConstants.QUERY_WITH_INVALID_UNIT_OF_METAL});
-                outputProcessor.writeToFile(outputFileName);
-            }
+            handleExceptions(e, outputFileName);
             throw e;
         } catch (IOException ex) {
             log.error(ex.getMessage());
             throw ex;
+        }
+    }
+
+    private void handleExceptions(Exception e, String outputFileName) throws IOException {
+        if(e instanceof FailedProcessInputFile) {
+            outputProcessor.saveForOutput(new String[]{QueryConstants.UNABLE_TO_PROCESS_INPUT_FILE});
+            outputProcessor.writeToFile(outputFileName);
+        }
+
+        if (e instanceof NoInterGalacticUnitDefinitionsFoundException) {
+            outputProcessor.saveForOutput(new String[]{QueryConstants.NO_INTERGALACTIC_UNIT_DEFN_FOUND});
+            outputProcessor.writeToFile(outputFileName);
+        }
+
+        if (e instanceof NoMetalValueDefinitionsFoundException) {
+            outputProcessor.saveForOutput(new String[]{QueryConstants.NO_METAL_VALUE_DEFN_FOUND});
+            outputProcessor.writeToFile(outputFileName);
+        }
+
+        if (!outputProcessor.getContents().isEmpty() && e instanceof InvalidMetalValueDefinitionException ) {
+            outputProcessor.saveForOutput(new String[]{QueryConstants.QUERY_WITH_INVALID_UNIT_OF_METAL});
+            outputProcessor.writeToFile(outputFileName);
+        }
+
+        if (e instanceof InvalidIntergalacticUnitException) {
+            outputProcessor.saveForOutput(new String[]{QueryConstants.QUERY_WITH_INVALID_UNIT});
+            outputProcessor.writeToFile(outputFileName);
+        }
+
+        if (e instanceof NoQueryFoundException) {
+            outputProcessor.saveForOutput(new String[]{QueryConstants.NO_QUERY_FOUND});
+            outputProcessor.writeToFile(outputFileName);
         }
     }
 
@@ -107,9 +136,7 @@ public class TradingService {
         }
 
         for (String queryDefinition : queryDefinitions) {
-            String[] unitsAndMetalQuery = queryParser.parseQuery(queryDefinition,
-                    metalAndMultipleCalculator.getMetalNameMultiplerMap().keySet(),
-                    interGalacticUnitParser.getInterGalacticUnits().keySet());
+            String[] unitsAndMetalQuery = queryParser.parseQuery(queryDefinition);
             outputProcessor.saveForOutput(unitsAndMetalQuery);
         }
     }

@@ -31,57 +31,50 @@ class QueryParserTest {
     }
     @Test
     void parseQueryReturnInvalidQueryDueToUnknowUnitsAndMetal() {
-        final String[] query = queryParser.parseQuery("how much wood could a woodchuck chuck if a woodchuck could chuck wood?",
-                metalValues, interGalacticUnits);
+        final String[] query = queryParser
+                .parseQuery("how much wood could a woodchuck chuck if a woodchuck could chuck wood?");
         assertEquals(QueryConstants.INVALID_QUERY, query[0]);
     }
 
     @Test
     void parseQueryReturnInvalidQueryDueToNoUnitsOrMetal() {
-        final String query[] = queryParser.parseQuery("how much is ?",
-                metalValues, interGalacticUnits);
+        final String query[] = queryParser.parseQuery("how much is ?");
         assertEquals(QueryConstants.INVALID_QUERY, query[0]);
     }
 
     @Test
     void parseQueryReturnInvalidQueryDueToNullQuery() {
-        final String query[] = queryParser.parseQuery("",
-                metalValues, interGalacticUnits);
+        final String query[] = queryParser.parseQuery("");
         assertEquals(QueryConstants.INVALID_QUERY, query[0]);
     }
 
     @Test
     void parseQueryReturnInvalidQueryDueToNoQuestionMark() {
-        final String[] query = queryParser.parseQuery("how much is pish tegj glob glob",
-                metalValues, interGalacticUnits);
+        final String[] query = queryParser.parseQuery("how much is pish tegj glob glob");
         assertEquals(QueryConstants.INVALID_QUERY, query[0]);
     }
 
     @Test
     void parseQueryReturnInvalidQueryDueToNoUnits() {
-        final String[] query = queryParser.parseQuery("how many Credits is Silver ?",
-                metalValues, interGalacticUnits);
+        final String[] query = queryParser.parseQuery("how many Credits is Silver ?");
         assertEquals(QueryConstants.INVALID_QUERY, query[0]);
     }
 
     @Test
     void parseQueryReturnValidQueryWithoutMetal() {
-        final String[] query = queryParser.parseQuery("how much is pish tegj glob glob ?",
-                metalValues, interGalacticUnits);
+        final String[] query = queryParser.parseQuery("how much is pish tegj glob glob ?");
         assertEquals("pish tegj glob glob", String.join(" ", query));
     }
 
     @Test
     void parseQueryReturnValidQueryWithMetal() {
-        final String query[] = queryParser.parseQuery("how much is glob prok Gold ?",
-                metalValues, interGalacticUnits);
+        final String query[] = queryParser.parseQuery("how much is glob prok Gold ?");
         assertEquals("glob prok Gold",String.join(" ", query));
     }
 
     @Test
     void parseQueryReturnValidQueryWithMetalAndSpaces() {
-        final String[] query = queryParser.parseQuery("how  much   is glob   prok   Gold ?",
-                metalValues, interGalacticUnits);
+        final String[] query = queryParser.parseQuery("how  much   is glob   prok   Gold ?");
         assertEquals("glob prok Gold", String.join(" ", query));
     }
 }

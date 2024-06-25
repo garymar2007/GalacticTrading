@@ -7,10 +7,7 @@ import lombok.extern.slf4j.Slf4j;
 import org.springframework.core.io.ClassPathResource;
 import org.springframework.stereotype.Service;
 
-import java.io.BufferedReader;
-import java.io.File;
-import java.io.FileReader;
-import java.io.IOException;
+import java.io.*;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -23,11 +20,11 @@ public class InputProcessor {
     private List<String> queryDefinitions = new ArrayList<>();
     private String invalidQuery = null;
 
-    public boolean processInputFromFile(String fileName) {
+    public boolean processInputFromFile(String fileName) throws IOException {
         log.info("Processing input from file...");
-        try {
-            File file = new ClassPathResource(fileName).getFile();
-            BufferedReader bufferedReader = new BufferedReader(new FileReader(file));
+
+        try (InputStream is = new  FileInputStream(new ClassPathResource(fileName).getFile());
+             BufferedReader bufferedReader = new BufferedReader(new InputStreamReader(is))){
             String line;
             while ((line = bufferedReader.readLine()) != null) {
                 log.debug("Processing line: {}", line);
@@ -44,7 +41,7 @@ public class InputProcessor {
             return true;
         } catch (IOException e) {
             log.error("Error: Unable to read file input.txt");
-            return false;
+            throw e;
         }
     }
 

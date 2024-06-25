@@ -14,7 +14,7 @@ import java.util.Set;
 @Component
 @Slf4j
 public class QueryParser {
-    public String[] parseQuery(final String query, final Set<String> metalNames, final Set<String> interGalacticUnits) {
+    public String[] parseQuery(final String query) {
         if (query == null || query.isEmpty() || !query.matches(InputRegEx.QUERY)) {
             log.error(QueryConstants.INVALID_QUERY);
             return new String[] {QueryConstants.INVALID_QUERY};
