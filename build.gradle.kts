@@ -10,8 +10,11 @@ plugins {
     id("org.springframework.boot") version "3.3.2"
     id("io.spring.dependency-management") version "1.1.6"
     kotlin("plugin.allopen") version "1.9.22"
-    kotlin("plugin.jpa") version "1.9.22"
-    kotlin("kapt") version "1.9.22"
+    jacoco
+    //kotlin("plugin.jpa") version "1.9.22"
+//    kotlin("plugin.lombok") version "1.8.10"
+//    id("io.freefair.lombok") version "5.3.0"
+//    kotlin("kapt") version "1.9.22"
 }
 
 group = "com.gary"
@@ -38,6 +41,10 @@ repositories {
     }
 }
 
+//kapt {
+//    keepJavacAnnotationProcessors = true
+//}
+
 dependencies {
     implementation("org.springframework.boot:spring-boot-starter-data-jpa")
     implementation("org.springframework.boot:spring-boot-starter-web")
@@ -53,7 +60,9 @@ dependencies {
     runtimeOnly("org.springframework.boot:spring-boot-devtools")
     testImplementation("org.springframework.boot:spring-boot-starter-test")
     testImplementation("org.junit.jupiter:junit-jupiter-api")
+    testImplementation("org.junit.jupiter:junit-jupiter-engine")
     testImplementation("io.kotest:kotest-runner-junit5:5.6.2")
+    testImplementation("io.mockk:mockk:1.12.4")
     compileOnly("org.projectlombok:lombok")
 }
 
@@ -63,11 +72,11 @@ kotlin {
     }
 }
 
-allOpen {
-    annotation("jakarta.persistence.Entity")
-    annotation("jakarta.persistence.Embeddable")
-    annotation("jakarta.persistence.MappedSuperclass")
-}
+//allOpen {
+//    annotation("jakarta.persistence.Entity")
+//    annotation("jakarta.persistence.Embeddable")
+//    annotation("jakarta.persistence.MappedSuperclass")
+//}
 
 tasks.withType<Test> {
     useJUnitPlatform()
@@ -79,4 +88,8 @@ tasks.withType<JavaCompile>() {
 
 tasks.withType<Javadoc>() {
     options.encoding = "UTF-8"
+}
+
+tasks.test {
+    finalizedBy(tasks.jacocoTestReport)
 }

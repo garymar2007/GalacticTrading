@@ -1,36 +1,29 @@
-package com.gary.GalacticTrading.parser;
+package com.gary.GalacticTrading.parser
 
-import org.junit.jupiter.api.BeforeEach;
-import org.junit.jupiter.api.Test;
+import org.junit.jupiter.api.Assertions
+import org.junit.jupiter.api.Test
 
-import static org.junit.jupiter.api.Assertions.*;
-
-class MetalValueParserTest {
-    private MetalValueParser metalValueParser;
-
-    @BeforeEach
-    void setUp() {
-        metalValueParser = new MetalValueParser();
-    }
+internal class MetalValueParserTest {
+    private val metalValueParser = MetalValueParser()
 
     @Test
-    void parseMetalValue() {
-        metalValueParser.parseMetalValue("glob glob Silver is 34 Credits");
-        assertEquals("Silver", metalValueParser.getMetalName());
-        assertEquals(34, metalValueParser.getValue());
-        assertEquals("glob glob", metalValueParser.getInterGalacticUnitString());
-        metalValueParser.reset();
+    fun parseMetalValue() {
+        metalValueParser.parseMetalValue("glob glob Silver is 34 Credits")
+        Assertions.assertEquals("Silver", metalValueParser.metalName)
+        Assertions.assertEquals(34, metalValueParser.value)
+        Assertions.assertEquals("glob glob", metalValueParser.interGalacticUnitString)
+        metalValueParser.reset()
 
-        metalValueParser.parseMetalValue("glob prok Gold is 57800 Credits");
-        assertEquals("Gold", metalValueParser.getMetalName());
-        assertEquals(57800, metalValueParser.getValue());
-        assertEquals("glob prok", metalValueParser.getInterGalacticUnitString());
-        metalValueParser.reset();
+        metalValueParser.parseMetalValue("glob prok Gold is 57800 Credits")
+        Assertions.assertEquals("Gold", metalValueParser.metalName)
+        Assertions.assertEquals(57800, metalValueParser.value)
+        Assertions.assertEquals("glob prok", metalValueParser.interGalacticUnitString)
+        metalValueParser.reset()
 
-        metalValueParser.parseMetalValue("pish pish Iron is 3910 Credits");
-        assertEquals("Iron", metalValueParser.getMetalName());
-        assertEquals(3910, metalValueParser.getValue());
-        assertEquals("pish pish", metalValueParser.getInterGalacticUnitString());
-        metalValueParser.reset();
+        metalValueParser.parseMetalValue("pish pish Iron is 3910 Credits")
+        Assertions.assertEquals("Iron", metalValueParser.metalName)
+        Assertions.assertEquals(3910, metalValueParser.value)
+        Assertions.assertEquals("pish pish", metalValueParser.interGalacticUnitString)
+        metalValueParser.reset()
     }
 }

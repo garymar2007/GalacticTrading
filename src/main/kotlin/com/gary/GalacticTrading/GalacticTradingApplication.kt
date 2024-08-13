@@ -24,7 +24,7 @@ class GalacticTradingApplication : ApplicationRunner {
 
             System.exit(0)
         } else {
-            this.log.error("Invalid number of arguments. Please provide input and output file names.")
+            log.error("Invalid number of arguments. Please provide input and output file names.")
         }
     }
 

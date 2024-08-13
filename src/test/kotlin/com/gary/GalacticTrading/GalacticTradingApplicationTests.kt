@@ -1,39 +1,43 @@
-package com.gary.GalacticTrading;
+package com.gary.GalacticTrading
 
-import com.gary.GalacticTrading.service.TradingService;
-import org.junit.jupiter.api.Test;
-import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.boot.test.context.SpringBootTest;
-
-import java.io.IOException;
+import com.gary.GalacticTrading.calculator.MetalAndMultipleCalculator
+import com.gary.GalacticTrading.io.InputProcessor
+import com.gary.GalacticTrading.io.OutputProcessor
+import com.gary.GalacticTrading.parser.InterGalacticUnitParser
+import com.gary.GalacticTrading.parser.MetalValueParser
+import com.gary.GalacticTrading.parser.QueryParser
+import com.gary.GalacticTrading.service.TradingService
+import io.kotest.core.spec.style.FunSpec
+import io.kotest.extensions.spring.SpringExtension
+import org.springframework.beans.factory.annotation.Autowired
+import org.springframework.boot.test.context.SpringBootTest
+import org.springframework.boot.test.mock.mockito.MockBean
 
 @SpringBootTest
-class GalacticTradingApplicationTests {
-	@Autowired
-	private TradingService tradingService;
+internal class GalacticTradingApplicationTests: FunSpec() {
+    @MockBean
+    private lateinit var inputProcessor: InputProcessor
+    @MockBean
+    private lateinit var interGalacticUnitParser: InterGalacticUnitParser
+    @MockBean
+    private lateinit var metalValueParser: MetalValueParser
+    @MockBean
+    private lateinit var queryParser: QueryParser
+    @MockBean
+    private lateinit var metalAndMultipleCalculator: MetalAndMultipleCalculator
+    @MockBean
+    private lateinit var outputProcessor: OutputProcessor
 
-	@Test
-	void testValidInputFile1() throws IOException {
-		String inputFileName = "input.txt";
-		String outputFileName = "output.txt";
-		tradingService.trade(inputFileName, outputFileName);
-	}
+    @Autowired
+    private lateinit var tradingService: TradingService
 
-	@Test
-	void testValidInputFile2() throws IOException {
-		String inputFileName = "input2.txt";
-		String outputFileName = "output2.txt";
-		tradingService.trade(inputFileName, outputFileName);
-	}
+    init {
+        extensions(SpringExtension)
 
-	@Test
-	void testInvalidInputFile() throws Exception {
-		try{
-			String inputFileName = "invalid-input.txt";
-			String outputFileName = "invalid-output.txt";
-			tradingService.trade(inputFileName, outputFileName);
-		} catch (Exception e) {
-			throw new Exception("Failed to process trade due to: " + e.getMessage());
-		}
-	}
+        test("valid input file 1") {
+            val inputFileName = "input.txt"
+            val outputFileName = "output.txt"
+            tradingService.trade(inputFileName, outputFileName)
+        }
+    }
 }

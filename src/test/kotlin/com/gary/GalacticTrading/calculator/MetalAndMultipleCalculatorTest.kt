@@ -1,69 +1,91 @@
-package com.gary.GalacticTrading.calculator;
+package com.gary.GalacticTrading.calculator
 
-import com.gary.GalacticTrading.converter.IntergalacticUnitsToRomanStringConverter;
-import com.gary.GalacticTrading.converter.RomanStringToIntegerConverter;
-import com.gary.GalacticTrading.validator.RomanSymbolRules;
-import org.junit.jupiter.api.BeforeEach;
-import org.junit.jupiter.api.Test;
+import com.gary.GalacticTrading.converter.IntergalacticUnitsToRomanStringConverter
+import com.gary.GalacticTrading.converter.RomanStringToIntegerConverter
+import com.gary.GalacticTrading.validator.RomanSymbolRules
+import org.junit.jupiter.api.Assertions
+import org.junit.jupiter.api.BeforeEach
+import org.junit.jupiter.api.Test
 
-import java.util.Map;
-
-import static org.junit.jupiter.api.Assertions.*;
-
-class MetalAndMultipleCalculatorTest {
-    private MetalAndMultipleCalculator metalAndMultipleCalculator;
-    private IntergalacticUnitsToRomanStringConverter intergalacticUnitsToRomanStringConverter;
-    private RomanStringToIntegerConverter romanStringToIntegerConverter;
-    private RomanSymbolRules romanSymbolRules;
+internal class MetalAndMultipleCalculatorTest {
+    private var metalAndMultipleCalculator: MetalAndMultipleCalculator? = null
+    private var intergalacticUnitsToRomanStringConverter: IntergalacticUnitsToRomanStringConverter? = null
+    private var romanStringToIntegerConverter: RomanStringToIntegerConverter? = null
+    private var romanSymbolRules: RomanSymbolRules? = null
 
     @BeforeEach
-    void setUp() {
-        intergalacticUnitsToRomanStringConverter = new IntergalacticUnitsToRomanStringConverter(
-                Map.of("glob", "I", "prok", "V", "pish", "X", "tegj", "L"));
-        romanStringToIntegerConverter = new RomanStringToIntegerConverter();
-        romanSymbolRules = new RomanSymbolRules();
-        metalAndMultipleCalculator = new MetalAndMultipleCalculator(romanSymbolRules, romanStringToIntegerConverter,
-                intergalacticUnitsToRomanStringConverter);
+    fun setUp() {
+        val interGalacticUnitsnte = mutableMapOf<String, String>(
+            "glob" to "I",
+            "prok" to "V",
+            "pish" to "X",
+            "tegj" to "L"
+        )
+        intergalacticUnitsToRomanStringConverter = IntergalacticUnitsToRomanStringConverter()
+        intergalacticUnitsToRomanStringConverter?.setInterGalacticUnits(interGalacticUnitsnte)
+
+        romanStringToIntegerConverter = RomanStringToIntegerConverter()
+        romanSymbolRules = RomanSymbolRules()
+        metalAndMultipleCalculator = MetalAndMultipleCalculator(
+            romanSymbolRules!!, romanStringToIntegerConverter!!,
+            intergalacticUnitsToRomanStringConverter!!
+        )
     }
 
     @Test
-    void initializeSilverAndMultipler() {
-        metalAndMultipleCalculator.initializeMetalAndMultipler("glob glob", "Silver", 34);
-        assertEquals(17, metalAndMultipleCalculator.getMetalNameMultiplerMap().get("Silver"));
+    fun `test that initializing metal and multipler`() {
+        metalAndMultipleCalculator?.initializeMetalAndMultipler("glob glob", "Silver", 34)
+        Assertions.assertEquals(
+            17.0,
+            metalAndMultipleCalculator!!.metalNameMultiplerMap["Silver"]
+        )
     }
 
     @Test
-    void initializeGoldAndMultipler() {
-        metalAndMultipleCalculator.initializeMetalAndMultipler("glob prok", "Gold", 57800);
-        assertEquals(14450, metalAndMultipleCalculator.getMetalNameMultiplerMap().get("Gold"));
+    fun `test that initialzing gold and multipler`() {
+        metalAndMultipleCalculator?.initializeMetalAndMultipler("glob prok", "Gold", 57800)
+        Assertions.assertEquals(
+            14450.0,
+            metalAndMultipleCalculator?.metalNameMultiplerMap?.get("Gold") ?: 0.0
+        )
     }
 
     @Test
-    void initializeIronAndMultipler() {
-        metalAndMultipleCalculator.initializeMetalAndMultipler("pish pish", "Iron", 3910);
-        assertEquals(195.5, metalAndMultipleCalculator.getMetalNameMultiplerMap().get("Iron"));
+    fun `test that initializing Iron and multipler`() {
+        metalAndMultipleCalculator?.initializeMetalAndMultipler("pish pish", "Iron", 3910)
+        Assertions.assertEquals(195.5, metalAndMultipleCalculator!!.metalNameMultiplerMap["Iron"])
     }
 
     @Test
-    void initializeThreeMetalsAndTheirMultiplers() {
-        metalAndMultipleCalculator.initializeMetalAndMultipler("pish pish", "Iron", 3910);
-        metalAndMultipleCalculator.initializeMetalAndMultipler("glob glob", "Silver", 34);
-        metalAndMultipleCalculator.initializeMetalAndMultipler("glob prok", "Gold", 57800);
-        assertEquals(14450, metalAndMultipleCalculator.getMetalNameMultiplerMap().get("Gold"));
-        assertEquals(17, metalAndMultipleCalculator.getMetalNameMultiplerMap().get("Silver"));
-        assertEquals(195.5, metalAndMultipleCalculator.getMetalNameMultiplerMap().get("Iron"));
+    fun `test that initializing three metals and their multiplers`() {
+        metalAndMultipleCalculator?.initializeMetalAndMultipler("pish pish", "Iron", 3910)
+        metalAndMultipleCalculator?.initializeMetalAndMultipler("glob glob", "Silver", 34)
+        metalAndMultipleCalculator?.initializeMetalAndMultipler("glob prok", "Gold", 57800)
+        Assertions.assertEquals(
+            14450.0,
+            metalAndMultipleCalculator?.metalNameMultiplerMap?.get("Gold") ?: 0.0
+        )
+        Assertions.assertEquals(
+            17.0,
+            metalAndMultipleCalculator?.metalNameMultiplerMap?.get("Silver") ?: 0.0
+        )
+        Assertions.assertEquals(195.5, metalAndMultipleCalculator?.metalNameMultiplerMap?.get("Iron") ?: 0.0 )
     }
 
     @Test
-    void calculateMetalValue() {
-        assertEquals(42, metalAndMultipleCalculator.calculateMetalValue("pish tegj glob glob",
-                null));
+    fun `test that calculating metal value`() {
+        Assertions.assertEquals(
+            42, metalAndMultipleCalculator?.calculateMetalValue(
+                "pish tegj glob glob",
+                ""
+            )
+        )
 
-        metalAndMultipleCalculator.initializeMetalAndMultipler("glob glob", "Silver", 34);
-        metalAndMultipleCalculator.initializeMetalAndMultipler("glob prok", "Gold", 57800);
-        metalAndMultipleCalculator.initializeMetalAndMultipler("pish pish", "Iron", 3910);
-        assertEquals(68, metalAndMultipleCalculator.calculateMetalValue("glob prok", "Silver"));
-        assertEquals(57800, metalAndMultipleCalculator.calculateMetalValue("glob prok", "Gold"));
-        assertEquals(782, metalAndMultipleCalculator.calculateMetalValue("glob prok", "Iron"));
+        metalAndMultipleCalculator?.initializeMetalAndMultipler("glob glob", "Silver", 34)
+        metalAndMultipleCalculator?.initializeMetalAndMultipler("glob prok", "Gold", 57800)
+        metalAndMultipleCalculator?.initializeMetalAndMultipler("pish pish", "Iron", 3910)
+        Assertions.assertEquals(68, metalAndMultipleCalculator?.calculateMetalValue("glob prok", "Silver"))
+        Assertions.assertEquals(57800, metalAndMultipleCalculator?.calculateMetalValue("glob prok", "Gold"))
+        Assertions.assertEquals(782, metalAndMultipleCalculator?.calculateMetalValue("glob prok", "Iron"))
     }
 }

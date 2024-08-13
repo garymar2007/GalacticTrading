@@ -8,11 +8,22 @@ import org.springframework.stereotype.Service
 import java.io.*
 
 @Service
-data class InputProcessor(
-    val interGalacticUnitDefinitions: MutableList<String>,
-    val metalValueDefinitions: MutableList<String>,
-    val queryDefinitions: MutableList<String>
-) {
+class InputProcessor {
+    var interGalacticUnitDefinitions: MutableList<String> = mutableListOf()
+        get() = field
+        set(value) {
+            field = value
+        }
+    var metalValueDefinitions: MutableList<String> = mutableListOf()
+        get() =  field
+        set(value) {
+            field = value
+        }
+    var queryDefinitions: MutableList<String> = mutableListOf()
+        get() = field
+        set(value) {
+            field = value
+        }
     lateinit var invalidQuery: String
     private val log = KotlinLogging.logger {}
 

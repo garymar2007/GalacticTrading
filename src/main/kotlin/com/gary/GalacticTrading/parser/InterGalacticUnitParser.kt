@@ -17,7 +17,7 @@ class InterGalacticUnitParser(private val intergalacticUnitsToRomanStringConvert
      * This map is used to store the intergalactic unit and roman letter.
      * NB: MutableMap is used here for modification purposes.
      */
-    private val interGalacticUnits: MutableMap<String, String> = HashMap()
+    val interGalacticUnits: MutableMap<String, String> = HashMap()
     private val log = KotlinLogging.logger {}
 
     /**

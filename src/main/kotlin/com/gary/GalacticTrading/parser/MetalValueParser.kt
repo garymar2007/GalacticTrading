@@ -26,20 +26,21 @@ class MetalValueParser() {
             .split(" ".toRegex())
             .filter { s: String -> s != "" }.toTypedArray()
         val indexOfIs = metalValueArray.indexOf("is")
-        val metalName = convertToUpperCaseForFirstLetter(metalValueArray[indexOfIs - 1])
+        this.metalName = convertToUpperCaseForFirstLetter(metalValueArray[indexOfIs - 1]) ?: ""
         log.debug("Parsed metal value: metal name -> {}", metalName)
         if (metalValueArray[indexOfIs + 1].chars().allMatch { codePoint: Int ->
                 Character.isDigit(
                     codePoint
                 )
             }) {
-            log.debug("Parsed total value: value -> {}", metalValueArray[indexOfIs + 1].toInt())
+            this.value = metalValueArray[indexOfIs + 1].toInt()
+            log.debug("Parsed total value: value -> {}", this.value)
         } else {
             throw InvalidMetalValueDefinitionException(ExceptionMsgConstants.INVALID_METAL_VALUE_DEFINITIONS)
         }
 
         for (i in 0 until indexOfIs - 1) {
-            if (interGalacticUnitString == null) {
+            if (interGalacticUnitString.isEmpty()) {
                 interGalacticUnitString = metalValueArray[i] + " "
             } else {
                 interGalacticUnitString += metalValueArray[i] + " "
