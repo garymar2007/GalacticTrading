@@ -1,44 +1,42 @@
-package com.gary.GalacticTrading.converter;
+package com.gary.GalacticTrading.converter
 
-import org.springframework.stereotype.Service;
-
-import java.util.HashMap;
-import java.util.Map;
+import org.springframework.stereotype.Service
 
 /**
  * This class is used to convert Roman String to Integer
  */
 @Service
-public class RomanStringToIntegerConverter {
-    private static final Map<String, Integer> ROMAN_TO_INTEGER_MAP = new HashMap<>(){
-        {
-            put("I", 1);
-            put("V", 5);
-            put("X", 10);
-            put("L", 50);
-            put("C", 100);
-            put("D", 500);
-            put("M", 1000);
-        }
-    };
-
+class RomanStringToIntegerConverter {
     /**
      * This method is used to convert Roman String to Integer
      * @param romanString
      * @return
      */
-    public int convertRomanStringToInteger(String romanString) {
-        int result = 0;
-        int prev = 0;
-        for (int i = romanString.length() - 1; i >= 0; i--) {
-            int current = ROMAN_TO_INTEGER_MAP.get(String.valueOf(romanString.charAt(i)));
+    fun convertRomanStringToInteger(romanString: String): Int {
+        var result = 0
+        var prev = 0
+        for (i in romanString.length - 1 downTo 0) {
+            val current =
+                ROMAN_TO_INTEGER_MAP[romanString[i].toString()]!!
             if (current < prev) {
-                result -= current;
+                result -= current
             } else {
-                result += current;
+                result += current
             }
-            prev = current;
+            prev = current
         }
-        return result;
+        return result
+    }
+
+    companion object {
+        private val ROMAN_TO_INTEGER_MAP: Map<String, Int> = mapOf(
+            "I" to 1,
+            "V" to 5,
+            "X" to 10,
+            "L" to 50,
+            "C" to 100,
+            "D" to 500,
+            "M" to 1000
+        )
     }
 }

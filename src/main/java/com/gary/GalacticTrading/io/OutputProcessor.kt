@@ -1,74 +1,66 @@
-package com.gary.GalacticTrading.io;
+package com.gary.GalacticTrading.io
 
-import com.gary.GalacticTrading.calculator.MetalAndMultipleCalculator;
-import lombok.Getter;
-import lombok.RequiredArgsConstructor;
-import lombok.extern.slf4j.Slf4j;
-import org.springframework.stereotype.Service;
-
-import java.io.BufferedWriter;
-import java.io.File;
-import java.io.FileWriter;
-import java.io.IOException;
-import java.util.ArrayList;
-import java.util.List;
+import com.gary.GalacticTrading.calculator.MetalAndMultipleCalculator
+import mu.KotlinLogging
+import org.springframework.stereotype.Service
+import java.io.BufferedWriter
+import java.io.File
+import java.io.FileWriter
+import java.io.IOException
 
 @Service
-@Slf4j
-@RequiredArgsConstructor
-@Getter
-public class OutputProcessor {
-    private final MetalAndMultipleCalculator metalAndMultipleCalculator;
-    private List<String> contents = new ArrayList<>();
+data class OutputProcessor(private val metalAndMultipleCalculator: MetalAndMultipleCalculator) {
+    var contents: List<String> = ArrayList()
+    private val log = KotlinLogging.logger {}
 
-    public void saveForOutput(final String[] unitsAndMetalQuery) {
-        log.debug("Saving to buffer and ready for output file...");
+    fun saveForOutput(unitsAndMetalQuery: Array<String>) {
+        log.debug("Saving to buffer and ready for output file...")
 
-            if (unitsAndMetalQuery.length == 1) {
-                contents.add(unitsAndMetalQuery[0]);
-                return;
-            }
+        if (unitsAndMetalQuery.size == 1) {
+            contents += unitsAndMetalQuery[0]
+            return
+        }
 
-            String temp = String.join(" ", unitsAndMetalQuery);
-            temp += " is ";
-            final int length = unitsAndMetalQuery.length;
-            if (metalAndMultipleCalculator.getMetalNameMultiplerMap().get(unitsAndMetalQuery[length - 1]) != null) {
-                final String metalName = unitsAndMetalQuery[length - 1];
-                final String interGalacticUnits = String.join(" ", unitsAndMetalQuery).replace(metalName, "");
-                temp += String.valueOf(
-                        metalAndMultipleCalculator.calculateMetalValue(interGalacticUnits, metalName));
-                temp += " Credits";
-            } else {
-                temp += String.valueOf(metalAndMultipleCalculator.calculateMetalValue(
-                        String.join(" ", unitsAndMetalQuery), null));
-            }
-            contents.add(temp);
-    }
-
-    public void writeToFile(String outputFileName) throws IOException {
-        File resourcesDir = new File("src/main/resources/");
-        File file = new File(resourcesDir.getAbsolutePath() + File.separator + outputFileName);
-        if (file.createNewFile()) {
-            log.info("File created: " + file.getName());
+        var temp = unitsAndMetalQuery.joinToString(" ")
+        temp += " is "
+        val length = unitsAndMetalQuery.size
+        if (metalAndMultipleCalculator.metalNameMultiplerMap[unitsAndMetalQuery[length - 1]] != null) {
+            val metalName = unitsAndMetalQuery[length - 1]
+            val interGalacticUnits = unitsAndMetalQuery.joinToString(" ").replace(metalName, "")
+            temp += metalAndMultipleCalculator.calculateMetalValue(interGalacticUnits, metalName).toString()
+            temp += " Credits"
         } else {
-            log.info("File already exists.");
+            temp += metalAndMultipleCalculator.calculateMetalValue(
+                unitsAndMetalQuery.joinToString(" "), ""
+            ).toString()
+        }
+        contents += temp
+    }
+
+    fun writeToFile(outputFileName: String) {
+        val resourcesDir = File("src/main/resources/")
+        val file = File(resourcesDir.absolutePath + File.separator + outputFileName)
+        if (file.createNewFile()) {
+            log.info("File created: " + file.name)
+        } else {
+            log.info("File already exists.")
         }
 
-        try (BufferedWriter writer = new BufferedWriter(new FileWriter(file))) {
-            for (String str : contents) {
-                writer.write(str + System.lineSeparator());
+        try {
+            BufferedWriter(FileWriter(file)).use { writer ->
+                for (str in contents) {
+                    writer.write(str + System.lineSeparator())
+                }
+                log.info("Output written to file: {}", file.absolutePath)
+                contents = ArrayList()
             }
-
-            log.info("Output written to file: {}", file.getAbsolutePath());
-            contents.clear();
-        } catch (IOException e) {
-            log.error("Error: Unable to write to file output.txt");
-            throw e;
+        } catch (e: IOException) {
+            log.error("Error: Unable to write to file output.txt")
+            throw e
         }
     }
 
-    public void reset() {
-        contents.clear();
+    fun reset() {
+        contents = ArrayList()
     }
-
 }

@@ -1,51 +1,51 @@
-package com.gary.GalacticTrading.validator;
+package com.gary.GalacticTrading.validator
 
-import lombok.extern.slf4j.Slf4j;
-import org.springframework.stereotype.Component;
-
-import java.util.regex.Matcher;
-import java.util.regex.Pattern;
+import mu.KotlinLogging
+import org.springframework.stereotype.Component
+import java.util.regex.Pattern
 
 @Component
-@Slf4j
-public class RomanSymbolRules {
-    private static final String ROMAN_SYMBOL_REGEX = "^M{0,3}(CM|CD|D?C{0,3})(XC|XL|L?X{0,3})(IX|IV|V?I{0,3})$";
-
-    public boolean validateRomanSymbols(String romanSymbol) {
-        boolean isValid;
+class RomanSymbolRules {
+    private val log = KotlinLogging.logger {}
+    fun validateRomanSymbols(romanSymbol: String): Boolean {
+        var isValid: Boolean
         //Rule 1: Format of Roman Symbol
-        log.debug("Validating Roman Symbol Rules...");
-        Pattern p = Pattern.compile(ROMAN_SYMBOL_REGEX);
-        Matcher m = p.matcher(romanSymbol);
+        this.log.debug("Validating Roman Symbol Rules...")
+        val p = Pattern.compile(ROMAN_SYMBOL_REGEX)
+        val m = p.matcher(romanSymbol)
 
-        isValid = m.matches();
+        isValid = m.matches()
 
         if (!isValid) {
-            log.debug("Failed on Rule 1 - Invalid Roman Symbol: {}", romanSymbol);
-            return false;
+            this.log.debug("Failed on Rule 1 - Invalid Roman Symbol: {}", romanSymbol)
+            return false
         }
 
         //Rule 2: Occurences - "I", "X", "C" and "M" should not have more than 3 consecutive occurences,
         // and "D", "L" and "V" should not have more than 1 occurence.
-        isValid = !romanSymbol.matches(".*M{4}.*") && !romanSymbol.matches(".*C{4}.*")
-                && !romanSymbol.matches(".*X{4}.*") && !romanSymbol.matches(".*I{4}.*")
-                && !romanSymbol.matches(".*[DLV]{2}.*");
+        isValid = !romanSymbol.matches(".*M{4}.*".toRegex()) && !romanSymbol.matches(".*C{4}.*".toRegex())
+                && !romanSymbol.matches(".*X{4}.*".toRegex()) && !romanSymbol.matches(".*I{4}.*".toRegex())
+                && !romanSymbol.matches(".*[DLV]{2}.*".toRegex())
 
         if (!isValid) {
-            log.debug("Failed on Rule 2 - wrong number of occurences: {}", romanSymbol);
-            return false;
+            this.log.debug("Failed on Rule 2 - wrong number of occurences: {}", romanSymbol)
+            return false
         }
 
         //Rule 3: Substraction - "I", "X" and "C" can be subtracted only from the next two higher values.
-        isValid = !romanSymbol.matches(".*I[LCDM].*") && !romanSymbol.matches(".*X[DM].*")
-                && !romanSymbol.matches(".*VX.*") && !romanSymbol.matches(".*LC.*")
-                && !romanSymbol.matches(".*DM.*");
+        isValid = !romanSymbol.matches(".*I[LCDM].*".toRegex()) && !romanSymbol.matches(".*X[DM].*".toRegex())
+                && !romanSymbol.matches(".*VX.*".toRegex()) && !romanSymbol.matches(".*LC.*".toRegex())
+                && !romanSymbol.matches(".*DM.*".toRegex())
 
         if (!isValid) {
-            log.debug("Failed on Rule 3 - wrong order for substraction: {}", romanSymbol);
-            return false;
+            this.log.debug("Failed on Rule 3 - wrong order for substraction: {}", romanSymbol)
+            return false
         }
 
-        return true;
+        return true
+    }
+
+    companion object {
+        private const val ROMAN_SYMBOL_REGEX = "^M{0,3}(CM|CD|D?C{0,3})(XC|XL|L?X{0,3})(IX|IV|V?I{0,3})$"
     }
 }

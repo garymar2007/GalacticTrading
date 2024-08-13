@@ -1,47 +1,45 @@
-package com.gary.GalacticTrading.parser;
+package com.gary.GalacticTrading.parser
 
-import com.gary.GalacticTrading.converter.IntergalacticUnitsToRomanStringConverter;
-import com.gary.GalacticTrading.exception.ExceptionMsgConstants;
-import com.gary.GalacticTrading.exception.InvalidIntergalacticUnitException;
-import lombok.Getter;
-import lombok.RequiredArgsConstructor;
-import lombok.extern.slf4j.Slf4j;
-import org.springframework.stereotype.Component;
-
-import java.util.HashMap;
-import java.util.Map;
+import com.gary.GalacticTrading.converter.IntergalacticUnitsToRomanStringConverter
+import com.gary.GalacticTrading.exception.ExceptionMsgConstants
+import com.gary.GalacticTrading.exception.InvalidIntergalacticUnitException
+import mu.KotlinLogging
+import org.springframework.stereotype.Component
+import java.util.*
 
 /**
  * This class is responsible for parsing intergalactic units.
- * */
+ */
 @Component
-@Getter
-@Slf4j
-@RequiredArgsConstructor
-public class InterGalacticUnitParser {
-    private final IntergalacticUnitsToRomanStringConverter intergalacticUnitsToRomanStringConverter;
+class InterGalacticUnitParser(private val intergalacticUnitsToRomanStringConverter:
+                              IntergalacticUnitsToRomanStringConverter) {
     /**
      * This map is used to store the intergalactic unit and roman letter.
+     * NB: MutableMap is used here for modification purposes.
      */
-    private final Map<String, String> interGalacticUnits = new HashMap<>();
+    private val interGalacticUnits: MutableMap<String, String> = HashMap()
+    private val log = KotlinLogging.logger {}
 
     /**
      * This method is used to parse intergalactic units.
      * @param interGalacticUnits intergalactic units definition string to be parsed
      */
-    public void parseIntergalacticUnits(final String interGalacticUnits) {
-        String[] interGalacticUnitArray = interGalacticUnits.split(" ");
-        if (interGalacticUnitArray.length != 3) {
-            throw new InvalidIntergalacticUnitException(ExceptionMsgConstants.INVALID_INTERGALACTIC_UNIT);
+    fun parseIntergalacticUnits(interGalacticUnits: String) {
+        val interGalacticUnitArray =
+            interGalacticUnits.split(" ".toRegex()).dropLastWhile { it.isEmpty() }.toTypedArray()
+        if (interGalacticUnitArray.size != 3) {
+            throw InvalidIntergalacticUnitException(ExceptionMsgConstants.INVALID_INTERGALACTIC_UNIT)
         }
-        log.debug("Parsed intergalactic unit: {} -> {}", interGalacticUnitArray[0],
-                interGalacticUnitArray[interGalacticUnitArray.length - 1]);
-        this.interGalacticUnits.put(interGalacticUnitArray[0].toLowerCase(),
-                interGalacticUnitArray[interGalacticUnitArray.length - 1].toUpperCase());
-        intergalacticUnitsToRomanStringConverter.setInterGalacticUnits(this.interGalacticUnits);
+        log.debug(
+            "Parsed intergalactic unit: {} -> {}", interGalacticUnitArray[0],
+            interGalacticUnitArray[interGalacticUnitArray.size - 1]
+        )
+        this.interGalacticUnits[interGalacticUnitArray[0].lowercase(Locale.getDefault())] =
+            interGalacticUnitArray[interGalacticUnitArray.size - 1].uppercase(Locale.getDefault())
+        intergalacticUnitsToRomanStringConverter.setInterGalacticUnits(this.interGalacticUnits)
     }
 
-    public void reset() {
-        interGalacticUnits.clear();
+    fun reset() {
+        interGalacticUnits.clear()
     }
 }

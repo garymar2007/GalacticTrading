@@ -1,33 +1,26 @@
-package com.gary.GalacticTrading.calculator;
+package com.gary.GalacticTrading.calculator
 
-import com.gary.GalacticTrading.converter.IntergalacticUnitsToRomanStringConverter;
-import com.gary.GalacticTrading.converter.RomanStringToIntegerConverter;
-import com.gary.GalacticTrading.exception.ExceptionMsgConstants;
-import com.gary.GalacticTrading.exception.InvalidMetalValueDefinitionException;
-import com.gary.GalacticTrading.validator.RomanSymbolRules;
-import lombok.Getter;
-import lombok.RequiredArgsConstructor;
-import lombok.extern.slf4j.Slf4j;
-import org.springframework.stereotype.Service;
-
-import java.util.HashMap;
-import java.util.Map;
+import com.gary.GalacticTrading.converter.IntergalacticUnitsToRomanStringConverter
+import com.gary.GalacticTrading.converter.RomanStringToIntegerConverter
+import com.gary.GalacticTrading.exception.ExceptionMsgConstants
+import com.gary.GalacticTrading.exception.InvalidMetalValueDefinitionException
+import com.gary.GalacticTrading.validator.RomanSymbolRules
+import mu.KotlinLogging
+import org.springframework.stereotype.Service
 
 /**
  * This class is used to calculate the value of metal and multiple.
  */
 @Service
-@RequiredArgsConstructor
-@Slf4j
-@Getter
-public class MetalAndMultipleCalculator {
-    private final RomanSymbolRules romanSymbolRules;
-    private final RomanStringToIntegerConverter romanStringToIntegerConverter;
-    private final IntergalacticUnitsToRomanStringConverter intergalacticUnitsToRomanStringConverter;
+class MetalAndMultipleCalculator(private val romanSymbolRules: RomanSymbolRules,
+                                 private val romanStringToIntegerConverter: RomanStringToIntegerConverter,
+                                 private val intergalacticUnitsToRomanStringConverter: IntergalacticUnitsToRomanStringConverter) {
+    private val log = KotlinLogging.logger {}
+
     /**
      * This map is used to store the metal name and multiple.
      */
-    private Map<String, Double> metalNameMultiplerMap = new HashMap<>();
+    val metalNameMultiplerMap: MutableMap<String, Double> = HashMap()
 
     /**
      * This method is used to calculate the value of metal and multiple.
@@ -35,37 +28,45 @@ public class MetalAndMultipleCalculator {
      * @param interGalacticUnits
      * @return
      */
-    public void initializeMetalAndMultipler(final String interGalacticUnits, final String metalName, final Integer value) {
-        final String romanString = intergalacticUnitsToRomanStringConverter
-                .convertIntergalacticUnitsToRomanString(interGalacticUnits);
+    fun initializeMetalAndMultipler(interGalacticUnits: String, metalName: String, value: Int) {
+        val romanString = intergalacticUnitsToRomanStringConverter
+            .convertIntergalacticUnitsToRomanString(interGalacticUnits)
         if (!romanSymbolRules.validateRomanSymbols(romanString)) {
-            log.error("Invalid Roman String: {}", romanString);
-            throw new InvalidMetalValueDefinitionException(ExceptionMsgConstants.INVALID_METAL_VALUE_DEFINITIONS);
+            log.error("Invalid Roman String: {}", romanString)
+            throw InvalidMetalValueDefinitionException(ExceptionMsgConstants.INVALID_METAL_VALUE_DEFINITIONS)
         }
 
-        final int totalValue = romanStringToIntegerConverter.convertRomanStringToInteger(romanString);
+        val totalValue = romanStringToIntegerConverter.convertRomanStringToInteger(romanString)
         if (totalValue == 0) {
-            log.error("Invalid Roman String: {}", romanString);
-            throw new InvalidMetalValueDefinitionException(ExceptionMsgConstants.INVALID_METAL_VALUE_DEFINITIONS);
+            log.error("Invalid Roman String: {}", romanString)
+            throw InvalidMetalValueDefinitionException(ExceptionMsgConstants.INVALID_METAL_VALUE_DEFINITIONS)
         }
 
-        final double multipler = (double)value / totalValue;
-        metalNameMultiplerMap.put(metalName, multipler);
+        val multipler = value.toDouble() / totalValue
+//        metalNameMultiplerMap = metalNameMultiplerMap.mapNotNull { (key, value) ->
+//            when(key) {
+//                metalName -> key to multipler
+//                else -> key to value
+//            }
+//        }.toMap()
+        metalNameMultiplerMap[metalName] = multipler
     }
 
-    public int calculateMetalValue(final String interGalacticUnits, final String metalName) {
-        final String romanString = intergalacticUnitsToRomanStringConverter
-                .convertIntergalacticUnitsToRomanString(interGalacticUnits);
+    fun calculateMetalValue(interGalacticUnits: String, metalName: String): Int {
+        val romanString = intergalacticUnitsToRomanStringConverter
+            .convertIntergalacticUnitsToRomanString(interGalacticUnits)
         if (!romanSymbolRules.validateRomanSymbols(romanString)) {
-            log.error("Invalid Roman String: {}", romanString);
-            throw new InvalidMetalValueDefinitionException(ExceptionMsgConstants.INVALID_UNITS_IN_QUERY);
+            log.error("Invalid Roman String: {}", romanString)
+            throw InvalidMetalValueDefinitionException(ExceptionMsgConstants.INVALID_UNITS_IN_QUERY)
         }
 
-        final int totalValue = romanStringToIntegerConverter.convertRomanStringToInteger(romanString);
-        if (metalName == null) {
-            return totalValue;
+        val totalValue = romanStringToIntegerConverter.convertRomanStringToInteger(romanString)
+        if (metalName.isEmpty() || !metalNameMultiplerMap.containsKey(metalName)
+            || metalNameMultiplerMap[metalName] == null) {
+            return totalValue
         }
-
-        return (int)(totalValue * metalNameMultiplerMap.get(metalName));
+        return metalNameMultiplerMap[metalName]?.let {
+            (totalValue * it).toInt()
+        } ?: totalValue
     }
 }

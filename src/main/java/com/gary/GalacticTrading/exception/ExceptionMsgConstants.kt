@@ -1,11 +1,12 @@
-package com.gary.GalacticTrading.exception;
+package com.gary.GalacticTrading.exception
 
-public class ExceptionMsgConstants {
-    public static final String INTERGALACTIC_DEFN_NOT_FOUND = "ERROR: No intergalactic unit definitions found!";
-    public static final String METAL_VALUE_DEFN_NOT_FOUND = "ERROR: No metal value definitions found!";
-    public static final String UNABLE_PROCESS_INPUT_FILE = "ERROR: Galactic Trading Process failed in intergalactic unit definitions process!";
-    public static final String INVALID_INTERGALACTIC_UNIT = "ERROR: Invalid intergalactic unit definition!";
-    public static final String INVALID_METAL_VALUE_DEFINITIONS = "Error: Invalid metal value definition!";
-    public static final String NO_QUERY_FOUND = "ERROR: No query found!";
-    public static final String INVALID_UNITS_IN_QUERY = "Invalid intergalactic units in query!";
+object ExceptionMsgConstants {
+    const val INTERGALACTIC_DEFN_NOT_FOUND: String = "ERROR: No intergalactic unit definitions found!"
+    const val METAL_VALUE_DEFN_NOT_FOUND: String = "ERROR: No metal value definitions found!"
+    const val UNABLE_PROCESS_INPUT_FILE: String =
+        "ERROR: Galactic Trading Process failed in intergalactic unit definitions process!"
+    const val INVALID_INTERGALACTIC_UNIT: String = "ERROR: Invalid intergalactic unit definition!"
+    const val INVALID_METAL_VALUE_DEFINITIONS: String = "Error: Invalid metal value definition!"
+    const val NO_QUERY_FOUND: String = "ERROR: No query found!"
+    const val INVALID_UNITS_IN_QUERY: String = "Invalid intergalactic units in query!"
 }
