@@ -12,14 +12,14 @@ import java.io.IOException
 @SpringBootApplication
 class GalacticTradingApplication : ApplicationRunner {
     @Autowired
-    private val tradingService: TradingService? = null
+    private lateinit var tradingService: TradingService
     private val log = KotlinLogging.logger("GalacticTradingApplication")
 
     override fun run(args: ApplicationArguments) {
         if (args.nonOptionArgs.size == 2) {
             val inputFileName = args.nonOptionArgs[0]
             val outputFileName = args.nonOptionArgs[1]
-            tradingService!!.trade(inputFileName, outputFileName)
+            tradingService.trade(inputFileName, outputFileName)
 
             System.exit(0)
         } else {

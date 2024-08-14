@@ -11,30 +11,34 @@ import io.kotest.core.spec.style.FunSpec
 import io.kotest.extensions.spring.SpringExtension
 import org.springframework.beans.factory.annotation.Autowired
 import org.springframework.boot.test.context.SpringBootTest
-import org.springframework.boot.test.mock.mockito.MockBean
 
 @SpringBootTest
 internal class GalacticTradingApplicationTests: FunSpec() {
-    @MockBean
+    @Autowired
     private lateinit var inputProcessor: InputProcessor
-    @MockBean
+    @Autowired
     private lateinit var interGalacticUnitParser: InterGalacticUnitParser
-    @MockBean
+    @Autowired
     private lateinit var metalValueParser: MetalValueParser
-    @MockBean
+    @Autowired
     private lateinit var queryParser: QueryParser
-    @MockBean
+    @Autowired
     private lateinit var metalAndMultipleCalculator: MetalAndMultipleCalculator
-    @MockBean
+    @Autowired
     private lateinit var outputProcessor: OutputProcessor
 
-    @Autowired
     private lateinit var tradingService: TradingService
 
     init {
         extensions(SpringExtension)
 
-        test("valid input file 1") {
+        this.beforeTest {
+            tradingService = TradingService(inputProcessor,
+                interGalacticUnitParser, metalValueParser,
+                queryParser, metalAndMultipleCalculator, outputProcessor)
+        }
+
+        this.test("valid input file 1") {
             val inputFileName = "input.txt"
             val outputFileName = "output.txt"
             tradingService.trade(inputFileName, outputFileName)

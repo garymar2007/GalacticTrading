@@ -46,24 +46,21 @@ repositories {
 //}
 
 dependencies {
-    //implementation("org.springframework.boot:spring-boot-starter-data-jpa")
     implementation("org.springframework.boot:spring-boot-starter-web")
     implementation("com.fasterxml.jackson.module:jackson-module-kotlin")
     implementation("org.jetbrains.kotlin:kotlin-reflect")
     implementation("io.github.microutils:kotlin-logging-jvm:2.0.11")
-    // https://mvnrepository.com/artifact/io.kotest.extensions/kotest-extensions-spring
     implementation("io.kotest.extensions:kotest-extensions-spring:1.3.0")
-    implementation("io.kotest:kotest-framework-engine-jvm:5.6.2")
+    implementation("io.kotest:kotest-framework-api:5.5.4")
+    implementation("io.kotest:kotest-framework-engine-jvm:5.5.4")
     compileOnly("org.projectlombok:lombok")
-
     api("org.springframework.boot:spring-boot-starter")
     api("org.springframework.boot:spring-boot-starter-web")
     runtimeOnly("org.springframework.boot:spring-boot-devtools")
     testImplementation("org.springframework.boot:spring-boot-starter-test")
     testImplementation("org.junit.jupiter:junit-jupiter-api")
     testImplementation("org.junit.jupiter:junit-jupiter-engine")
-    testImplementation("io.kotest:kotest-runner-junit5:5.6.2")
-    testImplementation("io.kotest:kotest-runner-junit5-jvm:5.6.2")
+    testImplementation("io.kotest:kotest-runner-junit5:5.5.4")
     testImplementation("io.kotest:kotest-assertions-core")
     testImplementation("io.mockk:mockk:1.12.4")
     testImplementation("org.jetbrains.kotlinx:kotlinx-coroutines-test")

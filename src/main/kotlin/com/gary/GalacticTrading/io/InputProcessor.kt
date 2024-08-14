@@ -3,7 +3,6 @@ package com.gary.GalacticTrading.io
 import com.gary.GalacticTrading.utils.InputRegEx
 import com.gary.GalacticTrading.utils.QueryConstants
 import mu.KotlinLogging
-import org.springframework.core.io.ClassPathResource
 import org.springframework.stereotype.Service
 import java.io.*
 
@@ -11,18 +10,17 @@ import java.io.*
 class InputProcessor(var interGalacticUnitDefinitions: MutableList<String> = mutableListOf(),
                      var metalValueDefinitions: MutableList<String> = mutableListOf(),
                      var queryDefinitions: MutableList<String> = mutableListOf()) {
-
     lateinit var invalidQuery: String
     private val log = KotlinLogging.logger {}
 
     fun processInputFromFile(fileName: String): Boolean {
         log.info("Processing input from file...")
-
         try {
-            val br = ClassPathResource(fileName).file.bufferedReader()
+            val fileNameStr = this.javaClass.classLoader.getResource(fileName).file
+            val br = File(fileNameStr).bufferedReader()
             br.use { bufferedReader ->
-                var line: String
-                while ((bufferedReader.readLine().also { line = it }) != null) {
+                var line: String? = bufferedReader.readLine()
+                while (line != null) {
                     log.debug("Processing line: {}", line)
                     if (line.matches(InputRegEx.INTERGALACTIC_UNIT_DEFINITION.toRegex())) {
                         interGalacticUnitDefinitions.add(line)
@@ -33,6 +31,8 @@ class InputProcessor(var interGalacticUnitDefinitions: MutableList<String> = mut
                     } else {
                         invalidQuery = QueryConstants.INVALID_QUERY
                     }
+
+                    line = bufferedReader.readLine()
                 }
                 return true
             }
