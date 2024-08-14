@@ -15,7 +15,6 @@ class GalacticTradingApplication : ApplicationRunner {
     private val tradingService: TradingService? = null
     private val log = KotlinLogging.logger("GalacticTradingApplication")
 
-    @Throws(Exception::class)
     override fun run(args: ApplicationArguments) {
         if (args.nonOptionArgs.size == 2) {
             val inputFileName = args.nonOptionArgs[0]
