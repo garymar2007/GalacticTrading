@@ -8,10 +8,7 @@ import org.junit.jupiter.api.BeforeEach
 import org.junit.jupiter.api.Test
 
 internal class MetalAndMultipleCalculatorTest {
-    private var metalAndMultipleCalculator: MetalAndMultipleCalculator? = null
-    private var intergalacticUnitsToRomanStringConverter: IntergalacticUnitsToRomanStringConverter? = null
-    private var romanStringToIntegerConverter: RomanStringToIntegerConverter? = null
-    private var romanSymbolRules: RomanSymbolRules? = null
+    private lateinit var metalAndMultipleCalculator: MetalAndMultipleCalculator
 
     @BeforeEach
     fun setUp() {
@@ -21,14 +18,14 @@ internal class MetalAndMultipleCalculatorTest {
             "pish" to "X",
             "tegj" to "L"
         )
-        intergalacticUnitsToRomanStringConverter = IntergalacticUnitsToRomanStringConverter()
-        intergalacticUnitsToRomanStringConverter?.setInterGalacticUnits(interGalacticUnitsnte)
+        val intergalacticUnitsToRomanStringConverter = IntergalacticUnitsToRomanStringConverter()
+        intergalacticUnitsToRomanStringConverter.setInterGalacticUnits(interGalacticUnitsnte)
 
-        romanStringToIntegerConverter = RomanStringToIntegerConverter()
-        romanSymbolRules = RomanSymbolRules()
+        val romanStringToIntegerConverter = RomanStringToIntegerConverter()
+        val romanSymbolRules = RomanSymbolRules()
         metalAndMultipleCalculator = MetalAndMultipleCalculator(
-            romanSymbolRules!!, romanStringToIntegerConverter!!,
-            intergalacticUnitsToRomanStringConverter!!
+            romanSymbolRules, romanStringToIntegerConverter,
+            intergalacticUnitsToRomanStringConverter
         )
     }
 

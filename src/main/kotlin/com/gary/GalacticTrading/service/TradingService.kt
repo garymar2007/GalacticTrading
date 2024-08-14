@@ -90,7 +90,7 @@ class TradingService(private val inputProcessor: InputProcessor,
             outputProcessor.writeToFile(outputFileName)
         }
 
-        if (!outputProcessor.contents.isEmpty() && e is InvalidMetalValueDefinitionException) {
+        if (e is InvalidMetalValueDefinitionException && !outputProcessor.contents.isEmpty()) {
             outputProcessor.saveForOutput(arrayOf(QueryConstants.QUERY_WITH_INVALID_UNIT_OF_METAL))
             outputProcessor.writeToFile(outputFileName)
         }

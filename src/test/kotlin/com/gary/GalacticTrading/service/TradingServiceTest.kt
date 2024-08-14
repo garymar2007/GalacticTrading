@@ -1,61 +1,46 @@
-//package com.gary.GalacticTrading.service
-//
-//import com.gary.GalacticTrading.calculator.MetalAndMultipleCalculator
-//import com.gary.GalacticTrading.exception.FailedProcessInputFile
-//import com.gary.GalacticTrading.exception.NoInterGalacticUnitDefinitionsFoundException
-//import com.gary.GalacticTrading.exception.NoMetalValueDefinitionsFoundException
-//import com.gary.GalacticTrading.exception.NoQueryFoundException
-//import com.gary.GalacticTrading.io.InputProcessor
-//import com.gary.GalacticTrading.io.OutputProcessor
-//import com.gary.GalacticTrading.parser.InterGalacticUnitParser
-//import com.gary.GalacticTrading.parser.MetalValueParser
-//import com.gary.GalacticTrading.parser.QueryParser
-//import io.kotest.assertions.throwables.shouldThrow
-//import io.kotest.matchers.should
-//import io.kotest.matchers.string.startWith
-//import org.junit.jupiter.api.Assertions
-//import org.junit.jupiter.api.BeforeEach
-//import org.junit.jupiter.api.Test
-//import org.mockito.*
-//import org.mockito.BDDMockito.given
-//import org.mockito.BDDMockito.willDoNothing
-//import org.springframework.boot.test.mock.mockito.MockBean
-//import java.io.IOException
-//
-//internal class TradingServiceTest {
-//    @InjectMocks
-//    private val tradingService: TradingService? = null
-//
-//    @MockBean
-//    private val inputProcessor: InputProcessor? = null
-//
-//    @MockBean
-//    private val interGalacticUnitParser: InterGalacticUnitParser? = null
-//
-//    @MockBean
-//    private val metalValueParser: MetalValueParser? = null
-//
-//    @MockBean
-//    private val queryParser: QueryParser? = null
-//
-//    @MockBean
-//    private val outputProcessor: OutputProcessor? = null
-//
-//    @MockBean
-//    private val metalAndMultipleCalculator: MetalAndMultipleCalculator? = null
-//
+package com.gary.GalacticTrading.service
+
+import com.gary.GalacticTrading.calculator.MetalAndMultipleCalculator
+import com.gary.GalacticTrading.exception.FailedProcessInputFile
+import com.gary.GalacticTrading.io.InputProcessor
+import com.gary.GalacticTrading.io.OutputProcessor
+import com.gary.GalacticTrading.parser.InterGalacticUnitParser
+import com.gary.GalacticTrading.parser.MetalValueParser
+import com.gary.GalacticTrading.parser.QueryParser
+import io.kotest.assertions.throwables.shouldThrow
+import io.kotest.core.spec.style.FunSpec
+import io.kotest.matchers.should
+import io.kotest.matchers.shouldBe
+import io.kotest.matchers.string.startWith
+import io.mockk.every
+import io.mockk.mockk
+import org.junit.jupiter.api.Test
+import org.mockito.BDDMockito.*
+
+internal class TradingServiceTest : FunSpec({
+    val inputProcessor: InputProcessor = mockk<InputProcessor>()
+    val interGalacticUnitParser: InterGalacticUnitParser = mockk<InterGalacticUnitParser>()
+    val metalValueParser: MetalValueParser = mockk<MetalValueParser>()
+    val queryParser: QueryParser = mockk<QueryParser>()
+    val outputProcessor: OutputProcessor = mockk<OutputProcessor>()
+    val metalAndMultipleCalculator: MetalAndMultipleCalculator = mockk<MetalAndMultipleCalculator>()
+
+    val tradingService = TradingService(inputProcessor,
+       interGalacticUnitParser, metalValueParser, queryParser,
+        metalAndMultipleCalculator, outputProcessor
+    )
+
+    test("Test Trade Service to throw Failed Process Input File Exception") {
+        every { inputProcessor.processInputFromFile("inputFileName") } returns false
+        every { outputProcessor.saveForOutput(any()) } returns Unit
+        every { outputProcessor.writeToFile("outputFileName") } returns Unit
+        val exception = shouldThrow<FailedProcessInputFile> {
+            tradingService.trade("inputFileName", "outputFileName")
+        }
+        exception.message should startWith("ERROR: Galactic Trading Process failed")
+    }
+
 //    @Test
-//    fun testTradeThrowFailedProcessInptFileException() {
-//        given(inputProcessor?.processInputFromFile(ArgumentMatchers.any())).willReturn(false)
-//
-//        val exception = shouldThrow<FailedProcessInputFile> {
-//            tradingService?.trade("inputFileName", "outputFileName")
-//        }
-//        exception.message should startWith("ERROR:")
-//    }
-//
-//    @Test
-//    @Throws(IOException::class)
 //    fun testTradeThrowNoInterGalacticUnitDefinitionsFoundException() {
 //        given(inputProcessor?.processInputFromFile(ArgumentMatchers.any())).willReturn(true)
 //        given(inputProcessor?.interGalacticUnitDefinitions).willReturn(null)
@@ -136,4 +121,4 @@
 //
 //        tradingService?.trade("inputFileName", "outputFileName")
 //    }
-//}
+    })
